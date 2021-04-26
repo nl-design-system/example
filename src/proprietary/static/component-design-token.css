@@ -1,0 +1,15 @@
+/* stylelint-disable no-duplicate-selectors */
+
+/*
+ * Comments in this file are automatically processed by a Storybook plugin.
+ * Documentation for the Storybook Design Token plugin:
+ * https://storybook.js.org/addons/storybook-design-token
+ */
+
+/**
+ * @tokens Component / Color
+ * @presenter Color
+ */
+:root {
+  --demo-link-color: var(--example-blue);
+}
