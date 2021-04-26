@@ -1,0 +1,23 @@
+/* stylelint-disable no-duplicate-selectors */
+
+/*
+ * Comments in this file are automatically processed by a Storybook plugin.
+ * Documentation for the Storybook Design Token plugin:
+ * https://storybook.js.org/addons/storybook-design-token
+ */
+
+/**
+ * @tokens Your Organisation / Color
+ * @presenter Color
+ */
+:root {
+  --example-blue: blue;
+}
+
+/**
+ * @tokens Your Organisation / Font Family
+ * @presenter FontFamily
+ */
+:root {
+  --example-font-family: "Comic Sans MS";
+}
