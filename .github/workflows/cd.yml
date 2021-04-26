@@ -19,11 +19,11 @@ jobs:
 
       - name: install, build, lint and test
         run: |
-          yarn
-          yarn bootstrap
-          yarn build
-          yarn lint
-          yarn test
+          npm ci
+          npm run bootstrap
+          npm run build
+          npm run lint
+          npm run test
 
       # - name: "TODO: Deploy to Github Pages and remove azure deploy below"
       #   uses: azure/webapps-deploy@v2
