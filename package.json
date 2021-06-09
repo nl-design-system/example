@@ -1,7 +1,7 @@
 {
   "version": "1.0.0-alpha.0",
   "author": "Community for NL Design System",
-  "description": "Template for design systems based on the NL Design System architecture",
+  "description": "Design system based on the NL Design System architecture",
   "license": "EUPL-1.2",
   "name": "@example/design-system",
   "private": true,

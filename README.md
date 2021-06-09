@@ -1,9 +1,16 @@
-# Template
+# Example Design System
 
-This design system is based on the architecture of the NL Design System POC
-For more info about that architecture or the progress of the POC, join the `#nl-design-system-developers` Slack via [codefor.nl](https://codefor.nl)!
+This design system is based on the NL Design System architecture.
 
-## About this template
+For more info about the NL Design System and learn about things happening in our open source community, join the `#nl-design-system` Slack via [praatmee.codefor.nl](https://praatmee.codefor.nl)!
+
+---
+
+✂ In your own repository: **remove the "Getting started" section below!**
+
+---
+
+## Getting started with the NL Design System template
 
 This template contains all relevant linting rules used by the NL Design System repository.
 It also contains the Storybook setup with two example components and two example general documentation page.
@@ -57,6 +64,12 @@ parameters: {
     // ...
 }
 ```
+
+---
+
+✂ In your own repository: **remove the "Getting started" section above!**
+
+---
 
 ## Code of Conduct
 
