@@ -1,12 +1,12 @@
-.demo-link {
-  color: var(--demo-link-color, blue);
+.example-link {
+  color: var(--example-link-color, blue);
   text-decoration: none;
 }
 
-.demo-link__text {
+.example-link__text {
   margin-inline-start: 1ch;
 }
 
-.demo-link:hover .demo-link__text {
+.example-link:hover .example-link__text {
   border-bottom: 1px solid currentColor;
 }
