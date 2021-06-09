@@ -1,14 +1,14 @@
-const cssReq = require.context('!!raw-loader!../src', true, /.\.css$/);
-const cssTokenFiles = cssReq.keys().map((filename) => ({ filename, content: cssReq(filename).default }));
+// const cssReq = require.context('!!raw-loader!../src', true, /.\.css$/);
+// const cssTokenFiles = cssReq.keys().map((filename) => ({ filename, content: cssReq(filename).default }));
 
-const designToken = {
-  files: {
-    css: cssTokenFiles,
-  },
-  options: {
-    hideMatchingHardCodedValues: true,
-  },
-};
+// const designToken = {
+//   files: {
+//     css: cssTokenFiles,
+//   },
+//   options: {
+//     hideMatchingHardCodedValues: true,
+//   },
+// };
 
 const statuses = {
   BETA: '#9F5E0F',
@@ -27,7 +27,7 @@ export const parameters = {
   controls: { expanded: false },
   previewTabs,
   statuses,
-  designToken,
+  // designToken,
   options: {
     panelPosition: 'right',
   },
