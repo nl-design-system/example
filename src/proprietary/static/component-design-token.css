@@ -11,5 +11,5 @@
  * @presenter Color
  */
 :root {
-  --demo-link-color: var(--example-blue);
+  --example-link-color: var(--example-blue);
 }
