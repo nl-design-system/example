@@ -34,14 +34,14 @@
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "lint": "npm-run-all --continue-on-error lint:**",
-    "lint:css": "stylelint '**/*.css'",
-    "lint:js": "eslint '**/*.{js,jsx,ts,tsx}'",
+    "lint:css": "stylelint --allow-empty-input '**/*.css'",
+    "lint:js": "eslint --no-error-on-unmatched-pattern '**/*.{js,jsx,ts,tsx}'",
     "lint:html": "find . -type d \\( -name node_modules \\) -prune -false -o -name '*.html' -print0 | xargs -0 npx html-validate",
     "lint:md": "markdownlint '**/*.md'",
-    "lint:package-json": "npmPkgJsonLint '**/package.json'",
+    "lint:package-json": "npmPkgJsonLint --allowEmptyTargets '**/package.json'",
     "lint-fix": "npm-run-all --continue-on-error lint-fix:** prettier",
     "lint-fix:css": "stylelint --fix '**/*.css'",
-    "lint-fix:js": "eslint --fix '**/*.{js,jsx,ts,tsx}'",
+    "lint-fix:js": "eslint --fix --no-error-on-unmatched-pattern '**/*.{js,jsx,ts,tsx}'",
     "lint-fix:md": "markdownlint --fix '**/*.md'",
     "prettier": "prettier --write .",
     "test": "exit 0"
