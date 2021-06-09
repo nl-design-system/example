@@ -1,21 +1,54 @@
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
 # Ignore 3rd party files
 node_modules/
+vendor/
 .npm/
 
 # Ignore generated files
+build/
+coverage/
 dist/
 tmp/
+
+# Ignore archives
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
 *.tgz
+*.zip
+
+# Cache
+.cache/
+tsconfig.tsbuildinfo
 
 # Ignore log files
 *.err
 *.log
 *.tmp
 
-# Ignore code editor files
-.vscode/
-*.sublime-workspace
+# Code editor files
+.idea/
 .vs/
+.vscode/
+.code-workspace/
+*.sublime-project
+*.sublime-workspace
 
-# Ignore OS files
+# Operating system files
 .DS_Store
+Thumbs.db
+
+# Files that (sometimes) contain secrets
+*.der
+*.env
+*.key
+*.pem
+.env.*
+
+# Example file exceptions
+!.env.example

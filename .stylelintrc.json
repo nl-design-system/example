@@ -1,8 +1,8 @@
 {
   "rules": {
-    "custom-property-pattern": "(example|demo)-[a-z0-9-]+",
-    "selector-class-pattern": "(example|demo)-[a-z0-9-]+",
-    "keyframes-name-pattern": "(example|demo)-[a-z0-9-]+",
+    "custom-property-pattern": "example-[a-z0-9-]+",
+    "selector-class-pattern": "example-[a-z0-9-]+",
+    "keyframes-name-pattern": "example-[a-z0-9-]+",
     "at-rule-no-unknown": [true],
     "block-no-empty": [true],
     "color-no-invalid-hex": [true],
@@ -30,7 +30,12 @@
     "alpha-value-notation": ["percentage"],
     "hue-degree-notation": ["number"],
     "color-function-notation": ["modern"],
-    "length-zero-no-unit": [true, "custom-properties"],
+    "length-zero-no-unit": [
+      true,
+      {
+        "ignore": ["custom-properties"]
+      }
+    ],
     "font-weight-notation": [
       "numeric",
       {
