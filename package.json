@@ -3,7 +3,7 @@
   "author": "Community for NL Design System",
   "description": "Template for design systems based on the NL Design System architecture",
   "license": "EUPL-1.2",
-  "name": "@nl-design-system/template",
+  "name": "@example/design-system",
   "private": true,
   "devDependencies": {
     "@babel/core": "^7.12.3",
