@@ -9,6 +9,14 @@ This template contains all relevant linting rules used by the NL Design System r
 It also contains the Storybook setup with two example components and two example general documentation page.
 Feel free to add or modify those documentation pages and use the example components as an initial template to create your own storybook components.
 
+### Customize organization settings
+
+1. Choose a prefix for your organisation. For example: the main NL Design System uses `nl-`, The Hague uses `denhaag-`, and you can choose something unique for you to use.
+2. Modify `.stylelintrc.json` by replacing the prefix `example` with the prefix you have chosen, in the following rules: `custom-property-pattern`, `selector-class-pattern` and `keyframes-name-pattern`.
+3. Choose and register an npm organisation on [npmjs.com](https://www.npmjs.com/org/create), if you haven't already. This is very important to keep your project secure. The core NL Design System uses `@nl-design-system/`, and you can choose something for yourself. This prevents others from adding their code to your teams codebase.
+4. Modify the `package.json` and `package-lock.json` files to use your npm organisation scope.
+5. Modify `.npmpackagejsonlintrc.json` to require your organisation scope in package names, by configuring the `valid-values-name-scope` property.
+
 ### Change the theme of your storybook to match your brand
 
 In `.storybook/customTheme.js` the theme used by NL Design System can be found. By changing those properties one can style the storybook to match ones brand. Checkout [https://storybook.js.org/docs/react/configure/theming](https://storybook.js.org/docs/react/configure/theming) to learn more about all the possible configurations to brand this storybook.
