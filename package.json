@@ -5,6 +5,10 @@
   "license": "EUPL-1.2",
   "name": "@example/design-system",
   "private": true,
+  "engines": {
+    "node": ">=16",
+    "npm": ">=7"
+  },
   "devDependencies": {
     "@babel/core": "^7.12.3",
     "@etchteam/storybook-addon-status": "^2.1.0",
@@ -38,7 +42,7 @@
     "bootstrap": "lerna bootstrap",
     "build:storybook": "build-storybook --output-dir dist/storybook -s src/static/,src/proprietary/static/",
     "build": "npm-run-all build:**",
-    "lint": "npm-run-all --continue-on-error 'lint:*' && lerna run lint",
+    "lint": "npm-run-all --continue-on-error lint:**",
     "lint:css": "stylelint '**/*.css'",
     "lint:js": "eslint '**/*.{js,jsx,ts,tsx}'",
     "lint:html": "find . -type d \\( -name node_modules \\) -prune -false -o -name '*.html' -print0 | xargs -0 npx html-validate",
