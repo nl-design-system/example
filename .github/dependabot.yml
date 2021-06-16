@@ -21,10 +21,3 @@ updates:
       interval: "weekly"
     target-branch: "main"
     versioning-strategy: "increase-if-necessary"
-
-  - package-ecosystem: "npm"
-    directory: "/packages/storybook/"
-    schedule:
-      interval: "weekly"
-    target-branch: "main"
-    versioning-strategy: "increase-if-necessary"
