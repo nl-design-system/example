@@ -69,6 +69,7 @@
     "lint-fix:js": "eslint --fix --no-error-on-unmatched-pattern '**/*.{js,jsx,ts,tsx}'",
     "lint-fix:md": "markdownlint --fix '**/*.md'",
     "prettier": "prettier --write .",
+    "prepare": "husky install",
     "start": "node_modules/http-server/bin/http-server dist/",
     "storybook": "start-storybook --port 6006 --static-dir ./documentation/",
     "test": "exit 0"
