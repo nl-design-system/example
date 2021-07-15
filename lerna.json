@@ -1,5 +1,14 @@
 {
   "npmClient": "npm",
+  "version": "independent",
   "useWorkspaces": true,
-  "version": "independent"
+  "command": {
+    "publish": {},
+    "version": {
+      "allowBranch": ["main"],
+      "conventionalCommits": true,
+      "exact": true,
+      "message": "docs(release): design system packages\n\nskip-checks: true"
+    }
+  }
 }
