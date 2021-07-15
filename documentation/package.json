@@ -5,7 +5,5 @@
   "license": "EUPL-1.2",
   "name": "@example/documentation",
   "private": true,
-  "devDependencies": {
-    "@storybook/addon-docs": "^6.2.9"
-  }
+  "devDependencies": {}
 }

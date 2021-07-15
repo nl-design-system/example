@@ -52,3 +52,8 @@ Thumbs.db
 
 # Example file exceptions
 !.env.example
+
+# Only track the npm 7 workspace root package-lock.json
+yarn.lock
+package-lock.json
+!/package-lock.json
