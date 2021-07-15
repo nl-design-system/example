@@ -1,3 +1,4 @@
+/* eslint-env node */
 module.exports = {
   stories: ['../documentation/**/*stories.@(js|mdx)', '../components/**/*stories.@(js|jsx|mdx|ts|tsx)'],
   features: {
