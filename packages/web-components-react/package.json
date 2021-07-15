@@ -25,6 +25,7 @@
     "react-dom": "^16.7.0"
   },
   "devDependencies": {
+    "@example/web-components-stencil": "1.0.0-alpha.0",
     "@types/jest": "23.3.9",
     "@types/node": "15.12.5",
     "@types/react": "16.7.6",
