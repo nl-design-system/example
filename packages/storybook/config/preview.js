@@ -1,14 +1,8 @@
-// const cssReq = require.context('!!raw-loader!../src', true, /.\.css$/);
-// const cssTokenFiles = cssReq.keys().map((filename) => ({ filename, content: cssReq(filename).default }));
+import '@example/design-tokens/dist/index.css';
 
-// const designToken = {
-//   files: {
-//     css: cssTokenFiles,
-//   },
-//   options: {
-//     hideMatchingHardCodedValues: true,
-//   },
-// };
+import { defineCustomElements } from '@example/web-components-stencil';
+
+defineCustomElements();
 
 const statuses = {
   BETA: '#9F5E0F',
@@ -27,7 +21,6 @@ export const parameters = {
   controls: { expanded: false },
   previewTabs,
   statuses,
-  // designToken,
   options: {
     panelPosition: 'right',
   },
