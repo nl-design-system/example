@@ -3,7 +3,7 @@
   "author": "Community for NL Design System",
   "description": "Example design tokens",
   "license": "SEE LICENSE IN LICENSE.md",
-  "name": "@nl-design-system-unstable/example-design-tokens",
+  "name": "@example/design-tokens",
   "private": false,
   "publishConfig": {
     "access": "public"
