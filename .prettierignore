@@ -12,6 +12,12 @@ CHANGELOG.md
 # The indentation of dependency JSON files should only be updated by `yarn` and
 # `npm` commands, so dependency automation scripts (such as Dependabot and
 # Snyk) automatically use the correct indentation.
-package.json
 package-lock.json
 yarn.lock
+
+
+# Ignore generated files from Stencil
+components/components.d.ts
+packages/web-components-stencil/loader
+packages/web-components-react/src/react-component-lib/
+packages/web-components-react/src/components.ts
