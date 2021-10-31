@@ -8,5 +8,7 @@
     "nl-design-system"
   ],
   "private": true,
-  "devDependencies": {}
+  "devDependencies": {
+    "@storybook/addon-docs": "6.3.12"
+  }
 }
