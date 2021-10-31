@@ -4,6 +4,9 @@
   "description": "Components for a design system based on the NL Design System architecture",
   "license": "EUPL-1.2",
   "name": "@example/components",
+  "keywords": [
+    "nl-design-system"
+  ],
   "private": true,
   "devDependencies": {}
 }

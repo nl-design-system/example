@@ -26,7 +26,7 @@
     "require-description": "error",
     "require-engines": "off",
     "require-homepage": "off",
-    "require-keywords": "off",
+    "require-keywords": "error",
     "require-license": "error",
     "require-name": "error",
     "require-repository": "off",
@@ -35,7 +35,7 @@
     "valid-values-author": "off",
     "valid-values-license": ["error", ["EUPL-1.2"]],
     "valid-values-name-scope": ["error", ["@example"]],
-    "valid-values-private": ["error", [true]],
+    "valid-values-private": "off",
     "version-format": "error",
     "version-type": "error"
   }

@@ -4,6 +4,9 @@
   "description": "Stencil web components bundle based on the NL Design System architecture",
   "license": "EUPL-1.2",
   "name": "@example/web-components-stencil",
+  "keywords": [
+    "nl-design-system"
+  ],
   "private": true,
   "main": "dist/index.cjs.js",
   "module": "dist/custom-elements/index.js",
