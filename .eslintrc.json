@@ -33,6 +33,16 @@
         "./.eslintrc.js.json",
         "./.eslintrc.react.json"
       ],
+      "files": ["*.js", "*.jsx"],
+      "plugins": ["import"]
+    },
+    {
+      "extends": [
+        "plugin:react/recommended",
+        "eslint-config-prettier",
+        "./.eslintrc.js.json",
+        "./.eslintrc.react.json"
+      ],
       "files": ["*.ts", "*.tsx"],
       "parser": "@typescript-eslint/parser",
       "plugins": ["@typescript-eslint", "import"]
