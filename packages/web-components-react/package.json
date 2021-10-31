@@ -28,7 +28,7 @@
     "react-dom": "^16.7.0"
   },
   "devDependencies": {
-    "@example/web-components-stencil": "1.0.0-alpha.0",
+    "@example/web-components-stencil": "file:../web-components-stencil",
     "@types/node": "16.11.6",
     "@types/react": "16.14.20",
     "@types/react-dom": "16.9.14",
