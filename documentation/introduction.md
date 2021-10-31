@@ -1,3 +1,5 @@
+<!-- @license CC0-1.0 -->
+
 # NL Design System introductie
 
 De Digitale Overheid stelt dat overheidsdienstverlening toegankelijk en begrijpelijk moet zijn voor iedereen. Hiervoor zijn consistent ontworpen diensten en websites nodig.
