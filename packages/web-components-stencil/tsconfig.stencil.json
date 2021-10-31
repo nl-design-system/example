@@ -15,6 +15,5 @@
     "jsxFactory": "h",
     "skipLibCheck": true
   },
-  "include": ["../../components/"],
-  "exclude": ["dist", "loader", "node_modules"]
+  "include": ["."]
 }
