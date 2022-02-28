@@ -32,7 +32,7 @@
     "@storybook/addon-viewport": "6.3.12",
     "@storybook/html": "6.3.12",
     "@storybook/preset-scss": "1.0.3",
-    "@storybook/theming": "6.3.12",
+    "@storybook/theming": "6.3.13",
     "babel-loader": "8.2.3",
     "css-loader": "5.2.7",
     "react": "16.14.0",
