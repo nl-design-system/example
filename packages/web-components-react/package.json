@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "@example/web-components-stencil": "file:../web-components-stencil",
-    "@types/node": "16.11.19",
+    "@types/node": "16.11.26",
     "@types/react": "16.14.21",
     "@types/react-dom": "16.9.14",
     "react": "16.14.0",
