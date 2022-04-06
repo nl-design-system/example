@@ -4,9 +4,9 @@
  */
 
 .example-button {
-  background-color: cornflowerblue;
+  background-color: var(--example-button-background-color);
   border: 0;
-  color: white;
+  color: var(--example-button-color);
   font-family: system-ui;
   font-size: 1rem;
   padding-block-end: 1ex;
