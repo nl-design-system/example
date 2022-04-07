@@ -56,16 +56,6 @@ To add a component implementation to storybook, we use the `<component-name>-sto
 - Declare the possible inputs, with types and a description in the `argTypes` property of the `Meta` component in `stories.mdx`.
 - Add an `Argstable` component in your `stories.mdx`
 - Optionally add a different `status` to the `Meta` parameters. The options and colors can be found in `.storybook/preview.js`
-- Add the code below to the `Meta` parameters to ensure a resolved code example in your story, instead of the Template function:
-
-```javascript
-parameters: {
-    docs: {
-      transformSource: (_src, { args }) => Template(args),
-    },
-    // ...
-}
-```
 
 ---
 
