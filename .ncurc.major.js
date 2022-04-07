@@ -13,7 +13,7 @@ module.exports = {
     'ng-packagr',
     // Percy needs a manual upgrade as it doesn't work without breaking
     '@percy/storybook',
-    // Storybook needs React 16 to have support out of the box.
+    // Storybook needs React 17 to have support out of the box.
     // Alternatively we could manually keep track of all sub-package versions,
     // but the benefit of upgrading is currently not high enough.
     'react',
