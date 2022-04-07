@@ -41,6 +41,6 @@
     "sass": "1.50.0",
     "sass-loader": "10.2.1",
     "style-loader": "2.0.0",
-    "webpack": "4.46.0"
+    "webpack": "5.72.0"
   }
 }
