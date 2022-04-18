@@ -22,7 +22,7 @@
   ],
   "devDependencies": {
     "@babel/core": "7.17.9",
-    "@etchteam/storybook-addon-status": "4.2.0",
+    "@etchteam/storybook-addon-status": "4.2.1",
     "@example/design-tokens": "file:../../proprietary/design-tokens",
     "@example/web-components-stencil": "file:../web-components-stencil",
     "@percy/storybook": "3.3.1",
