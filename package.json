@@ -20,7 +20,7 @@
     "./proprietary/*"
   ],
   "devDependencies": {
-    "@types/node": "16.11.26",
+    "@types/node": "16.11.59",
     "@typescript-eslint/eslint-plugin": "5.18.0",
     "@typescript-eslint/parser": "5.18.0",
     "eslint": "8.12.0",
