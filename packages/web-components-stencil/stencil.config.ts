@@ -4,14 +4,14 @@ import { sass } from '@stencil/sass';
 
 export const config: Config = {
   namespace: 'example',
-  srcDir: '../../components/',
+  srcDir: 'src/',
   outputTargets: [
     {
       type: 'dist',
       esmLoaderPath: '../loader',
     },
     {
-      type: 'dist-custom-elements-bundle',
+      type: 'dist-custom-elements',
     },
     reactOutputTarget({
       componentCorePackage: '@example/web-components-stencil',
