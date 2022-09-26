@@ -20,6 +20,8 @@
     "./proprietary/*"
   ],
   "devDependencies": {
+    "@lerna-lite/cli": "1.11.2",
+    "@lerna-lite/run": "1.11.2",
     "@types/node": "16.11.59",
     "@typescript-eslint/eslint-plugin": "5.38.0",
     "@typescript-eslint/parser": "5.38.0",
@@ -31,7 +33,6 @@
     "eslint-plugin-react": "7.31.8",
     "html-validate": "7.5.0",
     "husky": "8.0.1",
-    "lerna": "5.5.1",
     "lint-staged": "13.0.3",
     "markdownlint-cli": "0.32.2",
     "npm-check-updates": "16.1.3",
@@ -42,7 +43,8 @@
     "stylelint": "14.12.0",
     "stylelint-config-prettier": "9.0.3",
     "stylelint-config-standard-scss": "5.0.0",
-    "stylelint-order": "5.0.0"
+    "stylelint-order": "5.0.0",
+    "typescript": "4.7.4"
   },
   "scripts": {
     "build": "lerna run build",
@@ -53,7 +55,7 @@
     "lint:html": "find . -type d \\( -name node_modules \\) -prune -false -o -name '*.html' -print0 | xargs -0 npx html-validate",
     "lint:md": "markdownlint '**/*.md'",
     "lint:package-json": "npmPkgJsonLint '**/package.json'",
-    "lint:package-lock": "npm ls",
+    "lint:package-lock": "pnpm ls --recursive",
     "lint-fix": "npm-run-all --continue-on-error lint-fix:** prettier",
     "lint-fix:css": "stylelint --fix '**/*.{css,scss}'",
     "lint-fix:js": "eslint --ext '.js,.json,.jsx,.mdx,.ts,.tsx' --fix --report-unused-disable-directives .",
@@ -61,8 +63,8 @@
     "lint-workspaces": "lerna run --no-bail lint",
     "prepare": "husky install",
     "prettier": "prettier --write .",
-    "publish": "lerna publish from-package",
-    "release": "lerna version prerelease --no-changelog --no-private",
+    "publish": "lerna publish from-package --yes",
+    "release": "lerna version prerelease --conventional-prerelease --no-changelog --no-private --yes",
     "start": "node_modules/http-server/bin packages/storybook/dist/",
     "storybook": "npm-run-all --parallel watch:**",
     "test": "npm run test-workspaces",
