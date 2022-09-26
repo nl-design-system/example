@@ -1,7 +1,8 @@
+/* eslint-env node */
 module.exports = {
   stories: [
     '../../../documentation/**/*stories.@(js|jsx|mdx|ts|tsx)',
-    // '../../../components/**/*stories.@(js|jsx|mdx|ts|tsx)',
+    '../../../components/**/*stories.@(js|jsx|mdx|ts|tsx)',
   ],
   addons: [
     '@etchteam/storybook-addon-status/register',
@@ -19,4 +20,12 @@ module.exports = {
     postcss: false,
     buildStoriesJson: true,
   },
+  staticDirs: ['../../../proprietary/assets/src'],
+  webpackFinal: async (config) => ({
+    ...config,
+    performance: {
+      // Disable warning for: "asset size exceeds the recommended limit (244 KiB)"
+      hints: false,
+    },
+  }),
 };
