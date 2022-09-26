@@ -100,6 +100,7 @@ importers:
       '@babel/core': 7.19.1
       '@etchteam/storybook-addon-status': 4.2.1
       '@example/design-tokens': workspace:*
+      '@example/font': workspace:*
       '@example/web-components-stencil': workspace:*
       '@storybook/addon-a11y': 6.5.12
       '@storybook/addon-actions': 6.5.12
@@ -129,6 +130,7 @@ importers:
       '@babel/core': 7.19.1
       '@etchteam/storybook-addon-status': 4.2.1_biqbaboplfbrettd7655fr4n2y
       '@example/design-tokens': link:../../proprietary/design-tokens
+      '@example/font': link:../../proprietary/font
       '@example/web-components-stencil': link:../web-components-stencil
       '@storybook/addon-a11y': 6.5.12_biqbaboplfbrettd7655fr4n2y
       '@storybook/addon-actions': 6.5.12_biqbaboplfbrettd7655fr4n2y
