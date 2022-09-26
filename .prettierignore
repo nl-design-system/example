@@ -3,6 +3,7 @@ node_modules/
 vendor/
 
 # Ignore generated files
+.angular/
 build/
 coverage/
 dist/
@@ -14,6 +15,7 @@ CHANGELOG.md
 # Snyk) automatically use the correct indentation.
 package-lock.json
 yarn.lock
+pnpm-lock.yaml
 
 
 # Ignore generated files from Stencil

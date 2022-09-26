@@ -24,7 +24,7 @@
     "color-hex-case": null,
     "color-no-invalid-hex": [true],
     "comment-no-empty": [true],
-    "custom-property-pattern": "^(example|utrecht)-[a-z0-9-]+$",
+    "custom-property-pattern": "^_?(example|nl|utrecht)-[a-z0-9-]+$",
     "declaration-bang-space-after": ["never"],
     "declaration-bang-space-before": ["always"],
     "declaration-block-no-duplicate-properties": [true],
@@ -38,11 +38,20 @@
     "declaration-colon-newline-after": null,
     "declaration-colon-space-after": null,
     "declaration-colon-space-before": null,
-    "declaration-property-value-disallowed-list": [{ "text-align": ["left", "right"] }],
+    "declaration-property-value-disallowed-list": [
+      {
+        "text-align": ["left", "right"]
+      }
+    ],
     "font-family-name-quotes": ["always-unless-keyword"],
     "font-family-no-duplicate-names": [true],
     "font-family-no-missing-generic-family-keyword": [true],
-    "font-weight-notation": ["numeric", { "ignore": ["relative"] }],
+    "font-weight-notation": [
+      "numeric",
+      {
+        "ignore": ["relative"]
+      }
+    ],
     "function-calc-no-unspaced-operator": [true],
     "function-comma-newline-after": null,
     "function-comma-newline-before": null,
@@ -57,8 +66,13 @@
     "hue-degree-notation": ["number"],
     "indentation": null,
     "keyframe-declaration-no-important": [true],
-    "keyframes-name-pattern": "^(example|utrecht)-[a-z0-9-]+$",
-    "length-zero-no-unit": [true, { "ignore": ["custom-properties"] }],
+    "keyframes-name-pattern": "^(example|nl|utrecht)-[a-z0-9-]+$",
+    "length-zero-no-unit": [
+      true,
+      {
+        "ignore": ["custom-properties"]
+      }
+    ],
     "linebreaks": null,
     "max-empty-lines": null,
     "max-line-length": null,
@@ -103,15 +117,16 @@
     "property-no-vendor-prefix": null,
     "rule-empty-line-before": null,
     "scss/at-extend-no-missing-placeholder": null,
+    "scss/at-mixin-pattern": "^[a-z][a-z0-9-_]*$",
     "scss/at-rule-no-unknown": true,
     "scss/dollar-variable-default": true,
     "scss/dollar-variable-first-in-block": [true, { "ignore": ["comments", "imports"] }],
-    "scss/dollar-variable-pattern": "^(example|utrecht)-[a-z0-9-]+$",
+    "scss/dollar-variable-pattern": "^(example|nl|utrecht)-[a-z0-9-]+$",
     "scss/operator-no-newline-after": null,
-    "scss/percent-placeholder-pattern": "^(example|utrecht)-[a-z0-9-]+$",
+    "scss/percent-placeholder-pattern": "^(example|nl|utrecht)-[a-z0-9-]+$",
     "selector-attribute-brackets-space-inside": ["never"],
     "selector-attribute-quotes": ["always"],
-    "selector-class-pattern": "^(example|utrecht)-[a-z0-9_-]+$",
+    "selector-class-pattern": "^(example|nl|utrecht)-[a-z0-9_-]+$",
     "selector-combinator-space-after": null,
     "selector-combinator-space-before": null,
     "selector-descendant-combinator-no-non-space": null,
@@ -132,6 +147,7 @@
     "unit-case": null,
     "unit-disallowed-list": [["s"]],
     "unit-no-unknown": [true],
+    "value-keyword-case": ["lower", { "camelCaseSvgKeywords": true }],
     "value-list-comma-newline-after": null,
     "value-list-comma-newline-before": null,
     "value-list-comma-space-after": null,
