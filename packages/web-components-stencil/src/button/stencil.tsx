@@ -7,7 +7,7 @@ import { Component, h } from '@stencil/core';
 
 @Component({
   tag: 'example-button',
-  styleUrl: 'bem.scss',
+  styleUrl: 'index.scss',
   shadow: true,
 })
 export class Button {
