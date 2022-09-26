@@ -22,7 +22,13 @@
       "files": ["*.json"]
     },
     {
-      "extends": ["plugin:react/recommended", "eslint-config-prettier", "./.eslintrc.js.json", "plugin:mdx/overrides"],
+      "extends": [
+        "plugin:react/recommended",
+        "eslint-config-prettier",
+        "./.eslintrc.js.json",
+        "./.eslintrc.react.json",
+        "plugin:mdx/overrides"
+      ],
       "files": ["*.mdx"],
       "plugins": ["import"]
     },
