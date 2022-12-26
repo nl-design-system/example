@@ -31,7 +31,7 @@
     "eslint-plugin-json": "3.1.0",
     "eslint-plugin-mdx": "1.17.1",
     "eslint-plugin-react": "7.31.8",
-    "html-validate": "7.5.0",
+    "html-validate": "7.11.1",
     "husky": "8.0.1",
     "lint-staged": "13.0.3",
     "markdownlint-cli": "0.32.2",
