@@ -18,7 +18,7 @@
     "storybook": "start-storybook --config-dir config/ --port 6006"
   },
   "devDependencies": {
-    "@babel/core": "7.19.1",
+    "@babel/core": "7.21.0",
     "@etchteam/storybook-addon-status": "4.2.1",
     "@storybook/addon-actions": "6.5.12",
     "@storybook/addon-a11y": "6.5.12",
