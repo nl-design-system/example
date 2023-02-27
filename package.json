@@ -22,7 +22,7 @@
     "@lerna-lite/cli": "1.11.3",
     "@lerna-lite/run": "1.11.3",
     "@types/node": "18.14.2",
-    "@typescript-eslint/eslint-plugin": "5.38.1",
+    "@typescript-eslint/eslint-plugin": "5.54.0",
     "@typescript-eslint/parser": "5.38.1",
     "eslint": "8.23.1",
     "eslint-config-prettier": "8.5.0",
