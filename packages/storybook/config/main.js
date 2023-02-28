@@ -16,6 +16,9 @@ module.exports = {
     builder: '@storybook/builder-webpack5',
     disableTelemetry: true,
   },
+  docs: {
+    autodocs: true,
+  },
   features: {
     postcss: false,
     buildStoriesJson: true,
