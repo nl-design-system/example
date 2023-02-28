@@ -1,5 +1,5 @@
 const minorConfig = require('./.ncurc.minor');
 
 module.exports = {
-  reject: [...minorConfig.reject],
+  reject: ['@mdx-js/react', ...minorConfig.reject],
 };
