@@ -69,11 +69,21 @@
     },
     {
       "excludedFiles": ["**/stencil.tsx", "**/*.stencil.tsx"],
-      "extends": ["plugin:react/recommended", "eslint-config-prettier", "./.eslintrc.js.json"],
+      "extends": [
+        "plugin:react/recommended",
+        "eslint-config-prettier",
+        "./.eslintrc.js.json",
+        "./.eslintrc.react.json"
+      ],
       "files": ["*.ts", "*.tsx"],
       "parser": "@typescript-eslint/parser",
       "parserOptions": {
-        "project": ["packages/web-components-react/tsconfig.json", "packages/web-components-stencil/tsconfig.json"]
+        "project": [
+          "packages/storybook/tsconfig.json",
+          "packages/web-components-react/tsconfig.json",
+          "packages/web-components-stencil/tsconfig.json",
+          "packages/web-components-stencil/tsconfig.jest.json"
+        ]
       },
       "plugins": ["@typescript-eslint"]
     }
