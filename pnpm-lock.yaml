@@ -190,6 +190,8 @@ importers:
       node-sass-package-importer: 5.3.2
       npm-run-all: 4.1.5
       rimraf: 4.1.2
+      tslib: 2.5.0
+      typescript: 4.9.5
     dependencies:
       '@stencil/core': 3.0.1
     devDependencies:
@@ -201,6 +203,8 @@ importers:
       node-sass-package-importer: 5.3.2
       npm-run-all: 4.1.5
       rimraf: 4.1.2
+      tslib: 2.5.0
+      typescript: 4.9.5
 
   proprietary/assets:
     specifiers: {}
@@ -7679,7 +7683,7 @@ packages:
       remark-parse: 10.0.1
       remark-stringify: 10.0.2
       synckit: 0.8.5
-      tslib: 2.4.0
+      tslib: 2.5.0
       unified: 10.1.2
       unist-util-visit: 4.1.2
       uvu: 0.5.6
@@ -7782,7 +7786,7 @@ packages:
       remark-mdx: 2.3.0
       remark-parse: 10.0.1
       remark-stringify: 10.0.2
-      tslib: 2.4.0
+      tslib: 2.5.0
       unified: 10.1.2
       vfile: 5.3.7
     transitivePeerDependencies:
