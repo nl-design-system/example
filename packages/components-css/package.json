@@ -1,9 +1,9 @@
 {
   "version": "1.0.0-alpha.0",
   "author": "Community for NL Design System",
-  "description": "Components for a design system based on the NL Design System architecture",
+  "description": "CSS Components for a design system based on the NL Design System architecture",
   "license": "EUPL-1.2",
-  "name": "@example/components",
+  "name": "@example/components-css",
   "keywords": [
     "nl-design-system"
   ],
