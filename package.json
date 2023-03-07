@@ -13,8 +13,6 @@
   },
   "workspaces": [
     "./documentation/",
-    "./components/",
-    "./components/*",
     "./packages/*",
     "./proprietary/*"
   ],

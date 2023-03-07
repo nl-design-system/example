@@ -36,7 +36,7 @@
     "generate": "stencil generate"
   },
   "devDependencies": {
-    "@example/components": "workspace:*",
+    "@example/components-css": "workspace:*",
     "@stencil/react-output-target": "0.4.0",
     "@stencil/sass": "2.0.4",
     "@types/jest": "29.4.0",

@@ -1,8 +1,8 @@
 /* @license CC0-1.0 */
 
+import readme from '@example/components-css/button/README.md';
 import type { Meta, StoryObj } from '@storybook/react';
 import React from 'react';
-import readme from './README.md';
 
 const Button = ({ textContent }) => <example-button>{textContent}</example-button>;
 
