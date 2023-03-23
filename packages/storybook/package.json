@@ -18,7 +18,7 @@
     "storybook": "start-storybook --config-dir config/ --port 6006"
   },
   "devDependencies": {
-    "@babel/core": "7.21.0",
+    "@babel/core": "7.21.3",
     "@etchteam/storybook-addon-status": "4.2.2",
     "@storybook/addon-actions": "6.5.16",
     "@storybook/addon-a11y": "6.5.16",
@@ -46,8 +46,8 @@
     "require-from-string": "2.0.2",
     "rimraf": "4.1.2",
     "sass": "1.58.3",
-    "sass-loader": "13.2.0",
-    "style-loader": "3.3.1",
+    "sass-loader": "13.2.1",
+    "style-loader": "3.3.2",
     "typescript": "4.9.5",
     "webpack": "5.75.0"
   },
