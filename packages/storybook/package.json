@@ -31,7 +31,7 @@
     "@storybook/preset-scss": "1.0.3",
     "@storybook/react": "6.5.16",
     "@storybook/testing-library": "0.0.13",
-    "@types/react": "18.0.28",
+    "@types/react": "18.2.6",
     "@types/react-dom": "18.0.11",
     "@example/assets": "workspace:*",
     "@example/components-css": "workspace:*",
