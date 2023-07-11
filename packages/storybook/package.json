@@ -15,7 +15,8 @@
   "scripts": {
     "build": "storybook build --output-dir dist/ --config-dir config/",
     "clean": "rimraf dist/",
-    "storybook": "storybook dev --config-dir config/ --port 6006"
+    "storybook": "storybook dev --config-dir config/ --port 6006",
+    "preview": "vite preview"
   },
   "devDependencies": {
     "@babel/core": "7.21.3",
@@ -37,10 +38,12 @@
     "@storybook/addon-viewport": "7.0.26",
     "@storybook/preset-scss": "1.0.3",
     "@storybook/react": "7.0.26",
+    "@storybook/react-vite": "7.0.26",
     "@storybook/react-webpack5": "7.0.26",
     "@storybook/testing-library": "0.2.0",
     "@types/react": "18.0.28",
     "@types/react-dom": "18.0.11",
+    "@vitejs/plugin-react": "4.0.3",
     "babel-loader": "9.1.2",
     "css-loader": "6.7.3",
     "react": "18.2.0",
@@ -52,6 +55,9 @@
     "storybook": "7.0.26",
     "style-loader": "3.3.2",
     "typescript": "4.9.5",
+    "vite": "4.4.2",
+    "vite-plugin-html": "3.2.0",
+    "vite-plugin-markdown": "2.1.0",
     "webpack": "5.76.3"
   }
 }
