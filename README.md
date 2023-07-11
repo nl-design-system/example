@@ -33,7 +33,7 @@ You need to have the following tools installed to run Storybook locally:
 3. Choose and register an npm organisation on [npmjs.com](https://www.npmjs.com/org/create), if you haven't already. This is very important to keep your project secure. The core NL Design System uses `@nl-design-system/`, and you can choose something for yourself. This prevents others from adding their code to your teams codebase.
 4. Modify all `package.json` files to use your npm organisation scope. Don't forget the locally linked packages under `devDependencies`.
 5. Modify `.npmpackagejsonlintrc.json` to require your organisation scope in package names, by configuring the `valid-values-name-scope` property.
-6. Modify the imports in `/packages/storybook/config/preview.js` and `packages/web-components-stencil/src/button/index.scss` to use your prefix.
+6. Modify the imports in `/packages/storybook/config/preview.tsx` and `packages/web-components-stencil/src/button/index.scss` to use your prefix.
 
 ### Run storybook
 
@@ -69,7 +69,7 @@ To add a component implementation to storybook, we use the `<component-name>-sto
 - Declare a story for each component variation and bind the template
 - Declare the possible inputs, with types and a description in the `argTypes` property of the `Meta` component in `stories.mdx`.
 - Add an `Argstable` component in your `stories.mdx`
-- Optionally add a different `status` to the `Meta` parameters. The options and colors can be found in `.storybook/preview.js`
+- Optionally add a different `status` to the `Meta` parameters. The options and colors can be found in `.storybook/preview.tsx`
 
 ---
 

@@ -8,9 +8,11 @@ module.exports = {
     '@storybook/addon-viewport/register',
     '@storybook/preset-scss',
   ],
-  framework: '@storybook/react',
+  framework: {
+    name: '@storybook/react-webpack5',
+    options: {},
+  },
   core: {
-    builder: '@storybook/builder-webpack5',
     disableTelemetry: true,
   },
   docs: {
