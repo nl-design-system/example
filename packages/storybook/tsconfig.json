@@ -4,6 +4,6 @@
     "allowSyntheticDefaultImports": true
   },
   "extends": "../../tsconfig.json",
-  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "include": ["config/**/*.ts", "config/**/*.tsx", "src/**/*.ts", "src/**/*.tsx"],
   "exclude": ["**/node_modules/*"]
 }
