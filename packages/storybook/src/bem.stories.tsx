@@ -1,6 +1,6 @@
 /* @license CC0-1.0 */
 
-import readme from '@example/components-css/button/README.md';
+import readme from '@example/components-css/button/README.md?raw';
 import type { Meta, StoryObj } from '@storybook/react';
 import React from 'react';
 import '@example/components-css/button/index.scss';

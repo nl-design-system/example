@@ -9,7 +9,7 @@ module.exports = {
     '@storybook/preset-scss',
   ],
   framework: {
-    name: '@storybook/react-webpack5',
+    name: '@storybook/react-vite',
     options: {},
   },
   core: {
@@ -19,15 +19,8 @@ module.exports = {
     autodocs: true,
   },
   features: {
-    postcss: false,
     buildStoriesJson: true,
+    storyStoreV7: true,
   },
   staticDirs: ['../../../proprietary/assets/src'],
-  webpackFinal: async (config) => ({
-    ...config,
-    performance: {
-      // Disable warning for: "asset size exceeds the recommended limit (244 KiB)"
-      hints: false,
-    },
-  }),
 };
