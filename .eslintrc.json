@@ -2,7 +2,8 @@
   "env": {
     "browser": true,
     "es6": true,
-    "node": false
+    "node": false,
+    "jest": true
   },
   "parserOptions": {
     "ecmaVersion": 2018,
@@ -81,6 +82,8 @@
         "project": [
           "packages/storybook/tsconfig.json",
           "packages/web-components-react/tsconfig.json",
+          "packages/components-react/tsconfig.json",
+          "packages/components-react/tsconfig.test.json",
           "packages/web-components-stencil/tsconfig.json",
           "packages/web-components-stencil/tsconfig.jest.json"
         ]

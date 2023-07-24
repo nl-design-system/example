@@ -19,3 +19,5 @@ packages/storybook/config/preview.tsx
 packages/storybook/config/main.tsx
 packages/storybook/tsconfig.json
 packages/storybook/vite.config.ts
+packages/components-react/src/index.ts
+packages/web-components-react/src/index.ts
