@@ -15,7 +15,7 @@
   "sideEffects": false,
   "scripts": {
     "build": "tsc -p .",
-    "clean": "rimraf dist/"
+    "clean": "rimraf dist/ src/components.ts src/react-component-lib/"
   },
   "main": "./dist/index.js",
   "module": "./dist/index.js",
