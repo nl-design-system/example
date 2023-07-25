@@ -123,6 +123,9 @@ importers:
       lodash.chunk:
         specifier: 4.2.0
         version: 4.2.0
+      react-sparkle:
+        specifier: 2.0.0
+        version: 2.0.0(react@18.2.0)
     devDependencies:
       '@babel/core':
         specifier: 7.21.5
@@ -4263,7 +4266,6 @@ packages:
 
   /@juggle/resize-observer@3.4.0:
     resolution: {integrity: sha512-dfLbk+PwWvFzSxwk3n5ySL0hfBog779o8h68wK/7/APo/7cgyWp5jcXockbxdk5kFRkbeXWm4Fbi9FrdN381sA==}
-    dev: true
 
   /@lerna-lite/cli@2.4.2(@lerna-lite/run@2.4.2):
     resolution: {integrity: sha512-n7qykx847XePkaLoCW2WYz/Tr27Q8HOKHGXFtHHiv6XX/68BbGk5w5icp8w4esrk4xvenEXNSm6tm6Z9oPdbww==}
@@ -11732,7 +11734,6 @@ packages:
 
   /js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
-    dev: true
 
   /js-yaml@3.14.1:
     resolution: {integrity: sha512-okMH7OXXJ7YrN9Ok3/SXrnu4iX9yOk+25nqX4imS2npuvTYDmo/QEZoqwZkYaIDk3jVvBOTOIEgEhaLOynBS9g==}
@@ -12192,7 +12193,6 @@ packages:
     hasBin: true
     dependencies:
       js-tokens: 4.0.0
-    dev: true
 
   /lower-case-first@1.0.2:
     resolution: {integrity: sha512-UuxaYakO7XeONbKrZf5FEgkantPf5DUqDayzP5VXZrtRPdH86s4kN47I8B3TW10S4QKiE3ziHNf3kRN//okHjA==}
@@ -14909,12 +14909,20 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: true
 
+  /react-sparkle@2.0.0(react@18.2.0):
+    resolution: {integrity: sha512-Gy0us35SH25HeDa4t6Gu8oM4raAH4EKBzArENOoysgVl+jB5XCjsYRJhRF8Bfi8fdsVPjkNLNh1R6VYgGsInoA==}
+    peerDependencies:
+      react: '>=16.8.0 <19'
+    dependencies:
+      '@juggle/resize-observer': 3.4.0
+      react: 18.2.0
+    dev: false
+
   /react@18.2.0:
     resolution: {integrity: sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==}
     engines: {node: '>=0.10.0'}
     dependencies:
       loose-envify: 1.4.0
-    dev: true
 
   /read-package-json-fast@3.0.2:
     resolution: {integrity: sha512-0J+Msgym3vrLOUB3hzQCuZHII0xkNGCtz/HJH9xZshwv9DbDwkw1KaE3gx/e2J5rpEY5rtOy6cyhKOPrkP7FZw==}
