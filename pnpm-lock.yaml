@@ -112,30 +112,6 @@ importers:
         specifier: 5.76.3
         version: 5.76.3
 
-  packages/documentation:
-    devDependencies:
-      '@babel/core':
-        specifier: 7.21.3
-        version: 7.21.3
-      '@mdx-js/react':
-        specifier: 1.6.22
-        version: 1.6.22(react@18.2.0)
-      '@storybook/addon-docs':
-        specifier: 7.0.26
-        version: 7.0.26(react-dom@18.2.0)(react@18.2.0)
-      react:
-        specifier: 18.2.0
-        version: 18.2.0
-      react-dom:
-        specifier: 18.2.0
-        version: 18.2.0(react@18.2.0)
-      typescript:
-        specifier: 4.9.5
-        version: 4.9.5
-      webpack:
-        specifier: 5.76.3
-        version: 5.76.3
-
   packages/storybook:
     devDependencies:
       '@babel/core':
@@ -162,9 +138,6 @@ importers:
       '@example/design-tokens':
         specifier: workspace:*
         version: link:../../proprietary/design-tokens
-      '@example/documentation':
-        specifier: workspace:*
-        version: link:../documentation
       '@example/font':
         specifier: workspace:*
         version: link:../../proprietary/font

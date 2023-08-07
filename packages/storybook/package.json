@@ -26,7 +26,6 @@
     "@example/assets": "workspace:*",
     "@example/components-css": "workspace:*",
     "@example/design-tokens": "workspace:*",
-    "@example/documentation": "workspace:*",
     "@example/font": "workspace:*",
     "@example/web-components-stencil": "workspace:*",
     "@storybook/addon-a11y": "7.0.26",
