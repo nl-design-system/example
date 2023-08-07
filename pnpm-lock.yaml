@@ -142,6 +142,9 @@ importers:
       '@babel/runtime':
         specifier: 7.21.5
         version: 7.21.5
+      '@example/components-css':
+        specifier: workspace:*
+        version: link:../components-css
       '@rollup/plugin-babel':
         specifier: 6.0.3
         version: 6.0.3(@babel/core@7.21.5)(rollup@3.26.3)
