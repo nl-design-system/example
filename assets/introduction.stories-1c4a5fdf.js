@@ -1,4 +1,4 @@
-import{M as s,e as a}from"./chunk-PCJTTTQV-1dda0266.js";import{j as e}from"./jsx-runtime-5926aa06.js";import{u as o}from"./index-bda0bad7.js";import"./iframe-e72351b2.js";import"../sb-preview/runtime.js";import"./index-ebeaab24.js";import"./index-2ca4e314.js";const d=`<!-- @license CC0-1.0 -->
+import{M as s,e as a}from"./chunk-PCJTTTQV-af245cc5.js";import{j as e}from"./jsx-runtime-5926aa06.js";import{u as o}from"./index-bda0bad7.js";import"./iframe-b3526348.js";import"../sb-preview/runtime.js";import"./index-ebeaab24.js";import"./index-2ca4e314.js";const d=`<!-- @license CC0-1.0 -->
 
 # NL Design System introductie
 
@@ -36,4 +36,4 @@ De POC is te vinden op:
 <http://github.com/nl-design-system>
 `;function r(n){return e.jsxs(e.Fragment,{children:[e.jsx(s,{title:"Example/Intro"}),`
 `,e.jsx(a,{children:d})]})}function l(n={}){const{wrapper:i}=Object.assign({},o(),n.components);return i?e.jsx(i,{...n,children:e.jsx(r,{...n})}):r()}const m=()=>{throw new Error("Docs-only story")};m.parameters={docsOnly:!0};const t={title:"Example/Intro",tags:["stories-mdx"],includeStories:["__page"]};t.parameters=t.parameters||{};t.parameters.docs={...t.parameters.docs||{},page:l};const h=["__page"];export{h as __namedExportsOrder,m as __page,t as default};
-//# sourceMappingURL=introduction.stories-b3c1fd61.js.map
+//# sourceMappingURL=introduction.stories-1c4a5fdf.js.map

@@ -1,4 +1,4 @@
-import{M as r,e as a}from"./chunk-PCJTTTQV-1dda0266.js";import{j as e}from"./jsx-runtime-5926aa06.js";import{u as s}from"./index-bda0bad7.js";import"./iframe-e72351b2.js";import"../sb-preview/runtime.js";import"./index-ebeaab24.js";import"./index-2ca4e314.js";const c=`# EUROPEAN UNION PUBLIC LICENCE v. 1.2
+import{M as r,e as a}from"./chunk-PCJTTTQV-af245cc5.js";import{j as e}from"./jsx-runtime-5926aa06.js";import{u as s}from"./index-bda0bad7.js";import"./iframe-b3526348.js";import"../sb-preview/runtime.js";import"./index-ebeaab24.js";import"./index-2ca4e314.js";const c=`# EUROPEAN UNION PUBLIC LICENCE v. 1.2
 
 EUPL © the European Union 2007, 2016
 
@@ -288,4 +288,4 @@ All other changes or additions to this Appendix require the production of a new
 EUPL version.
 `;function t(n){return e.jsxs(e.Fragment,{children:[e.jsx(r,{title:"Example/Open Source License"}),`
 `,e.jsx(a,{children:c})]})}function h(n={}){const{wrapper:o}=Object.assign({},s(),n.components);return o?e.jsx(o,{...n,children:e.jsx(t,{...n})}):t()}const l=()=>{throw new Error("Docs-only story")};l.parameters={docsOnly:!0};const i={title:"Example/Open Source License",tags:["stories-mdx"],includeStories:["__page"]};i.parameters=i.parameters||{};i.parameters.docs={...i.parameters.docs||{},page:h};const y=["__page"];export{y as __namedExportsOrder,l as __page,i as default};
-//# sourceMappingURL=license.stories-47cdfe24.js.map
+//# sourceMappingURL=license.stories-962def8d.js.map
