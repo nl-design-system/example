@@ -1,4 +1,0 @@
-import{j as e}from"./jsx-runtime-5926aa06.js";import{r}from"./README-d28cd70e.js";import"./index-ebeaab24.js";const m=({textContent:s})=>e.jsx("button",{className:"example-button",type:"button",children:e.jsx("span",{className:"example-button__text",children:s})}),d={title:"CSS Component/Button",id:"css-button",component:m,argTypes:{textContent:{description:"Button text",type:{name:"string",required:!0},defaultValue:""}},args:{textContent:"Opslaan en verder"},tags:["autodocs"],parameters:{docs:{description:{component:r}}}},t={name:"Example button"};var o,n,a;t.parameters={...t.parameters,docs:{...(o=t.parameters)==null?void 0:o.docs,source:{originalSource:`{
-  name: 'Example button'
-}`,...(a=(n=t.parameters)==null?void 0:n.docs)==null?void 0:a.source}}};const i=["Default"];export{t as Default,i as __namedExportsOrder,d as default};
-//# sourceMappingURL=bem.stories-f01ae0e9.js.map
