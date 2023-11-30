@@ -2,12 +2,12 @@
 
 import readme from '@example/components-css/button/README.md?raw';
 import type { Meta, StoryObj } from '@storybook/react';
-import React from 'react';
+import { PropsWithChildren } from 'react';
 import '@example/components-css/button/index.scss';
 
-const Button = ({ textContent }) => (
+const Button = ({ children }: PropsWithChildren<{}>) => (
   <button className="example-button" type="button">
-    <span className="example-button__text">{textContent}</span>
+    <span className="example-button__text">{children}</span>
   </button>
 );
 
@@ -16,7 +16,8 @@ const meta = {
   id: 'css-button',
   component: Button,
   argTypes: {
-    textContent: {
+    children: {
+      name: 'Content',
       description: 'Button text',
       type: {
         name: 'string',
@@ -26,7 +27,7 @@ const meta = {
     },
   },
   args: {
-    textContent: 'Opslaan en verder',
+    children: 'Opslaan en verder',
   },
   tags: ['autodocs'],
   parameters: {
@@ -36,10 +37,12 @@ const meta = {
       },
     },
   },
-} as Meta<typeof Button>;
+} satisfies Meta<typeof Button>;
 
 export default meta;
 
-export const Default: StoryObj<typeof Button> = {
+type Story = StoryObj<typeof meta>;
+
+export const Default: Story = {
   name: 'Example button',
 };
