@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
     "jsx": "react-jsx",
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true
   },
   "extends": "../../tsconfig.json",
   "include": ["config/**/*.ts", "config/**/*.tsx", "src/**/*.ts", "src/**/*.tsx", "vite.config.ts"],
