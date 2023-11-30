@@ -392,18 +392,18 @@ importers:
   packages/web-components-stencil:
     dependencies:
       '@stencil/core':
-        specifier: 3.4.2
-        version: 3.4.2
+        specifier: 4.8.0
+        version: 4.8.0
     devDependencies:
       '@example/components-css':
         specifier: workspace:*
         version: link:../components-css
       '@stencil/react-output-target':
         specifier: 0.5.3
-        version: 0.5.3(@stencil/core@3.4.2)
+        version: 0.5.3(@stencil/core@4.8.0)
       '@stencil/sass':
-        specifier: 2.0.4
-        version: 2.0.4(@stencil/core@3.4.2)
+        specifier: 3.0.7
+        version: 3.0.7(@stencil/core@4.8.0)
       '@types/jest':
         specifier: 29.5.10
         version: 29.5.10
@@ -3837,25 +3837,26 @@ packages:
       '@sinonjs/commons': 3.0.0
     dev: true
 
-  /@stencil/core@3.4.2:
-    resolution: {integrity: sha512-FAUhUVaakCy29nU2GwO/HQBRV1ihPRvncz3PUc8oR+UJLAxGabTmP8PLY7wvHfbw+Cvi4VXfJFTBvdfDu6iKPQ==}
-    engines: {node: '>=14.10.0', npm: '>=6.0.0'}
+  /@stencil/core@4.8.0:
+    resolution: {integrity: sha512-iNEaMiEt9oFZXSjZ7qkdlBpPTzWzBgWM7go8nI8a7V6ZOkmdVhhT0xGQD7OY13v5ZuDoIw5IsGvbIAGefhIhhQ==}
+    engines: {node: '>=16.0.0', npm: '>=7.10.0'}
     hasBin: true
 
-  /@stencil/react-output-target@0.5.3(@stencil/core@3.4.2):
+  /@stencil/react-output-target@0.5.3(@stencil/core@4.8.0):
     resolution: {integrity: sha512-68jwRp35CjAcwhTJ9yFD/3n+jrHOqvEH2jreVuPVvZK+4tkhPlYlwz0d1E1RlF3jyifUSfdkWUGgXIEy8Fo3yw==}
     peerDependencies:
       '@stencil/core': '>=2.0.0 || >=3 || >= 4.0.0-beta.0 || >= 4.0.0'
     dependencies:
-      '@stencil/core': 3.4.2
+      '@stencil/core': 4.8.0
     dev: true
 
-  /@stencil/sass@2.0.4(@stencil/core@3.4.2):
-    resolution: {integrity: sha512-tq+ZgJ9ynmag+e21cYmA6+YYJxBJapxjf94eL+uysxY78dM1801ydAhnT+64S5UnX8Jh+22uAuTY2bEYDBPUww==}
+  /@stencil/sass@3.0.7(@stencil/core@4.8.0):
+    resolution: {integrity: sha512-HcBjrh2CJ6aJnkOrBNSVyf1+x3FnUneYFk44rcx/jDK6Lx7R4w0dXMEsIR5MXqtROYWonZt7WtR8wsM1vcD+6w==}
+    engines: {node: '>=12.0.0', npm: '>=6.0.0'}
     peerDependencies:
-      '@stencil/core': '>=2.0.0 || >=3.0.0-beta.0'
+      '@stencil/core': '>=2.0.0 || >=3.0.0-beta.0 || >= 4.0.0-beta.0 || >= 4.0.0'
     dependencies:
-      '@stencil/core': 3.4.2
+      '@stencil/core': 4.8.0
     dev: true
 
   /@storybook/addon-a11y@7.6.1:

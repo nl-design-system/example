@@ -36,7 +36,7 @@
   "devDependencies": {
     "@example/components-css": "workspace:*",
     "@stencil/react-output-target": "0.5.3",
-    "@stencil/sass": "2.0.4",
+    "@stencil/sass": "3.0.7",
     "@types/jest": "29.5.10",
     "chokidar-cli": "3.0.0",
     "node-sass-package-importer": "5.3.3",
@@ -46,6 +46,6 @@
     "typescript": "4.9.5"
   },
   "dependencies": {
-    "@stencil/core": "3.4.2"
+    "@stencil/core": "4.8.0"
   }
 }
