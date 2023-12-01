@@ -15,7 +15,7 @@
   "scripts": {
     "build": "storybook build --output-dir dist/ --config-dir config/",
     "clean": "rimraf dist/",
-    "lint": "tsc --noEmit --project tsconfig.json",
+    "lint-build": "tsc --noEmit --project tsconfig.json",
     "storybook": "storybook dev --config-dir config/ --port 6006"
   },
   "devDependencies": {
