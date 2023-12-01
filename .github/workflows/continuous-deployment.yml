@@ -125,6 +125,18 @@ jobs:
         run: |
           pnpm run --if-present build
 
+      - name: "Continuous Integration: lint build"
+        env:
+          BASE_URL: "/utrecht/"
+        run: |
+          pnpm run --if-present lint-build
+
+      - name: "Continuous Integration: test build"
+        env:
+          BASE_URL: "/utrecht/"
+        run: |
+          pnpm run --if-present test-build
+
       - name: "Retain build artifact: storybook"
         uses: actions/upload-artifact@v3
         with:
