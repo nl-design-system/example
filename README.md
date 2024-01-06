@@ -31,7 +31,7 @@ You need to have the following tools installed to run Storybook locally:
 1. Choose a prefix for your organisation. For example: the main NL Design System uses `nl-`, The Hague uses `denhaag-`, and you can choose something unique for you to use.
 2. Modify `.stylelintrc.json` by replacing the prefix `example` with the prefix you have chosen, in the following rules: `custom-property-pattern`, `selector-class-pattern`, `keyframes-name-pattern`, `scss/dollar-variable-pattern` and `scss/percent-placeholder-pattern`.
 3. Choose and register an npm organisation on [npmjs.com](https://www.npmjs.com/org/create), if you haven't already. This is very important to keep your project secure. The core NL Design System uses `@nl-design-system/`, and you can choose something for yourself. This prevents others from adding their code to your teams codebase.
-4. Modify all `package.json` files to use your npm organisation scope. Don't forget the locally linked packages under `devDependencies`. Find and replace all occurences of `@gemeente-rotterdam/` in your project with `@your-organisation/`. Run `pnpm install` to install each package in under the new organisation directory in each `node_modules/`.
+4. Modify all `package.json` files to use your npm organisation scope. Don't forget the locally linked packages under `devDependencies`. Find and replace all occurences of `@example/` in your project with `@your-organisation/`. Run `pnpm install` to install each package in under the new organisation directory in each `node_modules/`.
 5. Modify `.npmpackagejsonlintrc.json` to require your organisation scope in package names, by configuring the `valid-values-name-scope` property.
 6. Modify the imports in `/packages/storybook/config/preview.tsx` and `packages/web-components-stencil/src/button/index.scss` to use your prefix.
 7. Modify `proprietary/design-tokens/style-dictionary.config.json` to output `.yourprefix-theme` instead of `.example-theme`.
@@ -77,9 +77,9 @@ To add a component implementation to storybook, we use the `<component-name>-sto
 
 Things we usually do:
 
-- [ ] Generate [fine grained personal access token in GitHub](https://github.com/settings/tokens?type=beta), with rights to push npm version commits. Use a name that will be clear when the token expires, for example: `nl-design-system/example GH_TOKEN`. Choose "All repositories". Expand "Account permissions", then for "Contents" select "Read and write".
+- [ ] Generate [fine grained personal access token in GitHub](https://github.com/settings/tokens?type=beta), with rights to push npm version commits. Use a name that will be clear when the token expires, for example: `nl-design-system/example GH_TOKEN`. Choose "All repositories". For "Resource owner" choose the user or organisation of the repository. For "Repository access" choose "Only select repositories", and select only your repository. Expand "Account permissions", then for "Contents" select "Read and write".
 - [ ] Configure `GH_TOKEN` in Repository tokens, for use in the `publish-npm` GitHub Action. You might notice the `GITHUB_TOKEN` already exists, but the `GITHUB_` prefix is used by GitHub itself and the token has read-only rights.
-- [ ] Go to [npmjs.com](https://www.npmjs.com/) and create an "Access Token" for "Automation". Use a name that serves as hint where to reset the token when it expires, for example: `nl-design-system/example NPM_TOKEN`. Do not store the token anywhere, just copy it to GitHub once. You can always generate new tokens, and they will be protected by multi-factor authentication.
+- [ ] Go to [npmjs.com](https://www.npmjs.com/) and create an "Granular Access Token". Use a name that serves as hint where to reset the token when it expires, for example: `nl-design-system/example NPM_TOKEN`. For "Permissions", allow only "Only select packages and scopes" and choose the scope of your npm packages. Do not store the token anywhere, just copy it to GitHub once. You can always generate new tokens, and they will be protected by multi-factor authentication.
 - [ ] Configure `NPM_TOKEN` in Repository tokens, for use in the `publish-npm` GitHub Action.
 - [ ] Configure GitHub repository settings
   - [General settings](https://github.com/nl-design-system/example/settings)
@@ -104,12 +104,12 @@ Things we usually do:
     - [ ] Add rule to protect `gh-pages` branch, to prevent someone from deleting it accidentally.
 - [ ] Enable GitHub Pages to host Storybook
   - [ ] Go to [Pages](https://github.com/nl-design-system/example/settings/pages), choose "Deploy from a branch" with `gh-pages` as branch with `/ (root)` as folder. If `gh-pages` is not in the list, make sure the `publish-website` action succeeds at least once.
-  - [ ] In the ["Code" tab (the home page of your repository)](https://github.com/nl-design-system/rotterdam), configure the "About" section. Use "your GitHub Pages website" as "Website" of your repository.
+  - [ ] In the "Code" tab (the home page of your repository), configure the "About" section. Use "your GitHub Pages website" as "Website" of your repository.
   - [ ] Configure "nl-design-system" as one of the topics of your repository.
 
-If you get this the following error, you still need to configure `NPM_TOKEN` in your repository settings. Use "Generate New Token" in [Access Tokens of npmjs.com](https://www.npmjs.com/settings/littlebobbytabl.es/tokens) to create a new automation tokne. Use "New repository secret" in [GitHub Repository Secrets](https://github.com/nl-design-system/example/settings/secrets/actions) to configure it.
+If you get this the following error, you still need to configure `NPM_TOKEN` in your repository settings. Use "Generate New Token" in [Access Tokens of npmjs.com](https://www.npmjs.com/) to create a new automation tokne. Use "New repository secret" in [GitHub Repository Secrets](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository) to configure it.
 
-```
+```log
 Run actions/checkout
 Error: Input required and not supplied: token
 ```
