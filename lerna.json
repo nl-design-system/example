@@ -9,7 +9,7 @@
       "allowBranch": ["main"],
       "conventionalCommits": true,
       "exact": true,
-      "message": "docs(release): design system packages\n\nskip-checks: true",
+      "message": "docs(release): design system packages\n\n[skip ci]",
       "syncWorkspaceLock": true
     }
   }
