@@ -91,29 +91,7 @@ importers:
         specifier: 5.3.3
         version: 5.3.3
 
-  packages/components-css:
-    devDependencies:
-      '@babel/core':
-        specifier: 7.23.7
-        version: 7.23.7
-      '@mdx-js/react':
-        specifier: 1.6.22
-        version: 1.6.22(react@18.2.0)
-      '@storybook/addon-docs':
-        specifier: 7.6.7
-        version: 7.6.7(@types/react-dom@18.2.18)(@types/react@18.2.46)(react-dom@18.2.0)(react@18.2.0)
-      react:
-        specifier: 18.2.0
-        version: 18.2.0
-      react-dom:
-        specifier: 18.2.0
-        version: 18.2.0(react@18.2.0)
-      typescript:
-        specifier: 5.3.3
-        version: 5.3.3
-      webpack:
-        specifier: 5.89.0
-        version: 5.89.0
+  packages/components-css: {}
 
   packages/components-react:
     dependencies:
@@ -3045,14 +3023,6 @@ packages:
     engines: {node: '>= 0.4'}
     dependencies:
       call-bind: 1.0.5
-    dev: true
-
-  /@mdx-js/react@1.6.22(react@18.2.0):
-    resolution: {integrity: sha512-TDoPum4SHdfPiGSAaRBw7ECyI8VaHpK8GJugbJIJuqyh6kzw9ZLJZW3HGL3NNrJGxcAixUvqROm+YuQOo5eXtg==}
-    peerDependencies:
-      react: ^16.13.1 || ^17.0.0
-    dependencies:
-      react: 18.2.0
     dev: true
 
   /@mdx-js/react@2.3.0(react@18.2.0):
