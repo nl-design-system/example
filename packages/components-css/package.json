@@ -9,12 +9,12 @@
   ],
   "private": true,
   "devDependencies": {
-    "@babel/core": "7.23.5",
+    "@babel/core": "7.23.7",
     "@mdx-js/react": "1.6.22",
-    "@storybook/addon-docs": "7.6.1",
+    "@storybook/addon-docs": "7.6.7",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "typescript": "5.3.2",
+    "typescript": "5.3.3",
     "webpack": "5.89.0"
   }
 }
