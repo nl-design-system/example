@@ -46,6 +46,6 @@
     "typescript": "5.3.3"
   },
   "dependencies": {
-    "@stencil/core": "4.8.2"
+    "@stencil/core": "4.9.0"
   }
 }
