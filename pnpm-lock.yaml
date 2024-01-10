@@ -78,9 +78,6 @@ importers:
       stylelint:
         specifier: 16.1.0
         version: 16.1.0(typescript@5.3.3)
-      stylelint-config-prettier:
-        specifier: 9.0.5
-        version: 9.0.5(stylelint@16.1.0)
       stylelint-config-standard-scss:
         specifier: 13.0.0
         version: 13.0.0(postcss@8.4.33)(stylelint@16.1.0)
@@ -16699,16 +16696,6 @@ packages:
       browserslist: 4.21.9
       postcss: 8.4.33
       postcss-selector-parser: 6.0.13
-    dev: true
-
-  /stylelint-config-prettier@9.0.5(stylelint@16.1.0):
-    resolution: {integrity: sha512-U44lELgLZhbAD/xy/vncZ2Pq8sh2TnpiPvo38Ifg9+zeioR+LAkHu0i6YORIOxFafZoVg0xqQwex6e6F25S5XA==}
-    engines: {node: '>= 12'}
-    hasBin: true
-    peerDependencies:
-      stylelint: '>= 11.x < 15'
-    dependencies:
-      stylelint: 16.1.0(typescript@5.3.3)
     dev: true
 
   /stylelint-config-recommended-scss@14.0.0(postcss@8.4.33)(stylelint@16.1.0):
