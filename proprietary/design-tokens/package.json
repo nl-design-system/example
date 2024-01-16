@@ -17,11 +17,11 @@
   },
   "scripts": {
     "clean": "rimraf dist/",
-    "prebuild": "npm run clean",
+    "prebuild": "pnpm run clean",
     "build": "npm-run-all build:**",
     "build:style-dictionary": "style-dictionary build --config ./style-dictionary.config.json",
     "watch": "npm-run-all watch:**",
-    "watch:style-dictionary": "chokidar --follow-symlinks --initial --command 'npm run build' 'src/**/*.tokens.json'"
+    "watch:style-dictionary": "chokidar --follow-symlinks --initial --command 'pnpm run build' 'src/**/*.tokens.json'"
   },
   "devDependencies": {
     "chokidar-cli": "3.0.0",
