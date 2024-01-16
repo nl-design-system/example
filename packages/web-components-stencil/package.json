@@ -23,14 +23,14 @@
     "url": "git@github.com:nl-design-system/example.git"
   },
   "scripts": {
-    "prebuild": "npm run clean",
+    "prebuild": "pnpm run clean",
     "build": "npm-run-all build:**",
     "build:stencil": "stencil build",
     "build:typescript": "tsc",
     "clean": "rimraf dist/ ../web-components-react/src/components.ts ../web-components-react/src/react-component-lib/",
     "start": "stencil build --dev --watch --serve",
     "watch": "npm-run-all --parallel watch:**",
-    "watch:stencil": "chokidar --follow-symlinks --initial --command 'npm run build:stencil' '../../components/**/*.(js|jsx|ts|tsx)'",
+    "watch:stencil": "chokidar --follow-symlinks --initial --command 'pnpm run build:stencil' '../../components/**/*.(js|jsx|ts|tsx)'",
     "generate": "stencil generate"
   },
   "devDependencies": {
