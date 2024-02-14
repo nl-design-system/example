@@ -68,9 +68,9 @@
     "test-update": "npm-run-all --sequential clean lint build test",
     "test-workspaces": "lerna run --no-bail test",
     "prewatch:storybook": "lerna run build:stencil && lerna run build:style-dictionary",
-    "update-patch": "npm-check-updates --configFileName .ncurc.patch.js --deep --dep dev,prod --target patch --upgrade && pnpm install",
-    "update-minor": "npm-check-updates --configFileName .ncurc.minor.js --deep --dep dev,prod --target minor --upgrade && pnpm install",
-    "update-major": "npm-check-updates --configFileName .ncurc.major.js --deep --dep dev,prod --target latest --upgrade && pnpm install",
+    "update-patch": "npm-check-updates --configFileName .ncurc.patch.js",
+    "update-minor": "npm-check-updates --configFileName .ncurc.minor.js",
+    "update-major": "npm-check-updates --configFileName .ncurc.major.js",
     "watch:storybook": "pnpm --filter ./packages/storybook run storybook",
     "watch:style-dictionary": "lerna run watch:style-dictionary"
   },
