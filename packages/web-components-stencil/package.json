@@ -23,8 +23,7 @@
     "url": "git@github.com:nl-design-system/example.git"
   },
   "scripts": {
-    "prebuild": "pnpm run clean",
-    "build": "npm-run-all build:**",
+    "build": "npm-run-all clean build:**",
     "build:stencil": "stencil build",
     "build:typescript": "tsc",
     "clean": "rimraf dist/ ../web-components-react/src/components.ts ../web-components-react/src/react-component-lib/",

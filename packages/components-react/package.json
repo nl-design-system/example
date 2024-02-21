@@ -17,8 +17,7 @@
     "url": "git@github.com:nl-design-system/example-community.git"
   },
   "scripts": {
-    "prebuild": "pnpm run clean",
-    "build": "npm-run-all build:**",
+    "build": "npm-run-all clean build:**",
     "build:components": "vite build",
     "clean": "rimraf dist/ pages/",
     "lint": "tsc --project ./tsconfig.json --noEmit && tsc --noEmit --project ./tsconfig.test.json",
