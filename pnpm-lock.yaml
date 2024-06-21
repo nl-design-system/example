@@ -146,7 +146,7 @@ importers:
         version: 18.3.3
       '@vitejs/plugin-react':
         specifier: 4.3.1
-        version: 4.3.1(vite@5.2.13(@types/node@20.14.2)(sass@1.77.5)(terser@5.19.0))
+        version: 4.3.1(vite@5.2.13(@types/node@20.14.2)(sass@1.77.6)(terser@5.19.0))
       jest:
         specifier: 29.7.0
         version: 29.7.0(@types/node@20.14.2)
@@ -155,7 +155,7 @@ importers:
         version: 29.7.0
       next:
         specifier: 14.2.4
-        version: 14.2.4(@babel/core@7.24.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.5)
+        version: 14.2.4(@babel/core@7.24.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.6)
       npm-run-all:
         specifier: 4.1.5
         version: 4.1.5
@@ -193,8 +193,8 @@ importers:
         specifier: 0.36.0
         version: 0.36.0(rollup@4.18.0)(typescript@5.4.5)
       sass:
-        specifier: 1.77.5
-        version: 1.77.5
+        specifier: 1.77.6
+        version: 1.77.6
       tslib:
         specifier: 2.6.3
         version: 2.6.3
@@ -203,10 +203,10 @@ importers:
         version: 5.4.5
       vite:
         specifier: 5.2.13
-        version: 5.2.13(@types/node@20.14.2)(sass@1.77.5)(terser@5.19.0)
+        version: 5.2.13(@types/node@20.14.2)(sass@1.77.6)(terser@5.19.0)
       vite-plugin-runtime-config:
         specifier: 1.0.2
-        version: 1.0.2(vite@5.2.13(@types/node@20.14.2)(sass@1.77.5)(terser@5.19.0))
+        version: 1.0.2(vite@5.2.13(@types/node@20.14.2)(sass@1.77.6)(terser@5.19.0))
 
   packages/storybook:
     devDependencies:
@@ -254,7 +254,7 @@ importers:
         version: 8.1.8(encoding@0.1.13)(prettier@3.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.4.5)
       '@storybook/react-vite':
         specifier: 8.1.8
-        version: 8.1.8(encoding@0.1.13)(prettier@3.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.4.5)(vite@5.2.13(@types/node@20.14.2)(sass@1.77.5)(terser@5.19.0))
+        version: 8.1.8(encoding@0.1.13)(prettier@3.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.4.5)(vite@5.2.13(@types/node@20.14.2)(sass@1.77.6)(terser@5.19.0))
       '@types/react':
         specifier: 18.3.3
         version: 18.3.3
@@ -284,7 +284,7 @@ importers:
         version: 5.4.5
       vite:
         specifier: 5.2.13
-        version: 5.2.13(@types/node@20.14.2)(sass@1.77.5)(terser@5.19.0)
+        version: 5.2.13(@types/node@20.14.2)(sass@1.77.6)(terser@5.19.0)
 
   packages/web-components-react:
     devDependencies:
@@ -1356,6 +1356,7 @@ packages:
   '@humanwhocodes/config-array@0.11.14':
     resolution: {integrity: sha512-3T8LkOmg45BV5FICb15QQMsyUSWrQ8AygVfC7ZG32zOalnqrilm018ZVCw0eapXux8FtA33q8PSRSstjee3jSg==}
     engines: {node: '>=10.10.0'}
+    deprecated: Use @eslint/config-array instead
 
   '@humanwhocodes/module-importer@1.0.1':
     resolution: {integrity: sha512-bxveV4V8v5Yb4ncFTT3rPSgZBOpCkjfK0y4oVVVJwIuDVBRMDXrPyXRL988i5ap9m9bnyEEjWfm5WkBmtffLfA==}
@@ -1363,6 +1364,7 @@ packages:
 
   '@humanwhocodes/object-schema@2.0.2':
     resolution: {integrity: sha512-6EwiSjwWYP7pTckG6I5eyFANjPhmPjUX9JRLUSfNPC7FX7zK9gyZAfUEaECL6ALTpGX5AjnBq3C9XmVWPitNpw==}
+    deprecated: Use @eslint/object-schema instead
 
   '@hutson/parse-repository-url@5.0.0':
     resolution: {integrity: sha512-e5+YUKENATs1JgYHMzTr2MW/NDcXGfYFAuOQU8gJgF/kEh4EqKgfGrfLI67bMD4tbhZVlkigz/9YYwWcbOFthg==}
@@ -2840,6 +2842,7 @@ packages:
   are-we-there-yet@3.0.1:
     resolution: {integrity: sha512-QZW4EDmGwlYur0Yyf/b2uGucHQMa8aFUP7eu9ddR73vvhFyt4V0Vl3QHPcTNJ8l6qYOBdxgXdnBXQrHilfRQBg==}
     engines: {node: ^12.13.0 || ^14.15.0 || >=16.0.0}
+    deprecated: This package is no longer supported.
 
   are-we-there-yet@4.0.0:
     resolution: {integrity: sha512-nSXlV+u3vtVjRgihdTzbfWYzxPWGo424zPgQbHD0ZqIla3jqYAewDcvee0Ua2hjS5IfTAmjGlx1Jf0PKwjZDEw==}
@@ -3067,10 +3070,6 @@ packages:
 
   brace-expansion@2.0.1:
     resolution: {integrity: sha512-XnAIvQ8eM+kC6aULx6wuQiwVsnzsi9d3WxzV3FpWTGA19F621kwdbsAcFKXgKUHZWsy+mY6iL1sHTxWEFCytDA==}
-
-  braces@3.0.2:
-    resolution: {integrity: sha512-b8um+L1RzM3WDSzvhm6gIz1yfTbBt6YTlcEKAvsmqCZZFw46z626lVj9j1yEPW33H5H+lBQpZMP1k8l+78Ha0A==}
-    engines: {node: '>=8'}
 
   braces@3.0.3:
     resolution: {integrity: sha512-yQbXgO/OSZVD2IsiLlro+7Hf6Q18EJrKSEsdoMzKePKXct3gvD8oLcOQdIzGupr5Fj+EDe8gO/lxc1BzfMpxvA==}
@@ -4244,10 +4243,6 @@ packages:
     resolution: {integrity: sha512-mjFIpOHC4jbfcTfoh4rkWpI31mF7viw9ikj/JyLoKzqlwG/YsefKfvYlYhdYdg/9mtK2z1AzgN/0LvVQ3zdlSQ==}
     engines: {node: '>= 0.4.0'}
 
-  fill-range@7.0.1:
-    resolution: {integrity: sha512-qOo9F+dMUmC2Lcb4BbVvnKJxTPjCm+RRpe4gDuGrzkL7mEVl/djYSu2OdQ2Pa302N4oqkSg9ir6jaLWJ2USVpQ==}
-    engines: {node: '>=8'}
-
   fill-range@7.1.1:
     resolution: {integrity: sha512-YsGpe3WHLK8ZYi4tWDg2Jy3ebRz2rXowDxnld4bkQB00cc/1Zw9AWnC0i9ztDJitivtQvaI9KaLyKrc+hBW0yg==}
     engines: {node: '>=8'}
@@ -4393,6 +4388,7 @@ packages:
   gauge@4.0.4:
     resolution: {integrity: sha512-f9m+BEN5jkg6a0fZjleidjN51VE1X+mPFQ2DJ0uv1V39oCLCbsGe6yjbBnp7eK7z/+GAon99a3nHuqbuuthyPg==}
     engines: {node: ^12.13.0 || ^14.15.0 || >=16.0.0}
+    deprecated: This package is no longer supported.
 
   gauge@5.0.1:
     resolution: {integrity: sha512-CmykPMJGuNan/3S4kZOpvvPYSNqSHANiWnh9XcMU2pSjtBfF0XzZ2p1bFAxTbnFxyBuPxQYHhzwaoOmUdqzvxQ==}
@@ -4529,6 +4525,7 @@ packages:
   glob@8.1.0:
     resolution: {integrity: sha512-r8hpEjiQEYlF2QU0df3dS+nxxSIreXQS1qRhMJM0Q5NDdR386C7jb7Hwwod8Fgiuex+k0GFjgft18yvxm5XoCQ==}
     engines: {node: '>=12'}
+    deprecated: Glob versions prior to v9 are no longer supported
 
   global-dirs@3.0.1:
     resolution: {integrity: sha512-NBcGGFbBA9s1VzD41QXDG+3++t9Mn5t1FpLdhESY6oKY4gYTFpX4wO3sqGUa0Srjtbfj3szX0RnemmrVRUdULA==}
@@ -4842,6 +4839,7 @@ packages:
 
   inflight@1.0.6:
     resolution: {integrity: sha512-k92I/b08q4wvFscXCLvqfsHCrjrF7yiXsQuIVvVE7N82W3+aqpzuUdBbfhWcy/FZR3/4IgflMgKLOsvPDrGCJA==}
+    deprecated: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
 
   inherits@2.0.4:
     resolution: {integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==}
@@ -6238,6 +6236,7 @@ packages:
   npmlog@6.0.2:
     resolution: {integrity: sha512-/vBvz5Jfr9dT/aFWd0FIRf+T/Q2WBsLENygUaFUqstqsycmZAP/t5BvFJTK0viFmSUxiUKTUplWy5vt+rvKIxg==}
     engines: {node: ^12.13.0 || ^14.15.0 || >=16.0.0}
+    deprecated: This package is no longer supported.
 
   npmlog@7.0.1:
     resolution: {integrity: sha512-uJ0YFk/mCQpLBt+bxN88AKd+gyqZvZDbtiNxk6Waqcj2aPRyfVx8ITawkyQynxUagInjdYT1+qj4NfA5KJJUxg==}
@@ -7119,6 +7118,7 @@ packages:
   read-package-json@6.0.4:
     resolution: {integrity: sha512-AEtWXYfopBj2z5N5PbkAOeNHRPUg5q+Nen7QLxV8M2zJq1ym6/lCz3fYNTCXe19puu2d06jfHhrP7v/S2PtMMw==}
     engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
+    deprecated: This package is no longer supported. Please use @npmcli/package-json instead.
 
   read-package-json@7.0.1:
     resolution: {integrity: sha512-8PcDiZ8DXUjLf687Ol4BR8Bpm2umR7vhoZOzNRt+uxD9GpBh/K+CAAALVIiYFknmvlmyg7hM7BSNUXPaCCqd0Q==}
@@ -7413,8 +7413,8 @@ packages:
   safer-buffer@2.1.2:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
 
-  sass@1.77.5:
-    resolution: {integrity: sha512-oDfX1mukIlxacPdQqNb6mV2tVCrnE+P3nVYioy72V5tlk56CPNcO4TCuFcaCRKKfJ1M3lH95CleRS+dVKL2qMg==}
+  sass@1.77.6:
+    resolution: {integrity: sha512-ByXE1oLD79GVq9Ht1PeHWCPMPB8XHpBuz1r85oByKHjZY6qV6rWnQovQzXJXuQ/XyE1Oj3iPk3lo28uzaRA2/Q==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
@@ -9981,13 +9981,13 @@ snapshots:
       '@types/yargs': 17.0.24
       chalk: 4.1.2
 
-  '@joshwooding/vite-plugin-react-docgen-typescript@0.3.1(typescript@5.4.5)(vite@5.2.13(@types/node@20.14.2)(sass@1.77.5)(terser@5.19.0))':
+  '@joshwooding/vite-plugin-react-docgen-typescript@0.3.1(typescript@5.4.5)(vite@5.2.13(@types/node@20.14.2)(sass@1.77.6)(terser@5.19.0))':
     dependencies:
       glob: 7.2.3
       glob-promise: 4.2.2(glob@7.2.3)
       magic-string: 0.27.0
       react-docgen-typescript: 2.2.2(typescript@5.4.5)
-      vite: 5.2.13(@types/node@20.14.2)(sass@1.77.5)(terser@5.19.0)
+      vite: 5.2.13(@types/node@20.14.2)(sass@1.77.6)(terser@5.19.0)
     optionalDependencies:
       typescript: 5.4.5
 
@@ -10912,7 +10912,7 @@ snapshots:
       - prettier
       - supports-color
 
-  '@storybook/builder-vite@8.1.8(encoding@0.1.13)(prettier@3.3.2)(typescript@5.4.5)(vite@5.2.13(@types/node@20.14.2)(sass@1.77.5)(terser@5.19.0))':
+  '@storybook/builder-vite@8.1.8(encoding@0.1.13)(prettier@3.3.2)(typescript@5.4.5)(vite@5.2.13(@types/node@20.14.2)(sass@1.77.6)(terser@5.19.0))':
     dependencies:
       '@storybook/channels': 8.1.8
       '@storybook/client-logger': 8.1.8
@@ -10931,7 +10931,7 @@ snapshots:
       fs-extra: 11.2.0
       magic-string: 0.30.5
       ts-dedent: 2.2.0
-      vite: 5.2.13(@types/node@20.14.2)(sass@1.77.5)(terser@5.19.0)
+      vite: 5.2.13(@types/node@20.14.2)(sass@1.77.6)(terser@5.19.0)
     optionalDependencies:
       typescript: 5.4.5
     transitivePeerDependencies:
@@ -11242,11 +11242,11 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  '@storybook/react-vite@8.1.8(encoding@0.1.13)(prettier@3.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.4.5)(vite@5.2.13(@types/node@20.14.2)(sass@1.77.5)(terser@5.19.0))':
+  '@storybook/react-vite@8.1.8(encoding@0.1.13)(prettier@3.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.4.5)(vite@5.2.13(@types/node@20.14.2)(sass@1.77.6)(terser@5.19.0))':
     dependencies:
-      '@joshwooding/vite-plugin-react-docgen-typescript': 0.3.1(typescript@5.4.5)(vite@5.2.13(@types/node@20.14.2)(sass@1.77.5)(terser@5.19.0))
+      '@joshwooding/vite-plugin-react-docgen-typescript': 0.3.1(typescript@5.4.5)(vite@5.2.13(@types/node@20.14.2)(sass@1.77.6)(terser@5.19.0))
       '@rollup/pluginutils': 5.0.2(rollup@4.18.0)
-      '@storybook/builder-vite': 8.1.8(encoding@0.1.13)(prettier@3.3.2)(typescript@5.4.5)(vite@5.2.13(@types/node@20.14.2)(sass@1.77.5)(terser@5.19.0))
+      '@storybook/builder-vite': 8.1.8(encoding@0.1.13)(prettier@3.3.2)(typescript@5.4.5)(vite@5.2.13(@types/node@20.14.2)(sass@1.77.6)(terser@5.19.0))
       '@storybook/node-logger': 8.1.8
       '@storybook/react': 8.1.8(encoding@0.1.13)(prettier@3.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.4.5)
       '@storybook/types': 8.1.8
@@ -11257,7 +11257,7 @@ snapshots:
       react-dom: 18.3.1(react@18.3.1)
       resolve: 1.22.8
       tsconfig-paths: 4.2.0
-      vite: 5.2.13(@types/node@20.14.2)(sass@1.77.5)(terser@5.19.0)
+      vite: 5.2.13(@types/node@20.14.2)(sass@1.77.6)(terser@5.19.0)
     transitivePeerDependencies:
       - '@preact/preset-vite'
       - encoding
@@ -11744,14 +11744,14 @@ snapshots:
 
   '@ungap/structured-clone@1.2.0': {}
 
-  '@vitejs/plugin-react@4.3.1(vite@5.2.13(@types/node@20.14.2)(sass@1.77.5)(terser@5.19.0))':
+  '@vitejs/plugin-react@4.3.1(vite@5.2.13(@types/node@20.14.2)(sass@1.77.6)(terser@5.19.0))':
     dependencies:
       '@babel/core': 7.24.7
       '@babel/plugin-transform-react-jsx-self': 7.24.7(@babel/core@7.24.7)
       '@babel/plugin-transform-react-jsx-source': 7.24.7(@babel/core@7.24.7)
       '@types/babel__core': 7.20.5
       react-refresh: 0.14.2
-      vite: 5.2.13(@types/node@20.14.2)(sass@1.77.5)(terser@5.19.0)
+      vite: 5.2.13(@types/node@20.14.2)(sass@1.77.6)(terser@5.19.0)
     transitivePeerDependencies:
       - supports-color
 
@@ -12266,10 +12266,6 @@ snapshots:
     dependencies:
       balanced-match: 1.0.2
 
-  braces@3.0.2:
-    dependencies:
-      fill-range: 7.0.1
-
   braces@3.0.3:
     dependencies:
       fill-range: 7.1.1
@@ -12504,7 +12500,7 @@ snapshots:
   chokidar@3.5.3:
     dependencies:
       anymatch: 3.1.3
-      braces: 3.0.2
+      braces: 3.0.3
       glob-parent: 5.1.2
       is-binary-path: 2.1.0
       is-glob: 4.0.3
@@ -13812,10 +13808,6 @@ snapshots:
       minimatch: 5.1.6
 
   filesize@6.4.0: {}
-
-  fill-range@7.0.1:
-    dependencies:
-      to-regex-range: 5.0.1
 
   fill-range@7.1.1:
     dependencies:
@@ -15948,7 +15940,7 @@ snapshots:
 
   micromatch@4.0.5:
     dependencies:
-      braces: 3.0.2
+      braces: 3.0.3
       picomatch: 2.3.1
 
   micromatch@4.0.7:
@@ -16086,7 +16078,7 @@ snapshots:
     dependencies:
       type-fest: 2.19.0
 
-  next@14.2.4(@babel/core@7.24.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.5):
+  next@14.2.4(@babel/core@7.24.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.6):
     dependencies:
       '@next/env': 14.2.4
       '@swc/helpers': 0.5.5
@@ -16107,7 +16099,7 @@ snapshots:
       '@next/swc-win32-arm64-msvc': 14.2.4
       '@next/swc-win32-ia32-msvc': 14.2.4
       '@next/swc-win32-x64-msvc': 14.2.4
-      sass: 1.77.5
+      sass: 1.77.6
     transitivePeerDependencies:
       - '@babel/core'
       - babel-plugin-macros
@@ -17747,7 +17739,7 @@ snapshots:
 
   safer-buffer@2.1.2: {}
 
-  sass@1.77.5:
+  sass@1.77.6:
     dependencies:
       chokidar: 3.5.3
       immutable: 4.3.1
@@ -18898,12 +18890,12 @@ snapshots:
       unist-util-stringify-position: 4.0.0
       vfile-message: 4.0.2
 
-  vite-plugin-runtime-config@1.0.2(vite@5.2.13(@types/node@20.14.2)(sass@1.77.5)(terser@5.19.0)):
+  vite-plugin-runtime-config@1.0.2(vite@5.2.13(@types/node@20.14.2)(sass@1.77.6)(terser@5.19.0)):
     dependencies:
       lodash: 4.17.21
-      vite: 5.2.13(@types/node@20.14.2)(sass@1.77.5)(terser@5.19.0)
+      vite: 5.2.13(@types/node@20.14.2)(sass@1.77.6)(terser@5.19.0)
 
-  vite@5.2.13(@types/node@20.14.2)(sass@1.77.5)(terser@5.19.0):
+  vite@5.2.13(@types/node@20.14.2)(sass@1.77.6)(terser@5.19.0):
     dependencies:
       esbuild: 0.20.2
       postcss: 8.4.38
@@ -18911,7 +18903,7 @@ snapshots:
     optionalDependencies:
       '@types/node': 20.14.2
       fsevents: 2.3.3
-      sass: 1.77.5
+      sass: 1.77.6
       terser: 5.19.0
 
   vscode-json-languageservice@4.2.1:
