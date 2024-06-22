@@ -11,6 +11,11 @@ updates:
     directory: "/"
     schedule:
       interval: "monthly"
+    groups:
+      storybook:
+        patterns:
+          - "storybook"
+          - "@storybook/*"
     versioning-strategy: "increase-if-necessary"
     open-pull-requests-limit: 20
     reviewers:
