@@ -1,9 +1,9 @@
 {
+  "name": "@example/components-react",
   "version": "1.0.0-alpha.0",
   "author": "Community for NL Design System",
   "description": "React component library for the Example repository, based on the NL Design System architecture",
   "license": "EUPL-1.2",
-  "name": "@example/components-react",
   "keywords": [
     "nl-design-system"
   ],
@@ -14,7 +14,8 @@
   },
   "repository": {
     "type": "git+ssh",
-    "url": "git@github.com:nl-design-system/example-community.git"
+    "url": "git@github.com:nl-design-system/example.git",
+    "directory": "packages/components-react"
   },
   "scripts": {
     "build": "npm-run-all clean build:**",
