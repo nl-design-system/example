@@ -1,13 +1,18 @@
 {
+  "name": "@example/design-system",
   "version": "1.0.0-alpha.0",
   "author": "Community for NL Design System",
   "description": "Design system based on the NL Design System architecture",
   "license": "EUPL-1.2",
-  "name": "@example/design-system",
   "keywords": [
     "nl-design-system"
   ],
   "private": true,
+  "repository": {
+    "type": "git+ssh",
+    "url": "git@github.com:nl-design-system/example.git",
+    "directory": "."
+  },
   "engines": {
     "node": "^20",
     "pnpm": "^9"
@@ -50,7 +55,7 @@
     "lint:css": "stylelint --allow-empty-input '**/*.{css,scss}'",
     "lint:js": "eslint --ext .js,.cjs,.mjs,.json,.jsx,.mdx,.ts,.tsx --report-unused-disable-directives .",
     "lint:md": "markdownlint '**/*.md'",
-    "lint:package-json": "npmPkgJsonLint '**/package.json'",
+    "lint:package-json": "npmPkgJsonLint .",
     "lint:package-lock": "pnpm ls --recursive",
     "lint-fix": "npm-run-all --continue-on-error lint-fix:** prettier",
     "lint-fix:css": "stylelint --fix '**/*.{css,scss}'",

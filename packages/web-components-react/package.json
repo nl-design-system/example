@@ -1,16 +1,17 @@
 {
+  "name": "@example/web-components-react",
   "version": "1.0.0-alpha.0",
   "author": "Community for NL Design System",
   "description": "React web components bundle based on the NL Design System architecture",
   "license": "EUPL-1.2",
-  "name": "@example/web-components-react",
   "keywords": [
     "nl-design-system"
   ],
   "private": true,
   "repository": {
     "type": "git+ssh",
-    "url": "git@github.com:nl-design-system/example.git"
+    "url": "git@github.com:nl-design-system/example.git",
+    "directory": "packages/web-components-react"
   },
   "sideEffects": false,
   "scripts": {
