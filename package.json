@@ -17,7 +17,7 @@
     "./proprietary/*"
   ],
   "devDependencies": {
-    "@lerna-lite/cli": "3.6.0",
+    "@lerna-lite/cli": "3.7.1",
     "@lerna-lite/publish": "3.6.0",
     "@lerna-lite/run": "3.6.0",
     "@lerna-lite/version": "3.6.0",
