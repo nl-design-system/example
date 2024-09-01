@@ -310,18 +310,18 @@ importers:
   packages/web-components-stencil:
     dependencies:
       '@stencil/core':
-        specifier: 4.20.0
-        version: 4.20.0
+        specifier: 4.21.0
+        version: 4.21.0
     devDependencies:
       '@example/components-css':
         specifier: workspace:*
         version: link:../components-css
       '@stencil/react-output-target':
         specifier: 0.5.3
-        version: 0.5.3(@stencil/core@4.20.0)
+        version: 0.5.3(@stencil/core@4.21.0)
       '@stencil/sass':
         specifier: 3.0.12
-        version: 3.0.12(@stencil/core@4.20.0)
+        version: 3.0.12(@stencil/core@4.21.0)
       '@types/jest':
         specifier: 29.5.12
         version: 29.5.12
@@ -1426,6 +1426,7 @@ packages:
   '@humanwhocodes/config-array@0.11.14':
     resolution: {integrity: sha512-3T8LkOmg45BV5FICb15QQMsyUSWrQ8AygVfC7ZG32zOalnqrilm018ZVCw0eapXux8FtA33q8PSRSstjee3jSg==}
     engines: {node: '>=10.10.0'}
+    deprecated: Use @eslint/config-array instead
 
   '@humanwhocodes/module-importer@1.0.1':
     resolution: {integrity: sha512-bxveV4V8v5Yb4ncFTT3rPSgZBOpCkjfK0y4oVVVJwIuDVBRMDXrPyXRL988i5ap9m9bnyEEjWfm5WkBmtffLfA==}
@@ -1433,6 +1434,7 @@ packages:
 
   '@humanwhocodes/object-schema@2.0.2':
     resolution: {integrity: sha512-6EwiSjwWYP7pTckG6I5eyFANjPhmPjUX9JRLUSfNPC7FX7zK9gyZAfUEaECL6ALTpGX5AjnBq3C9XmVWPitNpw==}
+    deprecated: Use @eslint/object-schema instead
 
   '@isaacs/cliui@8.0.2':
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
@@ -1813,8 +1815,8 @@ packages:
   '@sinonjs/fake-timers@10.3.0':
     resolution: {integrity: sha512-V4BG07kuYSUkTCSBHG8G8TNhM+F19jXFWnQtzj+we8DrkpSBCee9Z3Ms8yiGer/dlmhe35/Xdgyo3/0rQKg7YA==}
 
-  '@stencil/core@4.20.0':
-    resolution: {integrity: sha512-WPrTHFngvN081RY+dJPneKQLwnOFD60OMCOQGmmSHfCW0f4ujPMzzhwWU1gcSwXPWXz5O+8cBiiCaxAbJU7kAg==}
+  '@stencil/core@4.21.0':
+    resolution: {integrity: sha512-v50lnVbzS8mpMSnEVxR+G75XpvxHKtkJaQrNPE8+/fF6Ppr5z4bcdcBhcP8LPfEW+4BZcic6VifMXRwTopc+kw==}
     engines: {node: '>=16.0.0', npm: '>=7.10.0'}
     hasBin: true
 
@@ -9208,15 +9210,15 @@ snapshots:
     dependencies:
       '@sinonjs/commons': 3.0.0
 
-  '@stencil/core@4.20.0': {}
+  '@stencil/core@4.21.0': {}
 
-  '@stencil/react-output-target@0.5.3(@stencil/core@4.20.0)':
+  '@stencil/react-output-target@0.5.3(@stencil/core@4.21.0)':
     dependencies:
-      '@stencil/core': 4.20.0
+      '@stencil/core': 4.21.0
 
-  '@stencil/sass@3.0.12(@stencil/core@4.20.0)':
+  '@stencil/sass@3.0.12(@stencil/core@4.21.0)':
     dependencies:
-      '@stencil/core': 4.20.0
+      '@stencil/core': 4.21.0
 
   '@storybook/addon-a11y@8.2.9(storybook@8.2.9(@babel/preset-env@7.25.3(@babel/core@7.25.2)))':
     dependencies:
