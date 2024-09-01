@@ -68,7 +68,7 @@
     "rollup-plugin-postcss": "4.0.2",
     "rollup-plugin-typescript2": "0.36.0",
     "sass": "1.77.8",
-    "tslib": "2.6.3",
+    "tslib": "2.7.0",
     "typescript": "5.5.4",
     "vite": "5.4.0",
     "vite-plugin-runtime-config": "1.0.2"
