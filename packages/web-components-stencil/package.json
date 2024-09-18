@@ -35,7 +35,7 @@
   },
   "devDependencies": {
     "@example/components-css": "workspace:*",
-    "@stencil/react-output-target": "0.5.3",
+    "@stencil/react-output-target": "0.7.1",
     "@stencil/sass": "3.0.12",
     "@types/jest": "29.5.12",
     "chokidar-cli": "3.0.0",
