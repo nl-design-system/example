@@ -1,4 +1,4 @@
-import { Config } from '@stencil/core';
+import type { Config } from '@stencil/core';
 import { reactOutputTarget } from '@stencil/react-output-target';
 import { sass } from '@stencil/sass';
 
@@ -13,14 +13,14 @@ export const config: Config = {
     {
       type: 'dist-custom-elements',
       customElementsExportBehavior: 'bundle',
+      externalRuntime: false,
     },
     {
       type: 'www',
       serviceWorker: null, // disable service workers
     },
     reactOutputTarget({
-      componentCorePackage: '@example/web-components-stencil',
-      proxiesFile: '../web-components-react/src/components.ts',
+      outDir: '../web-components-react/src/stencil-generated/',
     }),
   ],
   plugins: [sass()],
