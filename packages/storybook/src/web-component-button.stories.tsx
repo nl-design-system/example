@@ -5,7 +5,7 @@ import { ExampleButton } from '@example/web-components-react';
 import type { Meta, StoryObj } from '@storybook/react';
 import { PropsWithChildren } from 'react';
 
-const Button = ({ children }: PropsWithChildren<{}>) => <ExampleButton>{children}</ExampleButton>;
+const Button = ({ children }: PropsWithChildren<unknown>) => <ExampleButton>{children}</ExampleButton>;
 
 const meta = {
   title: 'Web Component/Button',

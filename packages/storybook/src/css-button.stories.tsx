@@ -5,7 +5,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { PropsWithChildren } from 'react';
 import '@example/components-css/button/index.scss';
 
-const Button = ({ children }: PropsWithChildren<{}>) => (
+const Button = ({ children }: PropsWithChildren<unknown>) => (
   <button className="example-button" type="button">
     <span className="example-button__text">{children}</span>
   </button>
