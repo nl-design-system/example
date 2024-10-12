@@ -12,10 +12,11 @@ updates:
     schedule:
       interval: "monthly"
     groups:
-      storybook:
-        patterns:
-          - "storybook"
-          - "@storybook/*"
+      patch-and-minor-dependencies:
+        applies-to: "version-updates"
+        update-types:
+          - "patch"
+          - "minor"
     versioning-strategy: "increase-if-necessary"
     open-pull-requests-limit: 20
     reviewers:
