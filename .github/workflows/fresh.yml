@@ -7,7 +7,7 @@ on:
     - cron: "1 1 1 * *"
 
 env:
-  MAINTAINER: "nl-design-system/kernteam-maintainer"
+  MAINTAINERS: "matijs,eslook,Robbert"
 
 jobs:
   create-issue:
@@ -31,4 +31,4 @@ jobs:
         run: gh issue close ${{ steps.find-existing-issue.outputs.existing-issue }}
 
       - name: Create new issue
-        run: gh issue create --title "🛠 Vers en veilig voor $(LC_ALL=nl_NL.UTF-8 date -u +'%B %Y')" --assignee "${MAINTAINER}" --label "dependencies" --body-file .github/workflows/fresh.md
+        run: gh issue create --title "🛠 Vers en veilig voor $(LC_ALL=nl_NL.UTF-8 date -u +'%B %Y')" --assignee "${MAINTAINERS}" --label "dependencies" --body-file .github/workflows/fresh.md
