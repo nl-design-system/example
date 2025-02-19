@@ -1,4 +1,4 @@
-naam: "Vers en veilig"
+name: "Vers en veilig"
 
 on:
   workflow_dispatch:
