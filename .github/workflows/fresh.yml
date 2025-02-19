@@ -20,6 +20,11 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
 
+      - name: Setup
+        run: |
+          sudo locale-gen nl_NL.UTF-8
+          sudo update-locale LC_TIME=nl_NL.UTF-8 LC_ALL
+
       - name: Find existing issue
         id: find-existing-issue
         run: |
@@ -31,4 +36,4 @@ jobs:
         run: gh issue close ${{ steps.find-existing-issue.outputs.existing-issue }}
 
       - name: Create new issue
-        run: gh issue create --title "🛠 Vers en veilig voor $(LC_ALL=nl_NL.UTF-8 date -u +'%B %Y')" --assignee "${MAINTAINERS}" --label "dependencies" --body-file .github/workflows/fresh.md
+        run: gh issue create --title "🛠 Vers en veilig voor $(LC_TIME=nl_NL.UTF-8 date -u +'%B %Y')" --assignee "${MAINTAINERS}" --label "dependencies" --body-file .github/workflows/fresh.md
