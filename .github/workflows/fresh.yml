@@ -2,38 +2,59 @@ name: "Vers en veilig"
 
 on:
   workflow_dispatch:
+    # Add `workflow_dispatch` so this can be run manually in case it was not run as scheduled
   schedule:
-    # at 01:01 on the first day of every month
-    - cron: "1 1 1 * *"
+    # Rationale:
+    #
+    # > The schedule event can be delayed during periods of high loads of GitHub Actions workflow runs
+    # > High load times include the start of every hour. If the load is sufficiently high enough, some
+    # > queued jobs may be dropped. To decrease the chance of delay, schedule your workflow to run at
+    # > a different time of the hour.
+    #
+    # We run this on the first day of every month at 01:15
+    - cron: "15 1 1 * *"
 
 env:
+  # GitHub accounts for maintainers for this repo
   MAINTAINERS: "matijs,eslook,Robbert"
+
+# Jobs in this repo make use of GitHubs own `gh` cli application. A `GH_TOKEN` environment variable
+# is set for the jobs that need it.
 
 jobs:
   create-issue:
     runs-on: ubuntu-latest
-    permissions:
-      issues: write
-    env:
-      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
-      - name: Checkout repo
+      - name: Create GitHub App Token
+        id: app-token
+        uses: actions/create-github-app-token@21cfef2b496dd8ef5b904c159339626a10ad380e # 1.11.6
+        with:
+          app-id: ${{ vars.NL_DESIGN_SYSTEM_BOT_APP_ID }}
+          private-key: ${{ secrets.NL_DESIGN_SYSTEM_BOT_PRIVATE_KEY }}
+
+      - name: Checkout
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
 
-      - name: Setup
+      - name: Setup nl_NL locale
         run: |
           sudo locale-gen nl_NL.UTF-8
           sudo update-locale LC_TIME=nl_NL.UTF-8 LC_ALL
 
       - name: Find existing issue
         id: find-existing-issue
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
         run: |
-          EXISTING_ISSUE=$(gh issue list --author "app/github-actions" --state open --search "🛠 Vers en veilig" --limit 1 --json number --jq first.number)
-          echo "existing-issue=${EXISTING_ISSUE}" >> $GITHUB_OUTPUT
+          ISSUE=$(gh issue list --author "${{ steps.app-token.outputs.app-slug }}[bot]" --state open --search "🛠 Vers en veilig" --limit 1 --json number --jq first.number)
+          echo "issue=${ISSUE}" | tee -a $GITHUB_OUTPUT
 
       - name: Close existing issue
-        if: ${{ steps.find-existing-issue.outputs.existing-issue != '' }}
-        run: gh issue close ${{ steps.find-existing-issue.outputs.existing-issue }}
+        if: ${{ steps.find-existing-issue.outputs.issue != '' }}
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+        run: gh issue close ${{ steps.find-existing-issue.outputs.issue }}
 
       - name: Create new issue
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
         run: gh issue create --title "🛠 Vers en veilig voor $(LC_TIME=nl_NL.UTF-8 date -u +'%B %Y')" --assignee "${MAINTAINERS}" --label "dependencies" --body-file .github/workflows/fresh.md
