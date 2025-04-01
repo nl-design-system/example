@@ -27,14 +27,14 @@
     "@example/font": "workspace:*",
     "@example/web-components-react": "workspace:*",
     "@example/web-components-stencil": "workspace:*",
-    "@storybook/addon-a11y": "8.6.4",
-    "@storybook/addon-actions": "8.6.4",
-    "@storybook/addon-docs": "8.6.4",
-    "@storybook/addon-interactions": "8.6.4",
-    "@storybook/addon-links": "8.6.4",
-    "@storybook/addon-viewport": "8.6.4",
-    "@storybook/react": "8.6.4",
-    "@storybook/react-vite": "8.6.4",
+    "@storybook/addon-a11y": "8.6.11",
+    "@storybook/addon-actions": "8.6.11",
+    "@storybook/addon-docs": "8.6.11",
+    "@storybook/addon-interactions": "8.6.11",
+    "@storybook/addon-links": "8.6.11",
+    "@storybook/addon-viewport": "8.6.11",
+    "@storybook/react": "8.6.11",
+    "@storybook/react-vite": "8.6.11",
     "@types/react": "18.3.18",
     "@types/react-dom": "18.3.5",
     "@whitespace/storybook-addon-html": "6.1.1",
@@ -42,8 +42,8 @@
     "react-dom": "18.3.1",
     "react-syntax-highlighter": "15.6.1",
     "rimraf": "6.0.1",
-    "storybook": "8.6.4",
+    "storybook": "8.6.11",
     "typescript": "5.8.2",
-    "vite": "6.2.1"
+    "vite": "6.2.4"
   }
 }
