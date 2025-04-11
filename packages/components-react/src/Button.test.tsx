@@ -1,7 +1,12 @@
-import { render, screen } from '@testing-library/react';
+import '@testing-library/jest-dom/vitest';
+import { cleanup, render, screen } from '@testing-library/react';
 import { createRef } from 'react';
+import { afterEach, describe, expect, it } from 'vitest';
 import { Button } from './Button';
-import '@testing-library/jest-dom';
+
+afterEach(() => {
+  cleanup();
+});
 
 describe('Button', () => {
   it('renders a button role element', () => {
