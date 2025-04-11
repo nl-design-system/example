@@ -1,35 +1,33 @@
 /* @license CC0-1.0 */
 
-import readme from '@example/components-css/button/README.md?raw';
 import type { Meta, StoryObj } from '@storybook/react';
+import readme from '@example/components-css/button/README.md?raw';
 import { PropsWithChildren } from 'react';
 import '@example/components-css/button/index.scss';
 
-const Button = ({ children }: PropsWithChildren<{}>) => (
+const Button = ({ children }: PropsWithChildren) => (
   <button className="example-button" type="button">
     <span className="example-button__text">{children}</span>
   </button>
 );
 
 const meta = {
-  title: 'CSS Component/Button',
   id: 'css-button',
-  component: Button,
+  args: {
+    children: 'Opslaan en verder',
+  },
   argTypes: {
     children: {
       name: 'Content',
+      defaultValue: '',
       description: 'Button text',
       type: {
         name: 'string',
         required: true,
       },
-      defaultValue: '',
     },
   },
-  args: {
-    children: 'Opslaan en verder',
-  },
-  tags: ['autodocs'],
+  component: Button,
   parameters: {
     docs: {
       description: {
@@ -37,6 +35,8 @@ const meta = {
       },
     },
   },
+  tags: ['autodocs'],
+  title: 'CSS Component/Button',
 } satisfies Meta<typeof Button>;
 
 export default meta;

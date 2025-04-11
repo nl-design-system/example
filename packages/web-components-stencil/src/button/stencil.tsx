@@ -6,9 +6,9 @@
 import { Component, h } from '@stencil/core';
 
 @Component({
-  tag: 'example-button',
-  styleUrl: 'index.scss',
   shadow: true,
+  styleUrl: 'index.scss',
+  tag: 'example-button',
 })
 export class Button {
   render() {

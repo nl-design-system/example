@@ -2,9 +2,7 @@ import { Meta, StoryObj } from '@storybook/react';
 import { Button } from '../../components-react/src/Button';
 
 const meta = {
-  title: 'React Component/Button',
   id: 'react-button',
-  component: Button,
   args: {
     children: 'Read more...',
   },
@@ -14,6 +12,8 @@ const meta = {
       options: [undefined, 'button', 'submit', 'reset'],
     },
   },
+  component: Button,
+  title: 'React Component/Button',
 } satisfies Meta<typeof Button>;
 
 export default meta;

@@ -5,8 +5,8 @@ import { readFileSync } from 'fs';
 import filesize from 'rollup-plugin-filesize';
 import nodeExternal from 'rollup-plugin-node-externals';
 import nodePolyfills from 'rollup-plugin-node-polyfills';
-import postcss from 'rollup-plugin-postcss';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
+import postcss from 'rollup-plugin-postcss';
 import typescript from 'rollup-plugin-typescript2';
 
 const packageJson = JSON.parse(readFileSync('./package.json', 'utf8'));
@@ -23,22 +23,22 @@ export const outputGlobals = {
 
 export default [
   {
+    external: [/@babel\/runtime/, 'react-dom', 'react'],
     input: 'src/index.ts',
     output: [
       {
         file: packageJson.main,
         format: 'cjs',
-        sourcemap: true,
         globals: outputGlobals,
+        sourcemap: true,
       },
       {
         file: packageJson.module,
         format: 'esm',
-        sourcemap: true,
         globals: outputGlobals,
+        sourcemap: true,
       },
     ],
-    external: [/@babel\/runtime/, 'react-dom', 'react'],
     plugins: [
       peerDepsExternal({ includeDependencies: true }),
       nodeExternal(),
@@ -53,12 +53,12 @@ export default [
       }),
       typescript({ includeDependencies: false }),
       babel({
-        presets: ['@babel/preset-react'],
         babelHelpers: 'runtime',
         exclude: ['node_modules/**', 'dist/**'],
         extensions: ['.ts', '.tsx'],
         inputSourceMap: true,
         plugins: ['@babel/plugin-transform-runtime'],
+        presets: ['@babel/preset-react'],
       }),
       filesize(),
     ],

@@ -4,25 +4,25 @@ import { sass } from '@stencil/sass';
 
 export const config: Config = {
   namespace: 'example',
-  srcDir: './src/',
+  extras: { enableImportInjection: true },
   outputTargets: [
     {
-      type: 'dist',
       esmLoaderPath: '../loader',
+      type: 'dist',
     },
     {
-      type: 'dist-custom-elements',
       customElementsExportBehavior: 'bundle',
       externalRuntime: false,
+      type: 'dist-custom-elements',
     },
     {
-      type: 'www',
       serviceWorker: null, // disable service workers
+      type: 'www',
     },
     reactOutputTarget({
       outDir: '../web-components-react/src/stencil-generated/',
     }),
   ],
   plugins: [sass()],
-  extras: { enableImportInjection: true },
+  srcDir: './src/',
 };
