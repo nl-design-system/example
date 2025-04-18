@@ -8,8 +8,6 @@ module.exports = {
     '@types/node',
     '@types/react',
     '@types/react-dom',
-    'eslint',
-    'eslint-plugin-json',
     'react',
     'react-dom',
     'style-dictionary',
