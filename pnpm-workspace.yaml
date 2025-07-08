@@ -1,4 +1,19 @@
 packages:
-  - "components/**"
-  - "packages/*"
-  - "proprietary/*"
+  - components/**
+  - packages/*
+  - proprietary/*
+
+autoInstallPeers: false
+
+engineStrict: true
+
+onlyBuiltDependencies:
+  - "@parcel/watcher"
+  - esbuild
+  - sharp
+
+saveExact: true
+
+savePrefix: ""
+
+strictPeerDependencies: false
