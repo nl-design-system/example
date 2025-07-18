@@ -7,7 +7,6 @@ Het is weer tijd voor de maandelijkse ronde “Vers & Veilig”
 - [ ] patch dependencies zijn bijgewerkt
 
   ### Zo doe je dat
-
   - [ ] Bekijk of `reject` in `.ncurc.patch.cjs` moet worden bijgewerkt.
   - [ ] Draai
 
@@ -23,7 +22,6 @@ Het is weer tijd voor de maandelijkse ronde “Vers & Veilig”
 - [ ] minor dependencies zijn bijgewerkt
 
   ### Zo doe je dat
-
   - [ ] Bekijk of `reject` in `.ncurc.minor.cjs` moet worden bijgewerkt.
   - [ ] Draai
 
@@ -39,7 +37,6 @@ Het is weer tijd voor de maandelijkse ronde “Vers & Veilig”
 - [ ] major dependencies zijn bijgewerkt óf er is een issue aangemaakt
 
   ### Zo doe je dat
-
   - [ ] Bekijk of `reject` in `.ncurc.major.cjs` moet worden bijgewerkt.
   - [ ] Draai
 
@@ -55,6 +52,5 @@ Het is weer tijd voor de maandelijkse ronde “Vers & Veilig”
 - [ ] Dependabot alerts nagekeken voor kwestbaarheden
 
   ### Zo doe je dat
-
   - [ ] Open de [Dependabot alerts](../security/dependabot)
   - [ ] Werk kwetsbaarheden bij of sluit kwetsbaarheden met een goede reden
