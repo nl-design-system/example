@@ -29,10 +29,18 @@ export default defineConfig([
       'perfectionist/sort-objects': [
         'error',
         {
-          customGroups: {
-            first: ['id', 'name'],
-            last: ['overrides'],
-          },
+          customGroups: [
+            {
+              elementNamePattern: '^(?:id|name)$',
+              groupName: 'first',
+              selector: 'property',
+            },
+            {
+              elementNamePattern: '^(?:overrides)$',
+              groupName: 'last',
+              selector: 'property',
+            },
+          ],
           groups: ['first', 'unknown', 'last'],
         },
       ],
