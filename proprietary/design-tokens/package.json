@@ -18,14 +18,14 @@
   },
   "scripts": {
     "clean": "rimraf dist/",
-    "build": "npm-run-all clean build:**",
+    "build": "pnpm run --sequential '/^build:.+$/'",
+    "build:clean": "pnpm run clean",
     "build:style-dictionary": "style-dictionary build --config ./style-dictionary.config.json",
-    "watch": "npm-run-all watch:**",
+    "watch": "pnpm run '/^watch:.+$/'",
     "watch:style-dictionary": "chokidar --follow-symlinks --initial --command 'pnpm run build' 'src/**/*.tokens.json'"
   },
   "devDependencies": {
     "chokidar-cli": "3.0.0",
-    "npm-run-all": "4.1.5",
     "rimraf": "6.0.1",
     "style-dictionary": "3.9.2"
   }

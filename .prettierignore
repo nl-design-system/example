@@ -20,7 +20,8 @@ pnpm-lock.yaml
 
 # Ignore generated files from Stencil
 components/components.d.ts
-packages/web-components-stencil/loader
+packages/web-components-stencil/loader/
 packages/web-components-react/src/react-component-lib/
 packages/web-components-react/src/components.ts
-
+packages/web-components-react/src/stencil-generated
+packages/web-components-stencil/www/

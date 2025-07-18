@@ -24,12 +24,13 @@
     "directory": "packages/web-components-stencil"
   },
   "scripts": {
-    "build": "npm-run-all clean build:**",
+    "build": "pnpm run --sequential '/^build:.+$/'",
+    "build:clean": "pnpm run clean",
     "build:stencil": "stencil build",
     "build:typescript": "tsc",
     "clean": "rimraf dist/ ../web-components-react/src/components.ts ../web-components-react/src/react-component-lib/",
     "start": "stencil build --dev --watch --serve",
-    "watch": "npm-run-all --parallel watch:**",
+    "watch": "pnpm run '/^watch:+$/'",
     "watch:stencil": "chokidar --follow-symlinks --initial --command 'pnpm run build:stencil' '../../components/**/*.(js|jsx|ts|tsx)'",
     "generate": "stencil generate"
   },
@@ -38,7 +39,6 @@
     "@stencil/react-output-target": "1.0.2",
     "@stencil/sass": "3.2.1",
     "chokidar-cli": "3.0.0",
-    "npm-run-all": "4.1.5",
     "rimraf": "6.0.1",
     "tslib": "2.8.1",
     "typescript": "5.8.3"
