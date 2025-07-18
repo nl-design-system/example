@@ -30,15 +30,15 @@
   },
   "devDependencies": {
     "@example/web-components-stencil": "workspace:*",
-    "@types/node": "22.14.0",
-    "@types/react": "18.3.20",
-    "@types/react-dom": "18.3.6",
+    "@types/node": "22.16.4",
+    "@types/react": "18.3.23",
+    "@types/react-dom": "18.3.7",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "rimraf": "6.0.1",
     "typescript": "5.8.3"
   },
   "dependencies": {
-    "@stencil/react-output-target": "1.0.2"
+    "@stencil/react-output-target": "1.2.0"
   }
 }

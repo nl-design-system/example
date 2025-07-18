@@ -11,6 +11,11 @@ module.exports = {
     'react',
     'react-dom',
     'style-dictionary',
+    'storybook',
+    '@storybook/*',
+    '@etchteam/storybook-addon-status',
+    '@whitespace/storybook-addon-html',
+    'vite',
   ],
   target: 'latest',
 };
