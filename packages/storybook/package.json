@@ -43,7 +43,7 @@
     "react-syntax-highlighter": "15.6.1",
     "rimraf": "6.0.1",
     "storybook": "8.6.14",
-    "typescript": "5.8.3",
+    "typescript": "5.9.2",
     "vite": "6.3.5"
   }
 }
