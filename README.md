@@ -40,7 +40,7 @@ You need to have the following tools installed to run Storybook locally:
 ### Run storybook
 
 - Install dependencies: `pnpm install`
-- Run storybook: `npm run storybook`
+- Run storybook: `pnpm run storybook`
 
 ### Change the theme of your storybook to match your brand
 
