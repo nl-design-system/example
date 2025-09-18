@@ -16,6 +16,8 @@ CHANGELOG.md
 package-lock.json
 yarn.lock
 pnpm-lock.yaml
+# pnpm using `pnpm config` is particular about the formatting of its workspace file
+pnpm-workspace.yaml
 
 
 # Ignore generated files from Stencil
@@ -25,3 +27,8 @@ packages/web-components-react/src/react-component-lib/
 packages/web-components-react/src/components.ts
 packages/web-components-react/src/stencil-generated
 packages/web-components-stencil/www/
+
+
+# Use `terraform fmt` to fix formatting issues in Terraform files
+*.tf
+*.hcl
