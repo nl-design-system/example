@@ -7,6 +7,8 @@ autoInstallPeers: false
 
 engineStrict: true
 
+minimumReleaseAge: 1440
+
 onlyBuiltDependencies:
   - "@parcel/watcher"
   - esbuild
