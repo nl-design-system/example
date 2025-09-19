@@ -3,6 +3,7 @@ node_modules/
 vendor/
 
 # Ignore generated files
+.docusaurus/
 .angular/
 build/
 coverage/
@@ -19,7 +20,6 @@ pnpm-lock.yaml
 # pnpm using `pnpm config` is particular about the formatting of its workspace file
 pnpm-workspace.yaml
 
-
 # Ignore generated files from Stencil
 components/components.d.ts
 packages/web-components-stencil/loader/
@@ -27,6 +27,11 @@ packages/web-components-react/src/react-component-lib/
 packages/web-components-react/src/components.ts
 packages/web-components-react/src/stencil-generated
 packages/web-components-stencil/www/
+
+# Ignore files in .changeset because they are temporary and frequently contributed by non-developers…
+.changeset/*.md
+# …but don't ignore .changeset/README.md
+!.changeset/README.md
 
 
 # Use `terraform fmt` to fix formatting issues in Terraform files
