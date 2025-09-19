@@ -3,19 +3,7 @@ packages:
   - packages/*
   - proprietary/*
 
-autoInstallPeers: false
-
-engineStrict: true
-
-minimumReleaseAge: 1440
-
 onlyBuiltDependencies:
   - "@parcel/watcher"
   - esbuild
   - sharp
-
-saveExact: true
-
-savePrefix: ""
-
-strictPeerDependencies: false
