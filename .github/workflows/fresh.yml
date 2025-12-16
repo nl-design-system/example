@@ -27,7 +27,7 @@ jobs:
     steps:
       - name: Create GitHub App Token
         id: app-token
-        uses: actions/create-github-app-token@67018539274d69449ef7c02e8e71183d1719ab42 # 2.1.4
+        uses: actions/create-github-app-token@29824e69f54612133e76f7eaac726eef6c875baf # 2.2.1
         with:
           app-id: ${{ vars.NL_DESIGN_SYSTEM_BOT_APP_ID }}
           private-key: ${{ secrets.NL_DESIGN_SYSTEM_BOT_PRIVATE_KEY }}
