@@ -199,8 +199,8 @@ importers:
         specifier: 7.28.0
         version: 7.28.0
       '@etchteam/storybook-addon-status':
-        specifier: 5.0.0
-        version: 5.0.0
+        specifier: 8.0.0
+        version: 8.0.0(storybook@8.6.14(prettier@3.6.2))
       '@example/assets':
         specifier: workspace:*
         version: link:../../proprietary/assets
@@ -1323,8 +1323,10 @@ packages:
     resolution: {integrity: sha512-1+WqvgNMhmlAambTvT3KPtCl/Ibr68VldY2XY40SL1CE0ZXiakFR/cbTspaF5HsnpDMvcYYoJHfl4980NBjGag==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@etchteam/storybook-addon-status@5.0.0':
-    resolution: {integrity: sha512-0Dg94xQ3T+rYTi6ekFkaH0XU9k0IQOqidiSmwN47Oqw4u1qjxK6m7wV3j7C0deLEuf4U4PrAcsDfDjyehKne2A==}
+  '@etchteam/storybook-addon-status@8.0.0':
+    resolution: {integrity: sha512-PR0qiT5ndB32rfRi3a6QJE66sUuTD2GeJMmQFdaEOLjTWuJ/usdZ6hXXCmWadPLZXcg6wkvHGFQxDSOKNVjU9A==}
+    peerDependencies:
+      storybook: ^10.0.0
 
   '@humanfs/core@0.19.1':
     resolution: {integrity: sha512-5DyQ4+1JEUzejeK1JGICcideyfUbGixgS9jNgex5nqkW+cY7WZhxBigmieN5Qnw9ZosSNVC9KQKyb+GUaGyKUA==}
@@ -6388,10 +6390,12 @@ packages:
   whatwg-encoding@2.0.0:
     resolution: {integrity: sha512-p41ogyeMUrw3jWclHWTQg1k05DSVXPLcVxRTYsXUk+ZooOCZLcoYgPZ/HL/D/N+uQPOtcp1me1WhBEaX02mhWg==}
     engines: {node: '>=12'}
+    deprecated: Use @exodus/bytes instead for a more spec-conformant and faster implementation
 
   whatwg-encoding@3.1.1:
     resolution: {integrity: sha512-6qN4hJdMwfYBtE3YBTTHhoeuUrDBPZmbQaxWAqSALV/MeEnR5z1xd8UKud2RAkFoPkmB+hli1TZSnyi84xz1vQ==}
     engines: {node: '>=18'}
+    deprecated: Use @exodus/bytes instead for a more spec-conformant and faster implementation
 
   whatwg-mimetype@4.0.0:
     resolution: {integrity: sha512-QaKxh0eNIi2mE9p2vEdzfagOKHCcj1pJ56EEHGQOVxp8r9/iszLUUV7v89x9O1p/T+NlTM5W7jW6+cz4Fq1YVg==}
@@ -7705,9 +7709,10 @@ snapshots:
       '@eslint/core': 0.15.1
       levn: 0.4.1
 
-  '@etchteam/storybook-addon-status@5.0.0':
+  '@etchteam/storybook-addon-status@8.0.0(storybook@8.6.14(prettier@3.6.2))':
     dependencies:
       lodash: 4.17.21
+      storybook: 8.6.14(prettier@3.6.2)
 
   '@humanfs/core@0.19.1': {}
 
