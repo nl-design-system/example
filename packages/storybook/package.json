@@ -40,7 +40,7 @@
     "@whitespace/storybook-addon-html": "6.1.1",
     "react": "18.3.1",
     "react-dom": "18.3.1",
-    "react-syntax-highlighter": "15.6.1",
+    "react-syntax-highlighter": "16.1.0",
     "rimraf": "6.0.1",
     "storybook": "8.6.14",
     "typescript": "5.8.3",
