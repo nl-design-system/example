@@ -41,9 +41,9 @@
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "react-syntax-highlighter": "15.6.6",
-    "rimraf": "6.0.1",
+    "rimraf": "6.1.2",
     "storybook": "8.6.15",
-    "typescript": "5.8.3",
-    "vite": "6.3.7"
+    "typescript": "5.9.3",
+    "vite": "6.4.1"
   }
 }
