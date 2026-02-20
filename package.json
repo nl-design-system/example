@@ -28,7 +28,7 @@
     "@eslint/js": "9.39.2",
     "@eslint/json": "0.14.0",
     "@nl-design-system/eslint-config": "2.2.0",
-    "@types/node": "24.10.9",
+    "@types/node": "24.10.13",
     "eslint": "9.39.2",
     "eslint-config-prettier": "10.1.8",
     "eslint-plugin-perfectionist": "4.15.1",
@@ -44,7 +44,7 @@
     "stylelint-config-standard-scss": "15.0.1",
     "stylelint-order": "7.0.1",
     "typescript": "5.9.3",
-    "typescript-eslint": "8.54.0"
+    "typescript-eslint": "8.56.0"
   },
   "scripts": {
     "build": "pnpm --recursive run build",
