@@ -42,7 +42,7 @@
     "react-dom": "18.3.1",
     "react-syntax-highlighter": "15.6.6",
     "rimraf": "6.1.2",
-    "storybook": "8.6.15",
+    "storybook": "10.2.13",
     "typescript": "5.9.3",
     "vite": "6.4.1"
   }
