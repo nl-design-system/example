@@ -37,7 +37,7 @@
     "@storybook/react-vite": "8.6.15",
     "@types/react": "18.3.27",
     "@types/react-dom": "18.3.7",
-    "@whitespace/storybook-addon-html": "6.1.1",
+    "@whitespace/storybook-addon-html": "9.0.0",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "react-syntax-highlighter": "15.6.6",
