@@ -34,7 +34,7 @@
     "@storybook/addon-links": "8.6.15",
     "@storybook/addon-viewport": "8.6.15",
     "@storybook/react": "8.6.15",
-    "@storybook/react-vite": "8.6.15",
+    "@storybook/react-vite": "10.2.13",
     "@types/react": "18.3.27",
     "@types/react-dom": "18.3.7",
     "@whitespace/storybook-addon-html": "6.1.1",
