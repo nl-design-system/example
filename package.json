@@ -28,7 +28,7 @@
     "@eslint/js": "9.39.2",
     "@eslint/json": "0.14.0",
     "@nl-design-system/eslint-config": "2.2.0",
-    "@types/node": "24.10.9",
+    "@types/node": "24.11.0",
     "eslint": "9.39.2",
     "eslint-config-prettier": "10.1.8",
     "eslint-plugin-perfectionist": "4.15.1",
@@ -36,15 +36,15 @@
     "husky": "9.1.7",
     "lint-staged": "16.2.7",
     "markdownlint-cli": "0.47.0",
-    "npm-check-updates": "19.3.2",
+    "npm-check-updates": "19.6.3",
     "npm-package-json-lint": "9.1.0",
     "postcss": "8.5.6",
     "prettier": "3.8.1",
-    "stylelint": "17.3.0",
+    "stylelint": "17.4.0",
     "stylelint-config-standard-scss": "17.0.0",
     "stylelint-order": "7.0.1",
     "typescript": "5.9.3",
-    "typescript-eslint": "8.54.0"
+    "typescript-eslint": "8.56.1"
   },
   "scripts": {
     "build": "pnpm --recursive run build",
