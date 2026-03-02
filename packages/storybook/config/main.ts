@@ -4,16 +4,12 @@ const config: StorybookConfig = {
   addons: [
     '@storybook/addon-a11y',
     '@storybook/addon-docs',
-    '@storybook/addon-viewport',
     '@whitespace/storybook-addon-html',
     '@etchteam/storybook-addon-status',
   ],
   core: {
     disableTelemetry: true,
     disableWhatsNewNotifications: true,
-  },
-  docs: {
-    autodocs: 'tag',
   },
   framework: {
     name: '@storybook/react-vite',

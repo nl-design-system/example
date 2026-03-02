@@ -1,4 +1,4 @@
-import type { Decorator } from '@storybook/react';
+import type { Decorator } from '@storybook/react-vite';
 
 export const ParametersArgsDecorator: Decorator = (Story, context) => {
   context.parameters['args'] = context.args;

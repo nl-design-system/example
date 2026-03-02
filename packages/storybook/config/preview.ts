@@ -1,6 +1,6 @@
 import '@example/design-tokens/dist/index.css';
 import '@example/font/src/index.scss';
-import type { Preview } from '@storybook/react';
+import type { Preview } from '@storybook/react-vite';
 import { defineCustomElements } from '@example/web-components-stencil/loader/index.js';
 import { ParametersArgsDecorator } from './ParametersArgsDecorator';
 
