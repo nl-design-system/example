@@ -4,6 +4,7 @@ import nlDesignSystemConfig from '@nl-design-system/eslint-config/configs/nl-des
 import prettier from 'eslint-config-prettier';
 import perfectionist from 'eslint-plugin-perfectionist';
 import react from 'eslint-plugin-react';
+import storybook from 'eslint-plugin-storybook';
 import { defineConfig, globalIgnores } from 'eslint/config';
 import tseslint from 'typescript-eslint';
 
@@ -72,6 +73,7 @@ export default defineConfig([
     ...react.configs.flat.recommended,
     ...react.configs.flat['jsx-runtime'],
   },
+  storybook.configs['flat/recommended'],
   {
     // Minor override for Stencil files that import `h` but do not use it so allow this
     files: ['packages/web-components-stencil/**/*.tsx'],
