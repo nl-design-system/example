@@ -1,13 +1,14 @@
 {
+  "$schema": "https://json.schemastore.org/tsconfig",
   "extends": "../../tsconfig.json",
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
     "declaration": true,
     "outDir": "dist",
-    "target": "es2017",
     "jsx": "react",
     "jsxFactory": "h",
-    "skipLibCheck": true
+    "module": "Preserve",
+    "moduleResolution": "bundler"
   },
   "include": ["src", "stencil.config.ts"],
   "exclude": ["**/node_modules/*", "**/*.spec.ts", "**/*.spec.tsx"]

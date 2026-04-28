@@ -24,6 +24,9 @@ importers:
       '@nl-design-system/eslint-config':
         specifier: 2.2.0
         version: 2.2.0(eslint@9.39.2)(typescript@5.9.3)
+      '@nl-design-system/tsconfig':
+        specifier: 1.0.5
+        version: 1.0.5(typescript@5.9.3)
       '@types/node':
         specifier: 24.10.9
         version: 24.10.9
@@ -1571,6 +1574,11 @@ packages:
     resolution: {integrity: sha512-vZVbEkOQviJoiOdQT5zOi0GuSCaFrcz9/Awg/iXsmaNoXLkD5WOPVXR7RNlqeP4fPRmrHUvnVPsTDKLeIwbn2w==}
     peerDependencies:
       eslint: ^9.22.0
+
+  '@nl-design-system/tsconfig@1.0.5':
+    resolution: {integrity: sha512-XXThvLEGrO68chEvJI9ITmJ8OqNL/Km7KWWXypUQGAZWkiYiXzLf9oo/Z/ahevqqcp9bC/p+HtQe6xHZQ++rbQ==}
+    peerDependencies:
+      typescript: ^5.4
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -7629,6 +7637,10 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
       - typescript
+
+  '@nl-design-system/tsconfig@1.0.5(typescript@5.9.3)':
+    dependencies:
+      typescript: 5.9.3
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
