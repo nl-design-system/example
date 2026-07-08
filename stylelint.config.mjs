@@ -145,6 +145,8 @@ export default {
       {
         camelCaseSvgKeywords: true,
         ignoreKeywords: [
+          // Prince keywords for accessible PDFs
+          // https://www.princexml.com/doc/css-props/
           'Part',
           'Art',
           'Sect',
