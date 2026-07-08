@@ -1,5 +1,6 @@
 export default {
   extends: ['stylelint-config-standard-scss'],
+  ignoreFiles: ['node_modules', '**/dist/**/*', '**/coverage/**/*'],
   plugins: ['stylelint-order', 'stylelint-use-logical'],
   rules: {
     'alpha-value-notation': ['percentage'],
@@ -10,7 +11,7 @@ export default {
     'color-no-invalid-hex': [true],
     'comment-no-empty': [true],
     'csstools/use-logical': 'always',
-    'custom-property-pattern': '^_?(basis|example|denhaag|utrecht)-[a-z0-9-]+$',
+    'custom-property-pattern': '^_?(ams|rhc|denhaag|example|nl|nlds|utrecht|ma|basis|pra)-[a-z0-9-]+$',
     'declaration-block-no-duplicate-properties': [true, { ignore: ['consecutive-duplicates-with-different-values'] }],
     'declaration-block-no-redundant-longhand-properties': null,
     'declaration-block-no-shorthand-property-overrides': [true],
@@ -34,7 +35,7 @@ export default {
     'function-url-quotes': ['always'],
     'hue-degree-notation': ['number'],
     'keyframe-declaration-no-important': [true],
-    'keyframes-name-pattern': '^(basis|example|utrecht)-[a-z0-9-]+$',
+    'keyframes-name-pattern': '^(ams|rhc|denhaag|example|nl|nlds|utrecht|ma|basis|pra)-[a-z0-9-]+$',
     'length-zero-no-unit': [
       true,
       {
@@ -128,11 +129,11 @@ export default {
     'scss/at-rule-no-unknown': true,
     'scss/dollar-variable-default': true,
     'scss/dollar-variable-first-in-block': [true, { ignore: ['comments', 'imports'] }],
-    'scss/dollar-variable-pattern': '^(basis|example|utrecht)-[a-z0-9-]+$',
+    'scss/dollar-variable-pattern': '^(ams|rhc|denhaag|example|nl|nlds|utrecht|ma|basis|pra)-[a-z0-9-]+$',
     'scss/operator-no-newline-after': null,
-    'scss/percent-placeholder-pattern': '^(basis|example|utrecht)-[a-z0-9-]+$',
+    'scss/percent-placeholder-pattern': '^(ams|rhc|denhaag|example|nl|nlds|utrecht|ma|basis|pra)-[a-z0-9-]+$',
     'selector-attribute-quotes': ['always'],
-    'selector-class-pattern': '^(basis|example|denhaag|utrecht|flo)-[a-z0-9_-]+$',
+    'selector-class-pattern': '^(ams|rhc|denhaag|example|nl|nlds|utrecht|ma|basis|pra)-[a-z0-9_-]+$',
     'selector-max-id': [0],
     'selector-pseudo-class-no-unknown': [true],
     'selector-pseudo-element-no-unknown': [true],
