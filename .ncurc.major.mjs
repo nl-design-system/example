@@ -14,6 +14,7 @@ export default {
     'storybook',
     '@storybook/*',
     '@etchteam/storybook-addon-status',
+    '@vitejs/plugin-react', // keep @vitejs/plugin-react at v5 to stay in line with vite
     '@whitespace/storybook-addon-html',
     'vite', // keep vite at v7 to stay in line with @storybook/react-vite
   ],
