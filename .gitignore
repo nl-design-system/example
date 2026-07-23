@@ -10,6 +10,7 @@ build/
 coverage/
 dist/
 tmp/
+.next/
 
 # Ignore archives
 *.7z

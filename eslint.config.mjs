@@ -10,7 +10,7 @@ import tseslint from 'typescript-eslint';
 
 export default defineConfig([
   // use the built-in globalIgnores utility to globally ignore files in the project
-  globalIgnores(['**/dist/', '**/build/', '**/coverage/', 'packages/web-components-stencil/loader']),
+  globalIgnores(['**/dist/', '**/build/', '**/coverage/', 'packages/web-components-stencil/loader', '**/.next/']),
   {
     // Use the Perfectionist recommended/natural configuration for all possible JavaScript, TypeScript and JSX files
     name: 'perfectionist/recommended/natural',
@@ -63,7 +63,15 @@ export default defineConfig([
     // Use the @eslint/json recommended configuration to lint JSON files
     name: 'eslint/json/recommended',
     files: ['**/*.json'],
+    ignores: ['**/tsconfig*.json'],
     language: 'json/json',
+    ...json.configs.recommended,
+  },
+  {
+    // tsconfig files are JSONC, so allow comments
+    name: 'eslint/json/recommended/jsonc',
+    files: ['**/tsconfig*.json'],
+    language: 'json/jsonc',
     ...json.configs.recommended,
   },
   {

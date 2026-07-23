@@ -1,6 +1,6 @@
-export default {
+const config = {
   extends: ['stylelint-config-standard-scss'],
-  ignoreFiles: ['node_modules', '**/dist/**/*', '**/coverage/**/*', '**/.next/**/*'],
+  ignoreFiles: ['node_modules'],
   plugins: ['stylelint-order', 'stylelint-use-logical'],
   rules: {
     'alpha-value-notation': ['percentage'],
@@ -186,3 +186,5 @@ export default {
     ],
   },
 };
+
+export default config;

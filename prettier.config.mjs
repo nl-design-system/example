@@ -1,7 +1,7 @@
 /**
  * @type {import('prettier').Config}
  */
-export default {
+const prettierConfig = {
   // Use a printWith of 120 characters which is different from the default 80
   printWidth: 120,
   // Use single quotes (') instead of the default double quotes ("), but see below.
@@ -26,3 +26,5 @@ export default {
     },
   ],
 };
+
+export default prettierConfig;
