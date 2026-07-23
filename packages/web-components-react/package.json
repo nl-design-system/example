@@ -36,7 +36,7 @@
     "react": "19.2.7",
     "react-dom": "19.2.7",
     "rimraf": "6.1.2",
-    "typescript": "5.9.3"
+    "typescript": "7.0.2"
   },
   "dependencies": {
     "@stencil/react-output-target": "1.4.0"
