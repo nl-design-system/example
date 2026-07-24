@@ -36,6 +36,9 @@ minimumReleaseAgeExclude:
   - '@rijkshuisstijl-community/*'
   - '@utrecht/*'
 
+overrides:
+  tar@<=7.5.18: ^7.5.19 # GHSA-23hp-3jrh-7fpw
+
 # Configure pnpm to save exact version numbers (not including ^ or ~) in package.json. Lock dependencies to specific
 # versions to ensure reproducible installs and prevent automatic upgrades to newer minor or patch releases.
 saveExact: true
