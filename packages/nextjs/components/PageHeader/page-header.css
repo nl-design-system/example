@@ -1,0 +1,5 @@
+.utrecht-page-header {
+  --utrecht-page-header-background-color: var(--basis-color-accent-1-inverse-bg-default);
+  --utrecht-page-header-content-background-color: var(--basis-color-accent-1-inverse-bg-default);
+  --utrecht-page-header-content-color: var(--basis-color-accent-1-bg-default);
+}

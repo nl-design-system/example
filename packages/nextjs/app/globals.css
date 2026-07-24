@@ -1,4 +1,6 @@
 html,
 body {
+  /* stylelint-disable-next-line */
+  margin: 0;
   min-block-size: 100%;
 }

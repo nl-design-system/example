@@ -45,6 +45,13 @@
     "@nl-design-system-candidate/paragraph-react": "2.2.2",
     "@nl-design-system-candidate/skip-link-css": "1.0.5",
     "@nl-design-system-candidate/skip-link-react": "1.1.7",
+    "@nl-design-system-community/ma-design-tokens": "6.0.0",
+    "@utrecht/page-body-css": "2.1.1",
+    "@utrecht/page-body-react": "1.0.13",
+    "@utrecht/page-footer-css": "4.0.2",
+    "@utrecht/page-footer-react": "1.0.13",
+    "@utrecht/page-header-css": "3.0.2",
+    "@utrecht/page-header-react": "1.0.12",
     "next": "16.2.10",
     "react": "19.2.4",
     "react-dom": "19.2.4"
