@@ -10,7 +10,6 @@ build/
 coverage/
 dist/
 tmp/
-.next/
 
 # Ignore archives
 *.7z
@@ -62,3 +61,7 @@ pnpm-lock.yaml
 
 # Ignore generated files from Stencil
 components.d.ts
+
+# Ignore generated files from Next.js
+.next/
+next-env.d.ts
