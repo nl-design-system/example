@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import '@amsterdam/design-system-tokens/dist/index.css';
 import '@nl-design-system-community/ma-design-tokens/dist/variables.css';
-import './globals.css';
 import { PageBody } from '../components/PageBody/PageBody';
 import { PageFooter } from '../components/PageFooter/PageFooter';
 import { PageHeader } from '../components/PageHeader/PageHeader';
@@ -18,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="ma-theme">
+    <html lang="en" dir="ltr" className="ma-theme">
       <body>
         <SkipLink href="#main">Skip to main content</SkipLink>
 
