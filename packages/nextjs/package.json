@@ -19,7 +19,6 @@
     "lint:js": "eslint",
     "lint:prettier": "prettier --write .",
     "lint": "pnpm run --sequential '/^lint:.+$/'",
-    "prepare": "husky",
     "start": "next start"
   },
   "dependencies": {
