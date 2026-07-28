@@ -1,10 +1,13 @@
 import type { Metadata } from 'next';
 import '@amsterdam/design-system-tokens/dist/index.css';
 import '@nl-design-system-community/ma-design-tokens/dist/variables.css';
+import { Link } from '../components/Link/Link';
+import { Logo } from '../components/Logo';
 import { PageBody } from '../components/PageBody/PageBody';
 import { PageFooter } from '../components/PageFooter/PageFooter';
 import { PageHeader } from '../components/PageHeader/PageHeader';
 import { SkipLink } from '../components/SkipLink/SkipLink';
+import './layout.css';
 
 export const metadata: Metadata = {
   description: 'A Next.js example project using components from the NL Design System',
@@ -21,10 +24,15 @@ export default function RootLayout({
       <body>
         <SkipLink href="#main">Skip to main content</SkipLink>
 
-        <PageHeader>Logo</PageHeader>
+        <PageHeader>
+          <Link href="https://nldesignsystem.nl">
+            <Logo />
+          </Link>
+        </PageHeader>
 
         <PageBody id="main">{children}</PageBody>
-        <PageFooter>Footer</PageFooter>
+
+        <PageFooter />
       </body>
     </html>
   );
