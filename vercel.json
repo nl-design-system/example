@@ -1,8 +1,0 @@
-{
-  "$schema": "https://openapi.vercel.sh/vercel.json",
-  "buildCommand": "pnpm run build",
-  "framework": "storybook",
-  "ignoreCommand": "[[ \"$VERCEL_GIT_COMMIT_AUTHOR_LOGIN\" == \"dependabot[bot]\" || \"$VERCEL_GIT_COMMIT_REF\" == \"gh-pages\" ]]",
-  "installCommand": "pnpm install --frozen-lockfile",
-  "outputDirectory": "packages/storybook/dist"
-}
