@@ -7,18 +7,17 @@ import { LinkList, LinkListLink } from '@/components/LinkList/LinkList';
 import { OrderedList, OrderedListItem } from '@/components/OrderedList/OrderedList';
 import { Paragraph } from '@/components/Paragraph/Paragraph';
 
-const contentSpan = { medium: 6, narrow: 4, wide: 8 } as const;
-const contentStart = { medium: 2, narrow: 1, wide: 3 } as const;
+const contentSpan = 'all' as const;
 
 const Home = () => {
   return (
     <div>
       <Grid paddingVertical="2x-large" gapVertical="2x-large">
-        <GridCell span={contentSpan} start={contentStart}>
+        <GridCell span={contentSpan}>
           <Heading level={1}>NL Design System in Next.js</Heading>
         </GridCell>
 
-        <GridCell span={contentSpan} start={contentStart}>
+        <GridCell span={contentSpan}>
           <Heading level={2}>Purpose</Heading>
           <Paragraph>
             This project shows how you can playfully discover and use components from the{' '}
@@ -31,7 +30,7 @@ const Home = () => {
           </Paragraph>
         </GridCell>
 
-        <GridCell span={contentSpan} start={contentStart}>
+        <GridCell span={contentSpan}>
           <Heading level={2}>Which component maturity should you use?</Heading>
           <Paragraph>
             The NL Design System groups every component by maturity through the{' '}
@@ -79,7 +78,7 @@ const Home = () => {
           </Alert>
         </GridCell>
 
-        <GridCell span={contentSpan} start={contentStart}>
+        <GridCell span={contentSpan}>
           <Heading level={2}>Getting started</Heading>
           <Paragraph>Everything you need to start using the NL Design System in a React application:</Paragraph>
           <OrderedList>
@@ -128,7 +127,7 @@ const Home = () => {
           </OrderedList>
         </GridCell>
 
-        <GridCell span={contentSpan} start={contentStart}>
+        <GridCell span={contentSpan}>
           <Heading level={2}>How to use this project</Heading>
           <Paragraph>
             Each component used on this page follows the steps above and is wrapped in its own file under{' '}
@@ -143,7 +142,7 @@ const Home = () => {
           </Alert>
         </GridCell>
 
-        <GridCell span={contentSpan} start={contentStart}>
+        <GridCell span={contentSpan}>
           <Heading level={2}>Next steps</Heading>
           <Paragraph>Want to continue? Here are two logical next steps:</Paragraph>
           <LinkList>
