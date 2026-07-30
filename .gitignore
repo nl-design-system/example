@@ -63,5 +63,4 @@ pnpm-lock.yaml
 components.d.ts
 
 # Ignore generated files from Next.js
-.next/
 next-env.d.ts
