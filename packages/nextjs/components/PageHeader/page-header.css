@@ -1,0 +1,9 @@
+.utrecht-page-header {
+  --utrecht-page-header-background-color: var(--basis-color-accent-1-inverse-bg-default);
+  --utrecht-page-header-content-background-color: var(--basis-color-accent-1-inverse-bg-default);
+  --utrecht-page-header-content-color: var(--basis-color-accent-1-bg-default);
+  --nl-link-color: currentColor;
+  --nl-link-hover-color: currentColor;
+  --nl-link-active-color: currentColor;
+  --nl-link-visited-color: currentColor;
+}
