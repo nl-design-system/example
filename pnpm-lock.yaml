@@ -246,9 +246,9 @@ importers:
       '@nl-design-system-candidate/skip-link-react':
         specifier: 1.1.7
         version: 1.1.7(@babel/runtime@7.29.7)(react@19.2.4)
-      '@nl-design-system-community/ma-design-tokens':
-        specifier: 6.0.0
-        version: 6.0.0
+      '@nl-design-system-unstable/start-design-tokens':
+        specifier: 7.0.0
+        version: 7.0.0
       '@utrecht/alert-css':
         specifier: 4.0.2
         version: 4.0.2
@@ -2061,8 +2061,8 @@ packages:
       '@babel/runtime': ^7
       react: ^18 || ^19
 
-  '@nl-design-system-community/ma-design-tokens@6.0.0':
-    resolution: {integrity: sha512-ZCbYAj289GsH+xFmTRyb6caTS6QhnXvo1JRbCZobjDKfRc+MzO4gc/Cev4pVZI6YnxskuZbDaAcpmzebziEa5A==}
+  '@nl-design-system-unstable/start-design-tokens@7.0.0':
+    resolution: {integrity: sha512-50+9g1OlY0HNc0ebzvDPJW9hJqDsoEPypcWINRYIRLDfqDo0GT7gRz+rW7xCSxD3sUjUn9Kdv4XJxySy5YolZw==}
 
   '@nl-design-system/eslint-config@2.2.0':
     resolution: {integrity: sha512-vZVbEkOQviJoiOdQT5zOi0GuSCaFrcz9/Awg/iXsmaNoXLkD5WOPVXR7RNlqeP4fPRmrHUvnVPsTDKLeIwbn2w==}
@@ -9112,8 +9112,8 @@ snapshots:
 
   '@jridgewell/remapping@2.3.5':
     dependencies:
-      '@jridgewell/gen-mapping': 0.3.12
-      '@jridgewell/trace-mapping': 0.3.29
+      '@jridgewell/gen-mapping': 0.3.13
+      '@jridgewell/trace-mapping': 0.3.31
 
   '@jridgewell/resolve-uri@3.1.0': {}
 
@@ -9262,7 +9262,7 @@ snapshots:
       clsx: 2.1.1
       react: 19.2.4
 
-  '@nl-design-system-community/ma-design-tokens@6.0.0': {}
+  '@nl-design-system-unstable/start-design-tokens@7.0.0': {}
 
   '@nl-design-system/eslint-config@2.2.0(eslint@9.39.2(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.9.3)':
     dependencies:
