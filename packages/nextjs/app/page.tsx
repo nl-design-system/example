@@ -121,8 +121,8 @@ const Home = () => {
               <Paragraph>
                 The React components can also be imported with CSS included but with the caveat that it can only be
                 client side rendered:
-                <CodeBlock>{"import { Link } from '@nl-design-system-candidate/link-react/css';"}</CodeBlock>
               </Paragraph>
+              <CodeBlock>{"import { Link } from '@nl-design-system-candidate/link-react/css';"}</CodeBlock>
             </OrderedListItem>
             <OrderedListItem>
               <Paragraph>
