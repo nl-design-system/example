@@ -35,45 +35,44 @@ const Home = () => {
           <Paragraph>
             The NL Design System groups every component by maturity through the{' '}
             <Link href="https://nldesignsystem.nl/handboek/estafettemodel/">estafettemodel</Link> (relay model). It
-            ranges from an early, documented need to a production-proven implementation:
+            ranges from a production-proven implementation to a concept with no clear implementation yet:
           </Paragraph>
           <OrderedList>
             <OrderedListItem>
               <Paragraph>
-                <strong>Hall of Fame</strong> — used in production by at least two organizations, audited for
+                <strong>Hall of Fame</strong> used in production by at least two organizations, audited for
                 accessibility, and semantically versioned with a changelog. The safest choice.
               </Paragraph>
             </OrderedListItem>
             <OrderedListItem>
               <Paragraph>
-                <strong>Candidate</strong> — expected to reach Hall of Fame, but still gathering documentation and
+                <strong>Candidate</strong> expected to reach Hall of Fame, but still gathering documentation and
                 feedback, so it can still change. This is what <code>@nl-design-system-candidate</code> offers.
               </Paragraph>
             </OrderedListItem>
             <OrderedListItem>
               <Paragraph>
-                <strong>Community</strong> — built by the community according to NL Design System guidelines and usable
+                <strong>Community</strong> built by the community according to NL Design System guidelines and usable
                 with confidence, but without the stability guarantees of Candidate or Hall of Fame.
               </Paragraph>
             </OrderedListItem>
             <OrderedListItem>
               <Paragraph>
-                <strong>Help wanted</strong> — a documented need without an implementation yet, and a good opportunity
-                to contribute one.
+                <strong>Help wanted</strong> a documented need without an implementation yet, and a good opportunity to
+                contribute one.
               </Paragraph>
             </OrderedListItem>
             <OrderedListItem>
               <Paragraph>
-                <strong>Discouraged</strong> — flagged by user research or accessibility guidelines as something to
-                avoid.
+                <strong>Discouraged</strong> flagged by user research or accessibility guidelines as something to avoid.
               </Paragraph>
             </OrderedListItem>
           </OrderedList>
           <Alert type="info">
             <Paragraph>
-              Rule of thumb: always reach for the most mature (Hall of Fame) version of a component first. If it
-              doesn&apos;t fit your use case, check Candidate implementations, and only then look around the Community
-              components — just know those carry fewer guarantees and may still change.
+              Rule of thumb: always reach for the most mature (Hall of Fame) version of a component first. If it doesn't
+              fit your use case, check Candidate implementations, and only then look around the Community components —
+              just know these can have organisasion specific quirks and may still change.
             </Paragraph>
           </Alert>
         </GridCell>
@@ -84,8 +83,8 @@ const Home = () => {
           <OrderedList>
             <OrderedListItem>
               <Paragraph>
-                Choose an implementation. The NL Design System isn&apos;t a single library, so pick the one (or
-                combination) that fits your project, such as <code>@nl-design-system-candidate</code>,{' '}
+                Choose an implementation. The NL Design System isn't a single library, so pick the one (or combination)
+                that fits your project, such as <code>@nl-design-system-candidate</code>,{' '}
                 <code>@utrecht/component-library-react</code>, or <code>@amsterdam/design-system-react</code>.
               </Paragraph>
             </OrderedListItem>
@@ -96,18 +95,21 @@ const Home = () => {
               </CodeBlock>
             </OrderedListItem>
             <OrderedListItem>
-              <Paragraph>Import the component&apos;s CSS once, wherever you set up your application.</Paragraph>
+              <Paragraph>
+                Import the component's CSS once, wherever you set up your application or with your component
+                implementation.
+              </Paragraph>
               <CodeBlock>{"import '@nl-design-system-candidate/heading-css/heading.css';"}</CodeBlock>
             </OrderedListItem>
             <OrderedListItem>
               <Paragraph>
                 Load a set of design tokens and apply the matching theme class to your root element. This project loads{' '}
-                <code>@nl-design-system-community/ma-design-tokens</code> and applies the <code>ma-theme</code> class in{' '}
-                <code>app/layout.tsx</code>.
+                <code>@nl-design-system-unstable/start-design-tokens</code> and applies the <code>start-theme</code>{' '}
+                class in <code>app/layout.tsx</code>.
               </Paragraph>
               <CodeBlock>
-                {"import '@nl-design-system-community/ma-design-tokens/dist/variables.css';\n\n" +
-                  '<html lang="en" className="ma-theme">'}
+                {"import '@nl-design-system-unstable/start-design-tokens/dist/variables.css';\n\n" +
+                  '<html lang="en" className="start-theme">'}
               </CodeBlock>
             </OrderedListItem>
             <OrderedListItem>
@@ -116,6 +118,11 @@ const Home = () => {
                 {"import { Heading } from '@nl-design-system-candidate/heading-react';\n\n" +
                   'const Example = () => <Heading level={1}>Hello world</Heading>;'}
               </CodeBlock>
+              <Paragraph>
+                The React components can also be imported with CSS included but with the caveat that it can only be
+                client side rendered:
+                <CodeBlock>{"import { Link } from '@nl-design-system-candidate/link-react/css';"}</CodeBlock>
+              </Paragraph>
             </OrderedListItem>
             <OrderedListItem>
               <Paragraph>
