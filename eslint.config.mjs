@@ -68,13 +68,6 @@ export default defineConfig([
     ...json.configs.recommended,
   },
   {
-    // tsconfig files are JSONC, so allow comments
-    name: 'eslint/json/recommended/jsonc',
-    files: ['**/tsconfig*.json'],
-    language: 'json/jsonc',
-    ...json.configs.recommended,
-  },
-  {
     name: 'eslint-plugin-react',
     files: ['**/*.{js,cjs,mjs,jsx,ts,tsx}'],
     plugins: { react },
