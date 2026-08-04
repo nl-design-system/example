@@ -1,5 +1,4 @@
 import { ReactNode } from 'react';
-import { Link } from '../components/Link/Link';
 import { Logo } from '../components/Logo';
 import { Navbar, type NavbarProps } from '../components/Navbar/Navbar';
 import { PageBody } from '../components/PageBody/PageBody';
@@ -20,9 +19,7 @@ const Layout = ({ children, navbarCurrent, theme }: LayoutProps) => {
         <SkipLink href="#main">Skip to main content</SkipLink>
 
         <PageHeader>
-          <Link href="https://nldesignsystem.nl">
-            <Logo />
-          </Link>
+          <Logo />
         </PageHeader>
 
         <Navbar current={navbarCurrent} />
