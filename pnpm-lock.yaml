@@ -249,12 +249,24 @@ importers:
       '@nl-design-system-unstable/start-design-tokens':
         specifier: 7.0.0
         version: 7.0.0
+      '@rijkshuisstijl-community/design-tokens':
+        specifier: 16.1.0
+        version: 16.1.0
       '@utrecht/alert-css':
         specifier: 4.0.2
         version: 4.0.2
       '@utrecht/component-library-react':
         specifier: 14.0.2
         version: 14.0.2(@babel/runtime@7.29.7)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      '@utrecht/nav-bar-css':
+        specifier: 3.2.1
+        version: 3.2.1
+      '@utrecht/nav-bar-react':
+        specifier: 1.1.2
+        version: 1.1.2(@babel/runtime@7.29.7)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      '@utrecht/nav-list-css':
+        specifier: 2.0.1
+        version: 2.0.1
       '@utrecht/ordered-list-css':
         specifier: 4.0.1
         version: 4.0.1
@@ -2217,6 +2229,9 @@ packages:
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
     engines: {node: '>=14'}
 
+  '@rijkshuisstijl-community/design-tokens@16.1.0':
+    resolution: {integrity: sha512-DUr5IMdOiPpQORZT7hwB75cRYccVHPrnCHXWk89NQTepxyUql8U7wmiPAMrezISoPjdS+OZ+2TLXThYOtSx5Ug==}
+
   '@rolldown/pluginutils@1.0.0-rc.3':
     resolution: {integrity: sha512-eybk3TjzzzV97Dlj5c+XrBFW57eTNhzod66y9HrBlzJ6NsCrWCp/2kaPS3K9wJmurBC0Tdw4yPjXKZqlznim3Q==}
 
@@ -3167,6 +3182,13 @@ packages:
 
   '@utrecht/nav-bar-css@3.2.1':
     resolution: {integrity: sha512-GsNkQMgWFHY5RgxkkeHuOcRhu+xQQcmu2wFn3s10xgtH+Q3RhqdxtSegIqPdXy+/NJ1HCmVrn0HX6sYqn1vmuQ==}
+
+  '@utrecht/nav-bar-react@1.1.2':
+    resolution: {integrity: sha512-p7n9Dw9f1XVY5NVglBKQpgtdZpmovaEE8U/DMncyCyR/uWwFk4nPDLN/oANyaz4ufP997RrNlmZNYvPubuTATw==}
+    peerDependencies:
+      '@babel/runtime': '*'
+      react: ^18.0.0 || ^19.0.0
+      react-dom: ^18.0.0 || ^19.0.0
 
   '@utrecht/nav-list-css@2.0.1':
     resolution: {integrity: sha512-8l34qR+XuPwVswb+ZJBZ+kh4zdWWimF+yNQPVEU7PwbfK2xOpQMehq3rPbwP4xDuxaogpC5J9+zbI+MRMifReg==}
@@ -9425,6 +9447,8 @@ snapshots:
   '@pkgjs/parseargs@0.11.0':
     optional: true
 
+  '@rijkshuisstijl-community/design-tokens@16.1.0': {}
+
   '@rolldown/pluginutils@1.0.0-rc.3': {}
 
   '@rollup/plugin-babel@6.1.0(@babel/core@7.28.6(supports-color@10.2.2))(@types/babel__core@7.20.5)(rollup@4.62.2)(supports-color@10.2.2)':
@@ -10487,6 +10511,14 @@ snapshots:
   '@utrecht/multiline-data-css@3.0.1': {}
 
   '@utrecht/nav-bar-css@3.2.1': {}
+
+  '@utrecht/nav-bar-react@1.1.2(@babel/runtime@7.29.7)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
+    dependencies:
+      '@babel/runtime': 7.29.7
+      '@utrecht/nav-bar-css': 3.2.1
+      clsx: 2.1.1
+      react: 19.2.4
+      react-dom: 19.2.4(react@19.2.4)
 
   '@utrecht/nav-list-css@2.0.1': {}
 
