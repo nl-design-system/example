@@ -20,7 +20,7 @@ const Home = () => {
         <GridCell span={contentSpan}>
           <Heading level={2}>Purpose</Heading>
           <Paragraph>
-            This project shows how you can playfully discover and use components from the{' '}
+            This project shows how you can discover and use components from the{' '}
             <Link href="https://nldesignsystem.nl">NL Design System</Link> in a Next.js application.
           </Paragraph>
           <Paragraph>

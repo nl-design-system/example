@@ -4,6 +4,7 @@ import { Grid, GridCell } from '@/components/Grid/Grid';
 import { Heading } from '@/components/Heading/Heading';
 import { OrderedList, OrderedListItem } from '@/components/OrderedList/OrderedList';
 import { Paragraph } from '@/components/Paragraph/Paragraph';
+import { UnorderedList, UnorderedListItem } from '@/components/UnorderedList/UnorderedList';
 import './detail.css';
 
 const contentSpan = 'all' as const;
@@ -49,8 +50,19 @@ const DetailPage = () => {
         </Alert>
         <Alert type="warning">
           <Paragraph>
-            Themes created by governments are proprietary and may only be used by them. The NL-Design
+            Themes created by governments are proprietary and may only be used by them. The NL Design System has several
+            themes that you can use as a starting of point for your own theme or to play around with:
           </Paragraph>
+          <UnorderedList>
+            <UnorderedListItem>
+              <Paragraph>For getting started</Paragraph>
+              <code>@nl-design-system-unstable/start-design-tokens</code>
+            </UnorderedListItem>
+            <UnorderedListItem>
+              <Paragraph>An example theme</Paragraph>
+              <code>@nl-design-system-unstable/voorbeeld-design-tokens</code>
+            </UnorderedListItem>
+          </UnorderedList>
         </Alert>
       </GridCell>
 
