@@ -1,18 +1,5 @@
 .rhc-theme {
-  --basis-color-accent-1-inverse-bg-default: var(--utrecht-page-header-color);
-  --basis-color-accent-1-bg-default: var(--utrecht-page-header-background-color);
+  /* Header */
   --utrecht-page-header-content-padding-block-start: 32px;
-  --utrecht-page-header-content-padding-block-end: 32px;
-  --utrecht-page-header-content-padding-inline: 32px;
-  --utrecht-nav-list-link-font-weight: var(--rhc-nav-bar-heading-font-weight);
-  --utrecht-nav-bar-link-padding-block-start: var(--rhc-nav-bar-link-padding-block-start);
-  --utrecht-nav-bar-link-padding-block-end: var(--rhc-nav-bar-link-padding-block-end);
-  --utrecht-nav-bar-link-padding-inline-start: var(--rhc-nav-bar-link-padding-inline-start);
-  --utrecht-nav-bar-link-padding-inline-end: var(--rhc-nav-bar-link-padding-inline-end);
-}
-
-.example-detail-alert-override {
-  --utrecht-alert-icon-info-color: var(--rhc-color-primary-500);
-  --utrecht-alert-info-background-color: var(--rhc-color-primary-50);
-  --utrecht-alert-info-border-color: var(--rhc-color-primary-500);
+  --utrecht-page-header-content-padding-inline: 16px;
 }

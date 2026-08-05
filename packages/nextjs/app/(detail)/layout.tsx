@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import '@amsterdam/design-system-tokens/dist/index.css';
 import '@rijkshuisstijl-community/design-tokens/dist/index.css';
+import '@rijkshuisstijl-community/components-css/dist/index.css';
 import { Layout } from '@/components/Layout';
 import '../layout.css';
 
