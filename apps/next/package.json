@@ -10,7 +10,7 @@
   "repository": {
     "type": "git+ssh",
     "url": "git@github.com:nl-design-system/example.git",
-    "directory": "packages/nextjs"
+    "directory": "packages/next"
   },
   "scripts": {
     "build": "next build",
