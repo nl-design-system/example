@@ -12,7 +12,7 @@ import './layout.css';
 
 export const metadata: Metadata = {
   description: 'A Next.js example project using components from the NL Design System',
-  title: 'NL Design System',
+  title: 'Next.js example site',
 };
 
 export default function RootLayout({ children }: PropsWithChildren) {
