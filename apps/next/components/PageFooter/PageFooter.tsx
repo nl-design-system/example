@@ -4,7 +4,6 @@ import { Grid, GridCell } from '../Grid/Grid';
 import { Link } from '../Link/Link';
 import { LinkList, LinkListLink } from '../LinkList/LinkList';
 import { Logo } from '../Logo';
-import './page-footer.css';
 
 const PageFooter = () => {
   const logoSpan = { medium: 2, narrow: 4, wide: 2 } as const;

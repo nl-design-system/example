@@ -6,15 +6,15 @@
 
   /* Navbar */
   --rhc-nav-bar-background-color: var(--basis-color-default-bg-default);
-  --rhc-nav-bar-border-color: var(--rhc-color-core-400);
+  --rhc-nav-bar-border-color: var(--basis-color-accent-1-color-document);
   --rhc-nav-bar-color: var(--basis-color-accent-1-color-document);
   --rhc-nav-bar-container-inline-size: 100%;
   --rhc-nav-bar-content-column-gap: var(--basis-space-inline-xl);
   --rhc-nav-bar-heading-font-weight: var(--basis-text-font-weight-default);
-  --rhc-nav-bar-icon-active-color: var(--rhc-color-foreground-on-dark-color);
-  --rhc-nav-bar-icon-color: var(--rhc-color-foreground-default);
+  --rhc-nav-bar-icon-active-color: var(--basis-color-accent-1-color-active);
+  --rhc-nav-bar-icon-color: var(--basis-color-accent-1-color-document);
   --rhc-nav-bar-link-active-background-color: var(--basis-color-accent-1-color-document);
-  --rhc-nav-bar-link-active-color: var(--rhc-color-foreground-on-dark-color);
+  --rhc-nav-bar-link-active-color: var(--basis-color-accent-1-color-active);
   --rhc-nav-bar-link-background-color: var(--basis-color-accent-1-color-document);
   --rhc-nav-bar-link-color: var(--basis-color-accent-1-color-document);
   --rhc-nav-bar-link-column-gap: var(--basis-space-block-lg);
@@ -31,7 +31,7 @@
   --rhc-text-font-family-default: var(--basis-text-font-family-default);
 }
 
-body {
-  /* stylelint-disable-next-line */
-  margin: 0;
+.start-theme .utrecht-page-footer {
+  --ams-link-list-link-inverse-color: var(--basis-color-accent-1-color-document);
+  --ams-link-list-link-inverse-hover-color: var(--basis-color-accent-1-color-hover);
 }
