@@ -1,7 +1,6 @@
 import '@utrecht/page-footer-css/dist/index.css';
 import { PageFooter as UtrechtPageFooter } from '@utrecht/page-footer-react';
 import { Grid, GridCell } from '../Grid/Grid';
-import { Link } from '../Link/Link';
 import { LinkList, LinkListLink } from '../LinkList/LinkList';
 import { Logo } from '../Logo';
 
@@ -15,9 +14,7 @@ const PageFooter = () => {
     <UtrechtPageFooter>
       <Grid paddingVertical="large" gapVertical="large">
         <GridCell span={logoSpan} start={logoStart}>
-          <Link href="https://nldesignsystem.nl">
-            <Logo />
-          </Link>
+          <Logo />
         </GridCell>
 
         <GridCell span={footerLinksSpan} start={footerLinksStart}>
