@@ -5,19 +5,14 @@ import { LinkList, LinkListLink } from '../LinkList/LinkList';
 import { Logo } from '../Logo';
 
 const PageFooter = () => {
-  const logoSpan = { medium: 2, narrow: 4, wide: 2 } as const;
-  const logoStart = { medium: 1, narrow: 1, wide: 1 } as const;
-  const footerLinksSpan = { medium: 4, narrow: 4, wide: 4 } as const;
-  const footerLinksStart = { medium: 3, narrow: 1, wide: 5 } as const;
-
   return (
     <UtrechtPageFooter>
       <Grid paddingVertical="large" gapVertical="large">
-        <GridCell span={logoSpan} start={logoStart}>
+        <GridCell span="all">
           <Logo />
         </GridCell>
 
-        <GridCell span={footerLinksSpan} start={footerLinksStart}>
+        <GridCell span="all">
           <LinkList>
             <LinkListLink href="https://nldesignsystem.nl/community/sluit-je-aan/">Meedoen aan community</LinkListLink>
             <LinkListLink href="https://nldesignsystem.nl/handboek/developer/conventies/">Conventies</LinkListLink>
