@@ -30,8 +30,3 @@
   --rhc-nav-bar-padding-inline: var(--basis-space-inline-xl);
   --rhc-text-font-family-default: var(--basis-text-font-family-default);
 }
-
-.start-theme .utrecht-page-footer {
-  --ams-link-list-link-inverse-color: var(--basis-color-accent-1-color-document);
-  --ams-link-list-link-inverse-hover-color: var(--basis-color-accent-1-color-hover);
-}

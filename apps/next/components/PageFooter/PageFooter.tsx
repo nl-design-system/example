@@ -19,19 +19,13 @@ const PageFooter = () => {
 
         <GridCell span={footerLinksSpan} start={footerLinksStart}>
           <LinkList>
-            <LinkListLink color="inverse" href="https://nldesignsystem.nl/community/sluit-je-aan/">
-              Meedoen aan community
-            </LinkListLink>
-            <LinkListLink color="inverse" href="https://nldesignsystem.nl/handboek/developer/conventies/">
-              Conventies
-            </LinkListLink>
-            <LinkListLink color="inverse" href="https://nldesignsystem.nl/richtlijnen/">
-              Richtlijnen
-            </LinkListLink>
-            <LinkListLink color="inverse" href="https://nldesignsystem.nl/handboek/developer/thema-maken/">
+            <LinkListLink href="https://nldesignsystem.nl/community/sluit-je-aan/">Meedoen aan community</LinkListLink>
+            <LinkListLink href="https://nldesignsystem.nl/handboek/developer/conventies/">Conventies</LinkListLink>
+            <LinkListLink href="https://nldesignsystem.nl/richtlijnen/">Richtlijnen</LinkListLink>
+            <LinkListLink href="https://nldesignsystem.nl/handboek/developer/thema-maken/">
               Zelf thema maken met design tokens
             </LinkListLink>
-            <LinkListLink color="inverse" href="https://nldesignsystem.nl/handboek/developer/infrastructuur/">
+            <LinkListLink href="https://nldesignsystem.nl/handboek/developer/infrastructuur/">
               Infrastructuur
             </LinkListLink>
           </LinkList>

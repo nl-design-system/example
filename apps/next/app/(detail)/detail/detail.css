@@ -3,3 +3,8 @@
   --utrecht-page-header-content-padding-block-start: 32px;
   --utrecht-page-header-content-padding-inline: 16px;
 }
+
+.rhc-theme .utrecht-page-footer {
+  --ams-link-list-link-color: var(--basis-color-accent-1-color-document);
+  --ams-link-list-link-hover-color: var(--basis-color-accent-1-color-hover);
+}
