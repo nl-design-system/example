@@ -151,8 +151,9 @@ const Home = () => {
 
         <GridCell span={contentSpan}>
           <Heading level={2}>Next steps</Heading>
-          <Paragraph>Want to continue? Here are two logical next steps:</Paragraph>
+          <Paragraph>Want to continue? Here's what you can have a look at next:</Paragraph>
           <LinkList>
+            <LinkListLink href="/detail">The detail page with a different theme</LinkListLink>
             <LinkListLink href="https://nldesignsystem.nl">
               Explore nldesignsystem.nl — discover the broader ecosystem and more components
             </LinkListLink>
