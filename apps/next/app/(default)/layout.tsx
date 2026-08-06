@@ -4,10 +4,10 @@ import { PropsWithChildren } from 'react';
 import { Layout } from '@/components/Layout';
 import './default.css';
 
-const RootLayout = ({ children }: PropsWithChildren) => (
+const DefaultLayout = ({ children }: PropsWithChildren) => (
   <Layout navbarCurrent="home" theme="start-theme">
     {children}
   </Layout>
 );
 
-export default RootLayout;
+export default DefaultLayout;
