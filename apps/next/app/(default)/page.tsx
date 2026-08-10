@@ -14,14 +14,18 @@ const Home = () => {
     <div>
       <Grid paddingVertical="2x-large" gapVertical="2x-large">
         <GridCell span={contentSpan}>
-          <Heading level={1}>NL Design System in Next.js</Heading>
+          <Heading level={1}>Getting started with the NL Design System</Heading>
         </GridCell>
-
         <GridCell span={contentSpan}>
           <Heading level={2}>Purpose</Heading>
           <Paragraph>
-            This project shows how you can discover and use components from the{' '}
-            <Link href="https://nldesignsystem.nl">NL Design System</Link> in a Next.js application.
+            The <Link href="https://nldesignsystem.nl">NL Design System</Link> grows bottom-up: developers build
+            components, share them with the community, and together help them mature into Candidate and, eventually,
+            Hall of Fame status. Using a component is often the first step toward contributing one.
+          </Paragraph>
+          <Paragraph>
+            This project shows how you can discover and use components from the NL Design System in a Next.js
+            application and doubles as a starting point if you want to build a component of your own.
           </Paragraph>
           <Paragraph>
             This page deliberately combines components from multiple implementations:{' '}
@@ -31,35 +35,36 @@ const Home = () => {
         </GridCell>
 
         <GridCell span={contentSpan}>
-          <Heading level={2}>Which component maturity should you use?</Heading>
+          <Heading level={2}>Which component should you use?</Heading>
           <Paragraph>
-            The NL Design System groups every component by maturity through the{' '}
+            The NL Design System groups every component through the{' '}
             <Link href="https://nldesignsystem.nl/handboek/estafettemodel/">estafettemodel</Link> (relay model). It
-            ranges from a production-proven implementation to a concept with no clear implementation yet:
+            ranges from a documented need with no implementation yet, to a production-proven implementation used across
+            organisations:
           </Paragraph>
           <OrderedList>
             <OrderedListItem>
               <Paragraph>
-                <strong>Hall of Fame</strong> used in production by at least two organizations, audited for
-                accessibility, and semantically versioned with a changelog. The safest choice.
-              </Paragraph>
-            </OrderedListItem>
-            <OrderedListItem>
-              <Paragraph>
-                <strong>Candidate</strong> expected to reach Hall of Fame, but still gathering documentation and
-                feedback, so it can still change. This is what <code>@nl-design-system-candidate</code> offers.
+                <strong>Help wanted</strong> a documented need for a specific implementation. It has a clear description
+                and use-case. Ready to be developed into a component for each organisation that needs it
               </Paragraph>
             </OrderedListItem>
             <OrderedListItem>
               <Paragraph>
                 <strong>Community</strong> built by the community according to NL Design System guidelines and usable
-                with confidence, but without the stability guarantees of Candidate or Hall of Fame.
+                with confidence. It can contain community specific quirks.
               </Paragraph>
             </OrderedListItem>
             <OrderedListItem>
               <Paragraph>
-                <strong>Help wanted</strong> a documented need without an implementation yet, and a good opportunity to
-                contribute one.
+                <strong>Candidate</strong> expected to reach Hall of Fame, but needs some hardening by gathering
+                documentation and feedback, so it can still change.
+              </Paragraph>
+            </OrderedListItem>
+            <OrderedListItem>
+              <Paragraph>
+                <strong>Hall of Fame</strong> used in production by at least two organizations, audited for
+                accessibility, and semantically versioned with a changelog.
               </Paragraph>
             </OrderedListItem>
             <OrderedListItem>
@@ -70,15 +75,42 @@ const Home = () => {
           </OrderedList>
           <Alert type="info">
             <Paragraph>
-              Rule of thumb: always reach for the most mature (Hall of Fame) version of a component first. If it doesn't
-              fit your use case, check Candidate implementations, and only then look around the Community components —
-              just know these can have organisasion specific quirks and may still change.
+              Rule of thumb: if a mature (Hall of Fame or Candidate) component already exists for your use case, reach
+              for that first. If it doesn't exist yet, or it doesn't fit your needs, create your own — share it with the
+              community, and help it grow toward Candidate.
             </Paragraph>
           </Alert>
         </GridCell>
 
         <GridCell span={contentSpan}>
-          <Heading level={2}>Getting started</Heading>
+          <Heading level={2}>Finding components</Heading>
+          <Paragraph>Before building a component yourself, check whether it already exists:</Paragraph>
+          <OrderedList>
+            <OrderedListItem>
+              <Paragraph>
+                Search <Link href="https://nldesignsystem.nl/componenten/">nldesignsystem.nl/componenten/</Link>, the
+                central catalog of components across all NL Design System implementations.
+              </Paragraph>
+            </OrderedListItem>
+            <OrderedListItem>
+              <Paragraph>
+                If you can't find what you need there, browse the individual implementation repositories on GitHub and
+                their Storybooks — for example{' '}
+                <Link href="https://github.com/nl-design-system/rijkshuisstijl-community/tree/main/packages/components-react">
+                  Rijkshuisstijl on GitHub
+                </Link>{' '}
+                and its <Link href="https://rijkshuisstijl-community.vercel.app/">Storybook</Link>, or{' '}
+                <Link href="https://github.com/nl-design-system/utrecht/blob/main/packages/component-library-react/">
+                  Utrecht on GitHub
+                </Link>{' '}
+                and its <Link href="https://nl-design-system.github.io/utrecht/storybook/">Storybook</Link>.
+              </Paragraph>
+            </OrderedListItem>
+          </OrderedList>
+        </GridCell>
+
+        <GridCell span={contentSpan}>
+          <Heading level={2}>Installing your first component</Heading>
           <Paragraph>Everything you need to start using the NL Design System in a React application:</Paragraph>
           <OrderedList>
             <OrderedListItem>
@@ -111,6 +143,13 @@ const Home = () => {
                 {"import '@nl-design-system-unstable/start-design-tokens/dist/variables.css';\n\n" +
                   '<html lang="en" className="start-theme">'}
               </CodeBlock>
+              <Alert type="warning">
+                <Paragraph>
+                  Your chosen component might be using design tokens that have not been defined in your theme file. This
+                  means you need to assign these yourself. Generally it's best to do this in a single css file to have
+                  all the custom variables in a single location.
+                </Paragraph>
+              </Alert>
             </OrderedListItem>
             <OrderedListItem>
               <Paragraph>Import and render the component.</Paragraph>
@@ -125,11 +164,7 @@ const Home = () => {
               <CodeBlock>{"import { Link } from '@nl-design-system-candidate/link-react/css';"}</CodeBlock>
             </OrderedListItem>
             <OrderedListItem>
-              <Paragraph>
-                Repeat for every component you need, and browse{' '}
-                <Link href="https://nldesignsystem.nl/componenten/">nldesignsystem.nl/componenten/</Link> to discover
-                which components exist and in which implementations.
-              </Paragraph>
+              <Paragraph>Repeat for every component you need.</Paragraph>
             </OrderedListItem>
           </OrderedList>
         </GridCell>
@@ -141,12 +176,6 @@ const Home = () => {
             <code>components/</code>, so you can see the install and import steps applied for real. Open a component in
             that folder to see the pattern.
           </Paragraph>
-          <Alert type="info">
-            <Paragraph>
-              Tip: start at <Link href="https://nldesignsystem.nl/componenten/">nldesignsystem.nl/componenten/</Link> to
-              discover which components are available and in which implementations, before building something yourself.
-            </Paragraph>
-          </Alert>
         </GridCell>
 
         <GridCell span={contentSpan}>
@@ -157,7 +186,9 @@ const Home = () => {
             <LinkListLink href="https://nldesignsystem.nl">
               Explore nldesignsystem.nl — discover the broader ecosystem and more components
             </LinkListLink>
-
+            <LinkListLink href="https://github.com/nl-design-system">
+              Head to github.com/nl-design-system — build a component, open an issue, or pick up a Help wanted item
+            </LinkListLink>
             <LinkListLink href="https://nl-design-system.github.io/example/">
               View the Storybook for this project — a starting point for implementing your own design system
             </LinkListLink>
