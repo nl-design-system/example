@@ -1,7 +1,7 @@
 import { NavBar } from '@rijkshuisstijl-community/navigation-bar-react';
 
 export interface NavbarProps {
-  current: 'home' | 'detail';
+  current: 'detail' | 'form' | 'home';
 }
 
 const Navbar = ({ current }: NavbarProps) => (
@@ -18,6 +18,12 @@ const Navbar = ({ current }: NavbarProps) => (
         'aria-current': current === 'detail' ? 'page' : undefined,
         href: '/detail',
         label: 'Detail page',
+      },
+      {
+        id: 'form',
+        'aria-current': current === 'form' ? 'page' : undefined,
+        href: '/form',
+        label: 'Form',
       },
     ]}
   />
