@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import { PropsWithChildren } from 'react';
-import './root.css';
 
 export const metadata: Metadata = {
   description: 'A Next.js example project using components from the NL Design System',
