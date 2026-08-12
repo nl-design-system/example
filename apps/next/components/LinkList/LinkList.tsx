@@ -1,6 +1,4 @@
-'use client';
-
-import { LinkList as AmsterdamLinkList } from '@amsterdam/design-system-react';
+import { LinkList as AmsterdamLinkList } from '@amsterdam/design-system-react/dist/LinkList';
 import '@amsterdam/design-system-css/dist/icon/icon.css';
 import '@amsterdam/design-system-css/dist/link-list/link-list.css';
 
