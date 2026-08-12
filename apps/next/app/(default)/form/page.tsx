@@ -47,19 +47,20 @@ const FormPage = () => {
         </Field>
 
         <FieldSet>
-          <FieldSetLegend>Preferred contact time</FieldSetLegend>
-
-          <div className="example-form-page__option">
-            <Radio id="contact-time-morning" name="contact-time" value="morning" />
-            <Label htmlFor="contact-time-morning">Morning</Label>
-          </div>
-          <div className="example-form-page__option">
-            <Radio defaultChecked id="contact-time-afternoon" name="contact-time" value="afternoon" />
-            <Label htmlFor="contact-time-afternoon">Afternoon</Label>
-          </div>
-          <div className="example-form-page__option">
-            <Radio id="contact-time-evening" name="contact-time" value="evening" />
-            <Label htmlFor="contact-time-evening">Evening</Label>
+          <div className="example-formpage__radio-group">
+            <FieldSetLegend>Preferred contact time</FieldSetLegend>
+            <div className="example-form-page__option">
+              <Radio id="contact-time-morning" name="contact-time" value="morning" />
+              <Label htmlFor="contact-time-morning">Morning</Label>
+            </div>
+            <div className="example-form-page__option">
+              <Radio defaultChecked id="contact-time-afternoon" name="contact-time" value="afternoon" />
+              <Label htmlFor="contact-time-afternoon">Afternoon</Label>
+            </div>
+            <div className="example-form-page__option">
+              <Radio id="contact-time-evening" name="contact-time" value="evening" />
+              <Label htmlFor="contact-time-evening">Evening</Label>
+            </div>
           </div>
         </FieldSet>
 
