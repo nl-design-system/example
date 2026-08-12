@@ -79,6 +79,12 @@ A theme is a design tokens package plus a class name applied to an element (usua
 `app/(detail)/layout.tsx` for an example that scopes a theme to a single route group, and `app/(detail)/detail/page.tsx`
 for the full explanation.
 
+## Why Next.js?
+
+This example uses [Next.js](https://nextjs.org/) because it's one of the most widely adopted React frameworks, so
+its patterns will look familiar to most teams evaluating the NL Design System. The same NL Design System components work in any React setup, but it's a
+convenient, widely-known host for demonstrating them.
+
 ## Related
 
 - [Root repository README](../../README.md) — monorepo setup, contributing, and license information
