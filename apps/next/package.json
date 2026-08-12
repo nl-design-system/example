@@ -37,7 +37,6 @@
     "@rijkshuisstijl-community/navigation-bar-react": "1.0.2",
     "@utrecht/alert-css": "4.0.2",
     "@utrecht/component-library-react": "14.0.2",
-    "@utrecht/ordered-list-css": "4.0.1",
     "@utrecht/page-body-css": "2.1.1",
     "@utrecht/page-body-react": "1.0.13",
     "@utrecht/page-footer-css": "4.0.2",
@@ -46,7 +45,6 @@
     "@utrecht/page-header-react": "1.0.12",
     "@utrecht/root-css": "4.1.2",
     "@utrecht/root-react": "1.0.17",
-    "@utrecht/unordered-list-css": "3.1.1",
     "next": "16.2.10",
     "react": "19.2.4",
     "react-dom": "19.2.4"
