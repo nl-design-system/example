@@ -6,7 +6,6 @@ export interface NavbarProps {
 
 const Navbar = ({ current }: NavbarProps) => (
   <NavBar
-    aria-label="Hoofdnavigatie"
     items={[
       {
         id: 'home',
