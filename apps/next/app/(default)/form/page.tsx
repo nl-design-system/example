@@ -26,7 +26,7 @@ const FormPage = () => {
         not the <Code>Grid</Code> component used elsewhere on this site.
       </Paragraph>
 
-      <form className="example-form-page__fields">
+      <form className="example-form-page__fields" method="POST">
         <Field>
           <Label htmlFor="name">Name</Label>
           <TextInput autoComplete="name" id="name" inputRequired name="name" required />
