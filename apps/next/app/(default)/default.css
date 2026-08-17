@@ -29,4 +29,18 @@
   --rhc-nav-bar-max-inline-size: var(--basis-page-max-inline-size);
   --rhc-nav-bar-padding-inline: var(--basis-space-inline-xl);
   --rhc-text-font-family-default: var(--basis-text-font-family-default);
+
+  /* Note */
+  --utrecht-note-info-color: var(--basis-color-info-color-document);
+  --utrecht-note-info-background-color: var(--basis-color-info-bg-default);
+  --utrecht-note-info-border-color: var(--basis-color-info-border-default);
+  --utrecht-note-info-border-width: var(--basis-border-width-sm);
+  --utrecht-space-around: var(--basis-space-inline-md);
+  --utrecht-note-border-radius: var(--basis-border-radius-sm);
+  --utrecht-note-border-width: var(--basis-border-width-md);
+  --utrecht-note-row-gap: var(--basis-space-inline-md);
+  --utrecht-note-padding-block-start: var(--basis-space-inline-xl);
+  --utrecht-note-padding-block-end: var(--basis-space-inline-xl);
+  --utrecht-note-padding-inline-start: var(--basis-space-inline-xl);
+  --utrecht-note-padding-inline-end: var(--basis-space-inline-xl);
 }

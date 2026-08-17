@@ -47,6 +47,8 @@
     "@utrecht/form-fieldset-css": "3.0.1",
     "@utrecht/form-label-css": "3.0.1",
     "@utrecht/form-toggle-css": "3.0.1",
+    "@utrecht/note-css": "1.0.0",
+    "@utrecht/note-react": "1.0.0",
     "@utrecht/ordered-list-css": "4.0.1",
     "@utrecht/page-body-css": "2.1.1",
     "@utrecht/page-body-react": "1.0.13",

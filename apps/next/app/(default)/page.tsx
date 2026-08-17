@@ -5,6 +5,7 @@ import { Grid, GridCell } from '@/components/Grid/Grid';
 import { Heading } from '@/components/Heading/Heading';
 import { Link } from '@/components/Link/Link';
 import { LinkList, LinkListLink } from '@/components/LinkList/LinkList';
+import { Note } from '@/components/Note/Note';
 import { OrderedList, OrderedListItem } from '@/components/OrderedList/OrderedList';
 import { Paragraph } from '@/components/Paragraph/Paragraph';
 
@@ -74,13 +75,13 @@ const Home = () => {
               </Paragraph>
             </OrderedListItem>
           </OrderedList>
-          <Alert type="info">
+          <Note purpose="info">
             <Paragraph>
               Rule of thumb: if a mature (Hall of Fame or Candidate) component already exists for your use case, reach
               for that first. If it doesn't exist yet, or it doesn't fit your needs, create your own — share it with the
               community, and help it grow toward Candidate.
             </Paragraph>
-          </Alert>
+          </Note>
         </GridCell>
 
         <GridCell span={contentSpan}>
