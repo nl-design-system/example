@@ -1,25 +1,25 @@
 .example-form-page {
   display: flex;
   flex-direction: column;
-  gap: var(--basis-space-block-xl);
   padding-block: var(--basis-space-block-2xl);
   padding-inline: var(--basis-space-inline-xl);
+  row-gap: var(--basis-space-block-xl);
 }
 
 .example-form-page__fields {
   display: flex;
   flex-direction: column;
-  gap: var(--basis-space-block-2xl);
+  row-gap: var(--basis-space-block-2xl);
 }
 
 .example-formpage__radio-group {
   display: flex;
   flex-direction: column;
-  gap: var(--basis-space-block-md);
+  row-gap: var(--basis-space-block-md);
 }
 
 .example-form-page__option {
   align-items: center;
+  column-gap: var(--basis-space-inline-sm);
   display: flex;
-  gap: var(--basis-space-inline-sm);
 }
