@@ -120,7 +120,7 @@ export default {
         ],
       },
     ],
-    'property-disallowed-list': [['border', 'margin', 'padding']],
+    'property-disallowed-list': [['border', 'margin', 'padding', 'gap']],
     'property-no-unknown': [true],
     'property-no-vendor-prefix': null,
     'rule-empty-line-before': null,
