@@ -42,7 +42,7 @@ The app is served at [http://localhost:3000](http://localhost:3000).
 
 | Script       | Description                                      |
 | ------------ | ------------------------------------------------ |
-| `pnpm dev`   | Start the Next.js dev server                     |
+| `pnpm run dev`   | Start the Next.js dev server                     |
 | `pnpm build` | Build the app for production (output in `dist/`) |
 | `pnpm start` | Start the production server (run `build` first)  |
 | `pnpm clean` | Remove the `dist/` output directory              |

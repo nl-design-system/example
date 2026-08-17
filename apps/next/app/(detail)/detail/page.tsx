@@ -19,7 +19,7 @@ const DetailPage = () => {
           project&apos;s default <code>start-theme</code>. The rest of the site keeps its own theme, so this page lives
           in its own route group, <code>app/(detail)/</code>, with its own root layout,{' '}
           <code>app/(detail)/layout.tsx</code>, that applies the <code>rhc-theme</code> class and imports{' '}
-          <code>@rijkshuisstijl-community/design-tokens</code> instead.
+          <Code>@rijkshuisstijl-community/design-tokens</Code> instead.
         </Paragraph>
       </GridCell>
 
