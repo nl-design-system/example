@@ -1,4 +1,5 @@
 import { Alert } from '@/components/Alert/Alert';
+import { Code } from '@/components/Code/Code';
 import { CodeBlock } from '@/components/CodeBlock/CodeBlock';
 import { Grid, GridCell } from '@/components/Grid/Grid';
 import { Heading } from '@/components/Heading/Heading';
@@ -29,8 +30,8 @@ const Home = () => {
           </Paragraph>
           <Paragraph>
             This page deliberately combines components from multiple implementations:{' '}
-            <code>@nl-design-system-candidate</code>, <code>@utrecht/component-library-react</code>, and{' '}
-            <code>@amsterdam/design-system-react</code>.
+            <Code>@nl-design-system-candidate</Code>, <Code>@utrecht/component-library-react</Code>, and{' '}
+            <Code>@amsterdam/design-system-react</Code>.
           </Paragraph>
         </GridCell>
 
@@ -116,8 +117,8 @@ const Home = () => {
             <OrderedListItem>
               <Paragraph>
                 Choose an implementation. The NL Design System isn't a single library, so pick the one (or combination)
-                that fits your project, such as <code>@nl-design-system-candidate</code>,{' '}
-                <code>@utrecht/component-library-react</code>, or <code>@amsterdam/design-system-react</code>.
+                that fits your project, such as <Code>@nl-design-system-candidate</Code>,{' '}
+                <Code>@utrecht/component-library-react</Code>, or <Code>@amsterdam/design-system-react</Code>.
               </Paragraph>
             </OrderedListItem>
             <OrderedListItem>
@@ -136,8 +137,8 @@ const Home = () => {
             <OrderedListItem>
               <Paragraph>
                 Load a set of design tokens and apply the matching theme class to your root element. This project loads{' '}
-                <code>@nl-design-system-unstable/start-design-tokens</code> and applies the <code>start-theme</code>{' '}
-                class in <code>app/layout.tsx</code>.
+                <Code>@nl-design-system-unstable/start-design-tokens</Code> and applies the <Code>start-theme</Code>{' '}
+                class in <Code>app/layout.tsx</Code>.
               </Paragraph>
               <CodeBlock>
                 {"import '@nl-design-system-unstable/start-design-tokens/dist/variables.css';\n\n" +
@@ -173,7 +174,7 @@ const Home = () => {
           <Heading level={2}>How to use this project</Heading>
           <Paragraph>
             Each component used on this page follows the steps above and is wrapped in its own file under{' '}
-            <code>components/</code>, so you can see the install and import steps applied for real. Open a component in
+            <Code>components/</Code>, so you can see the install and import steps applied for real. Open a component in
             that folder to see the pattern.
           </Paragraph>
         </GridCell>

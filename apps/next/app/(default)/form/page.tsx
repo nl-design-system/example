@@ -1,5 +1,6 @@
 import { Button } from '@/components/Button/Button';
 import { Checkbox } from '@/components/Checkbox/Checkbox';
+import { Code } from '@/components/Code/Code';
 import { ErrorMessage } from '@/components/ErrorMessage/ErrorMessage';
 import { Field } from '@/components/Field/Field';
 import { FieldSet, FieldSetLegend } from '@/components/FieldSet/FieldSet';
@@ -20,9 +21,9 @@ const FormPage = () => {
       <Paragraph>
         This page gathers the Utrecht Design System&apos;s form elements into a single contact form: text inputs, a
         radio group, a select, a text area, a checkbox, and a toggle. Every component here can render as a Server
-        Component &mdash; only <code>Checkbox</code> needs to run on the client, since it uses React hooks internally to
+        Component &mdash; only <Code>Checkbox</Code> needs to run on the client, since it uses React hooks internally to
         support an indeterminate state. The page itself is laid out with a plain flex column and token-based spacing,
-        not the <code>Grid</code> component used elsewhere on this site.
+        not the <Code>Grid</Code> component used elsewhere on this site.
       </Paragraph>
 
       <form className="example-form-page__fields">

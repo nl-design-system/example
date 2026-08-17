@@ -1,4 +1,5 @@
 import { Alert } from '@/components/Alert/Alert';
+import { Code } from '@/components/Code/Code';
 import { CodeBlock } from '@/components/CodeBlock/CodeBlock';
 import { Grid, GridCell } from '@/components/Grid/Grid';
 import { Heading } from '@/components/Heading/Heading';
@@ -16,9 +17,9 @@ const DetailPage = () => {
         <Heading level={1}>Detail page: a per-route theme</Heading>
         <Paragraph>
           This entire page: header, footer, and content uses the Rijkshuisstijl Community theme instead of this
-          project&apos;s default <code>start-theme</code>. The rest of the site keeps its own theme, so this page lives
-          in its own route group, <code>app/(detail)/</code>, with its own root layout,{' '}
-          <code>app/(detail)/layout.tsx</code>, that applies the <code>rhc-theme</code> class and imports{' '}
+          project&apos;s default <Code>start-theme</Code>. The rest of the site keeps its own theme, so this page lives
+          in its own route group, <Code>app/(detail)/</Code>, with its own root layout,{' '}
+          <Code>app/(detail)/layout.tsx</Code>, that applies the <Code>rhc-theme</Code> class and imports{' '}
           <Code>@rijkshuisstijl-community/design-tokens</Code> instead.
         </Paragraph>
       </GridCell>
@@ -38,14 +39,14 @@ const DetailPage = () => {
           <OrderedListItem>
             <Paragraph>
               Apply the theme&apos;s class name to whichever element should carry it. For a single, global theme,
-              that&apos;s the <code>&lt;html&gt;</code> element in <code>app/layout.tsx</code>.
+              that&apos;s the <Code>&lt;html&gt;</Code> element in <Code>app/layout.tsx</Code>.
             </Paragraph>
           </OrderedListItem>
         </OrderedList>
         <Alert type="info">
           <Paragraph>
             Every theme documents its own class name and token package — check the theme&apos;s README instead of
-            assuming <code>rhc-theme</code> or <code>start-theme</code> apply universally.
+            assuming <Code>rhc-theme</Code> or <Code>start-theme</Code> apply universally.
           </Paragraph>
         </Alert>
         <Alert type="warning">
@@ -56,11 +57,11 @@ const DetailPage = () => {
           <UnorderedList>
             <UnorderedListItem>
               <Paragraph>For getting started</Paragraph>
-              <code>@nl-design-system-unstable/start-design-tokens</code>
+              <Code>@nl-design-system-unstable/start-design-tokens</Code>
             </UnorderedListItem>
             <UnorderedListItem>
               <Paragraph>An example theme</Paragraph>
-              <code>@nl-design-system-unstable/voorbeeld-design-tokens</code>
+              <Code>@nl-design-system-unstable/voorbeeld-design-tokens</Code>
             </UnorderedListItem>
           </UnorderedList>
         </Alert>
@@ -71,7 +72,7 @@ const DetailPage = () => {
         <Paragraph>
           Most components have defined their own custom tokens. So you can easily overwrite them to create your own
           theme. For this page several CSS variables have been overwritten. Have a look in{' '}
-          <code>/app/(detail)/detail/detail.css</code>.
+          <Code>/app/(detail)/detail/detail.css</Code>.
         </Paragraph>
       </GridCell>
     </Grid>
