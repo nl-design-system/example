@@ -34,6 +34,7 @@ const FormPage = () => {
 
         <Field invalid>
           <Label htmlFor="email">Email address</Label>
+          <ErrorMessage id="email-error">Enter a valid email address, such as name@example.com.</ErrorMessage>
           <TextInput
             aria-describedby="email-error"
             defaultValue="not-an-email"
@@ -44,7 +45,6 @@ const FormPage = () => {
             required
             type="email"
           />
-          <ErrorMessage id="email-error">Enter a valid email address, such as name@example.com.</ErrorMessage>
         </Field>
 
         <FieldSet>
