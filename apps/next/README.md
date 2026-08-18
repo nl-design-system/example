@@ -4,8 +4,7 @@
 
 A Next.js application that shows how to discover and use components from the [NL Design System](https://nldesignsystem.nl)
 in a real app. The homepage deliberately mixes components from multiple implementations
-(`@nl-design-system-candidate`, `@utrecht/component-library-react`, and `@amsterdam/design-system-react`), and the
-`/detail` page shows how to apply a different theme to just part of a site.
+(`@nl-design-system-candidate`, `@utrecht/component-library-react`, and `@amsterdam/design-system-react`), and [the detail page](http://localhost:3000/detail) shows how to apply a different theme to just part of a site.
 
 ## Setup
 
@@ -40,12 +39,12 @@ The app is served at [http://localhost:3000](http://localhost:3000).
 
 ## Available scripts
 
-| Script       | Description                                      |
-| ------------ | ------------------------------------------------ |
-| `pnpm run dev`   | Start the Next.js dev server                     |
-| `pnpm build` | Build the app for production (output in `dist/`) |
-| `pnpm start` | Start the production server (run `build` first)  |
-| `pnpm clean` | Remove the `dist/` output directory              |
+| Script         | Description                                      |
+| -------------- | ------------------------------------------------ |
+| `pnpm run dev` | Start the Next.js dev server                     |
+| `pnpm build`   | Build the app for production (output in `dist/`) |
+| `pnpm start`   | Start the production server (run `build` first)  |
+| `pnpm clean`   | Remove the `dist/` output directory              |
 
 ## How to use this project
 
