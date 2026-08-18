@@ -1,7 +1,7 @@
 .rhc-theme {
   /* Header */
-  --utrecht-page-header-content-padding-block-start: 32px;
-  --utrecht-page-header-content-padding-inline: 16px;
+  --utrecht-page-header-content-padding-block-start: var(--basis-size-sm);
+  --utrecht-page-header-content-padding-inline: var(--basis-size-2xs);
 }
 
 .rhc-theme .utrecht-page-footer {
