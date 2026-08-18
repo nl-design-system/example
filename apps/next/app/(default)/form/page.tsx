@@ -1,3 +1,4 @@
+import { ActionGroup } from '@/components/ActionGroup/ActionGroup';
 import { Button } from '@/components/Button/Button';
 import { Checkbox } from '@/components/Checkbox/Checkbox';
 import { Code } from '@/components/Code/Code';
@@ -82,8 +83,9 @@ const FormPage = () => {
           <Label htmlFor="newsletter">Subscribe to the newsletter</Label>
           <Switch id="newsletter" name="newsletter" value="yes" />
         </Field>
-
-        <Button type="submit">Send message</Button>
+        <ActionGroup>
+          <Button type="submit">Send message</Button>
+        </ActionGroup>
       </form>
     </div>
   );

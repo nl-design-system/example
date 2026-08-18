@@ -150,12 +150,15 @@ importers:
       '@rijkshuisstijl-community/navigation-bar-react':
         specifier: 1.0.2
         version: 1.0.2(@babel/runtime@7.29.7)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
+      '@utrecht/action-group-css':
+        specifier: 4.0.1
+        version: 4.0.1
+      '@utrecht/action-group-react':
+        specifier: 1.1.6
+        version: 1.1.6(@babel/runtime@7.29.7)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       '@utrecht/alert-css':
         specifier: 4.0.2
         version: 4.0.2
-      '@utrecht/button-css':
-        specifier: 4.0.1
-        version: 4.0.1
       '@utrecht/checkbox-css':
         specifier: 3.1.0
         version: 3.1.0

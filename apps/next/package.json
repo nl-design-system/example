@@ -39,6 +39,8 @@
     "@nl-design-system-unstable/start-design-tokens": "7.0.0",
     "@rijkshuisstijl-community/design-tokens": "16.1.0",
     "@rijkshuisstijl-community/navigation-bar-react": "1.0.2",
+    "@utrecht/action-group-css": "4.0.1",
+    "@utrecht/action-group-react": "1.1.6",
     "@utrecht/alert-css": "4.0.2",
     "@utrecht/checkbox-css": "3.1.0",
     "@utrecht/component-library-react": "14.0.2",
