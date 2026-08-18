@@ -8,7 +8,7 @@ import { Heading } from '@/components/Heading/Heading';
 import { Hint } from '@/components/Hint/Hint';
 import { Label } from '@/components/Label/Label';
 import { Paragraph } from '@/components/Paragraph/Paragraph';
-import { Radio } from '@/components/Radio/Radio';
+import { RadioButton } from '@/components/RadioButton/RadioButton';
 import { Switch } from '@/components/Switch/Switch';
 import { TextArea } from '@/components/TextArea/TextArea';
 import { TextInput } from '@/components/TextInput/TextInput';
@@ -51,15 +51,15 @@ const FormPage = () => {
           <div className="example-formpage__radio-group">
             <FieldSetLegend>Preferred contact time</FieldSetLegend>
             <div className="example-form-page__option">
-              <Radio id="contact-time-morning" name="contact-time" value="morning" />
+              <RadioButton id="contact-time-morning" name="contact-time" value="morning" />
               <Label htmlFor="contact-time-morning">Morning</Label>
             </div>
             <div className="example-form-page__option">
-              <Radio defaultChecked id="contact-time-afternoon" name="contact-time" value="afternoon" />
+              <RadioButton defaultChecked id="contact-time-afternoon" name="contact-time" value="afternoon" />
               <Label htmlFor="contact-time-afternoon">Afternoon</Label>
             </div>
             <div className="example-form-page__option">
-              <Radio id="contact-time-evening" name="contact-time" value="evening" />
+              <RadioButton id="contact-time-evening" name="contact-time" value="evening" />
               <Label htmlFor="contact-time-evening">Evening</Label>
             </div>
           </div>
