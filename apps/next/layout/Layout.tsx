@@ -7,6 +7,7 @@ import { Navbar } from '@/layout/Navbar/Navbar';
 import { PageFooter } from '@/layout/PageFooter/PageFooter';
 import { PageHeader } from '@/layout/PageHeader/PageHeader';
 import '@utrecht/root-css/dist/index.css';
+import '@utrecht/page-layout-css/dist/index.css';
 
 type NavbarCurrent = 'detail' | 'form' | 'home';
 
@@ -30,7 +31,7 @@ const Layout = ({ children, navbarCurrent, theme }: LayoutProps) => {
 
   return (
     <Root lang="en" dir="ltr" className={theme}>
-      <body>
+      <body className="utrecht-page-layout">
         <SkipLink href="#main">Skip to main content</SkipLink>
 
         <PageHeader>
