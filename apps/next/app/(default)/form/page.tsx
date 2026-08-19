@@ -5,8 +5,8 @@ import { Code } from '@/components/Code/Code';
 import { ErrorMessage } from '@/components/ErrorMessage/ErrorMessage';
 import { Field } from '@/components/Field/Field';
 import { FieldSet, FieldSetLegend } from '@/components/FieldSet/FieldSet';
+import { FormFieldDescription } from '@/components/FormFieldDescription/FormFieldDescription';
 import { Heading } from '@/components/Heading/Heading';
-import { Hint } from '@/components/Hint/Hint';
 import { Label } from '@/components/Label/Label';
 import { Paragraph } from '@/components/Paragraph/Paragraph';
 import { RadioButton } from '@/components/RadioButton/RadioButton';
@@ -68,7 +68,7 @@ const FormPage = () => {
 
         <Field>
           <Label htmlFor="message">Message</Label>
-          <Hint id="message-hint">Optional</Hint>
+          <FormFieldDescription id="message-hint">Optional</FormFieldDescription>
           <TextArea aria-describedby="message-hint" id="message" name="message" rows={4} />
         </Field>
 
