@@ -1,8 +1,8 @@
-import '@utrecht/page-footer-css/dist/index.css';
 import { PageFooter as UtrechtPageFooter } from '@utrecht/page-footer-react';
 import { Grid, GridCell } from '../Grid/Grid';
 import { LinkList, LinkListLink } from '../LinkList/LinkList';
 import { Logo } from '../Logo';
+import '@utrecht/page-footer-css/dist/index.css';
 
 const PageFooter = () => {
   return (
