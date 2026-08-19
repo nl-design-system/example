@@ -43,4 +43,7 @@
   --utrecht-note-padding-block-end: var(--basis-space-inline-xl);
   --utrecht-note-padding-inline-start: var(--basis-space-inline-xl);
   --utrecht-note-padding-inline-end: var(--basis-space-inline-xl);
+
+  /* RadioGroup */
+  --utrecht-form-field-label-margin-block-end: var(--basis-space-inline-md);
 }

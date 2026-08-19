@@ -12,12 +12,6 @@
   row-gap: var(--basis-space-block-2xl);
 }
 
-.example-formpage__radio-group {
-  display: flex;
-  flex-direction: column;
-  row-gap: var(--basis-space-block-md);
-}
-
 .example-form-page__option {
   align-items: center;
   column-gap: var(--basis-space-inline-sm);

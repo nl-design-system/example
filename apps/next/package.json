@@ -60,7 +60,7 @@
     "@utrecht/page-header-css": "3.0.2",
     "@utrecht/page-header-react": "1.0.12",
     "@utrecht/page-layout-css": "4.0.1",
-    "@utrecht/radio-button-css": "3.0.1",
+    "@utrecht/radio-group-react": "1.0.17",
     "@utrecht/root-css": "4.1.2",
     "@utrecht/root-react": "1.0.17",
     "@utrecht/textarea-css": "4.1.0",

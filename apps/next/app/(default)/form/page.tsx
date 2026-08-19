@@ -4,12 +4,11 @@ import { Checkbox } from '@/components/Checkbox/Checkbox';
 import { Code } from '@/components/Code/Code';
 import { ErrorMessage } from '@/components/ErrorMessage/ErrorMessage';
 import { Field } from '@/components/Field/Field';
-import { FieldSet, FieldSetLegend } from '@/components/FieldSet/FieldSet';
 import { FormFieldDescription } from '@/components/FormFieldDescription/FormFieldDescription';
 import { FormLabel } from '@/components/FormLabel/FormLabel';
 import { Heading } from '@/components/Heading/Heading';
 import { Paragraph } from '@/components/Paragraph/Paragraph';
-import { RadioButton } from '@/components/RadioButton/RadioButton';
+import { RadioGroup } from '@/components/RadioGroup/RadioGroup';
 import { Switch } from '@/components/Switch/Switch';
 import { TextArea } from '@/components/TextArea/TextArea';
 import { TextInput } from '@/components/TextInput/TextInput';
@@ -48,23 +47,15 @@ const FormPage = () => {
           />
         </Field>
 
-        <FieldSet>
-          <div className="example-formpage__radio-group">
-            <FieldSetLegend>Preferred contact time</FieldSetLegend>
-            <div className="example-form-page__option">
-              <RadioButton id="contact-time-morning" name="contact-time" value="morning" />
-              <FormLabel htmlFor="contact-time-morning">Morning</FormLabel>
-            </div>
-            <div className="example-form-page__option">
-              <RadioButton defaultChecked id="contact-time-afternoon" name="contact-time" value="afternoon" />
-              <FormLabel htmlFor="contact-time-afternoon">Afternoon</FormLabel>
-            </div>
-            <div className="example-form-page__option">
-              <RadioButton id="contact-time-evening" name="contact-time" value="evening" />
-              <FormLabel htmlFor="contact-time-evening">Evening</FormLabel>
-            </div>
-          </div>
-        </FieldSet>
+        <RadioGroup
+          label="Preferred contact time"
+          name="contact-time"
+          options={[
+            { label: 'Morning', value: 'morning' },
+            { defaultChecked: true, label: 'Afternoon', value: 'afternoon' },
+            { label: 'Evening', value: 'evening' },
+          ]}
+        />
 
         <Field>
           <FormLabel htmlFor="message">Message</FormLabel>
