@@ -1,11 +1,11 @@
 import { Root } from '@utrecht/root-react';
 import { ReactNode } from 'react';
-import { Logo } from '../components/Logo';
-import { Navbar } from '../components/Navbar/Navbar';
-import { PageBody } from '../components/PageBody/PageBody';
-import { PageFooter } from '../components/PageFooter/PageFooter';
-import { PageHeader } from '../components/PageHeader/PageHeader';
-import { SkipLink } from '../components/SkipLink/SkipLink';
+import { Logo } from '@/components/Logo';
+import { PageBody } from '@/components/PageBody/PageBody';
+import { SkipLink } from '@/components/SkipLink/SkipLink';
+import { Navbar } from '@/layout/Navbar/Navbar';
+import { PageFooter } from '@/layout/PageFooter/PageFooter';
+import { PageHeader } from '@/layout/PageHeader/PageHeader';
 import '@utrecht/root-css/dist/index.css';
 
 type NavbarCurrent = 'detail' | 'form' | 'home';

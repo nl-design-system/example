@@ -1,5 +1,5 @@
 import { PropsWithChildren } from 'react';
-import { Layout } from '@/components/Layout';
+import { Layout } from '@/layout/Layout';
 import '@amsterdam/design-system-tokens/dist/index.css';
 import '@rijkshuisstijl-community/design-tokens/dist/index.css';
 import './detail/detail.css';
