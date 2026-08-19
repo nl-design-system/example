@@ -6,8 +6,8 @@ import { ErrorMessage } from '@/components/ErrorMessage/ErrorMessage';
 import { Field } from '@/components/Field/Field';
 import { FieldSet, FieldSetLegend } from '@/components/FieldSet/FieldSet';
 import { FormFieldDescription } from '@/components/FormFieldDescription/FormFieldDescription';
+import { FormLabel } from '@/components/FormLabel/FormLabel';
 import { Heading } from '@/components/Heading/Heading';
-import { Label } from '@/components/Label/Label';
 import { Paragraph } from '@/components/Paragraph/Paragraph';
 import { RadioButton } from '@/components/RadioButton/RadioButton';
 import { Switch } from '@/components/Switch/Switch';
@@ -29,12 +29,12 @@ const FormPage = () => {
 
       <form className="example-form-page__fields" method="POST">
         <Field>
-          <Label htmlFor="name">Name</Label>
+          <FormLabel htmlFor="name">Name</FormLabel>
           <TextInput autoComplete="name" id="name" inputRequired name="name" required />
         </Field>
 
         <Field invalid>
-          <Label htmlFor="email">Email address</Label>
+          <FormLabel htmlFor="email">Email address</FormLabel>
           <ErrorMessage id="email-error">Enter a valid email address, such as name@example.com.</ErrorMessage>
           <TextInput
             aria-describedby="email-error"
@@ -53,21 +53,21 @@ const FormPage = () => {
             <FieldSetLegend>Preferred contact time</FieldSetLegend>
             <div className="example-form-page__option">
               <RadioButton id="contact-time-morning" name="contact-time" value="morning" />
-              <Label htmlFor="contact-time-morning">Morning</Label>
+              <FormLabel htmlFor="contact-time-morning">Morning</FormLabel>
             </div>
             <div className="example-form-page__option">
               <RadioButton defaultChecked id="contact-time-afternoon" name="contact-time" value="afternoon" />
-              <Label htmlFor="contact-time-afternoon">Afternoon</Label>
+              <FormLabel htmlFor="contact-time-afternoon">Afternoon</FormLabel>
             </div>
             <div className="example-form-page__option">
               <RadioButton id="contact-time-evening" name="contact-time" value="evening" />
-              <Label htmlFor="contact-time-evening">Evening</Label>
+              <FormLabel htmlFor="contact-time-evening">Evening</FormLabel>
             </div>
           </div>
         </FieldSet>
 
         <Field>
-          <Label htmlFor="message">Message</Label>
+          <FormLabel htmlFor="message">Message</FormLabel>
           <FormFieldDescription id="message-hint">Optional</FormFieldDescription>
           <TextArea aria-describedby="message-hint" id="message" name="message" rows={4} />
         </Field>
@@ -75,12 +75,12 @@ const FormPage = () => {
         <Field>
           <div className="example-form-page__option">
             <Checkbox id="agree-to-contact" inputRequired name="agree-to-contact" required value="yes" />
-            <Label htmlFor="agree-to-contact">I agree to be contacted about this request</Label>
+            <FormLabel htmlFor="agree-to-contact">I agree to be contacted about this request</FormLabel>
           </div>
         </Field>
 
         <Field>
-          <Label htmlFor="newsletter">Subscribe to the newsletter</Label>
+          <FormLabel htmlFor="newsletter">Subscribe to the newsletter</FormLabel>
           <Switch id="newsletter" name="newsletter" value="yes" />
         </Field>
         <ActionGroup>
