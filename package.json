@@ -53,6 +53,7 @@
   "scripts": {
     "build": "pnpm --recursive run build",
     "clean": "pnpm --recursive run clean",
+    "dev:next": "pnpm --filter @example/next dev",
     "lint": "pnpm run --sequential '/^lint:.+$/'",
     "lint:css": "stylelint --allow-empty-input '**/*.{css,scss}'",
     "lint:js": "eslint",
