@@ -3,7 +3,7 @@ import { Button } from '@/components/Button/Button';
 import { Checkbox } from '@/components/Checkbox/Checkbox';
 import { Code } from '@/components/Code/Code';
 import { ErrorMessage } from '@/components/ErrorMessage/ErrorMessage';
-import { Field } from '@/components/Field/Field';
+import { FormField } from '@/components/FormField/FormField';
 import { FormFieldDescription } from '@/components/FormFieldDescription/FormFieldDescription';
 import { FormLabel } from '@/components/FormLabel/FormLabel';
 import { Heading } from '@/components/Heading/Heading';
@@ -26,13 +26,13 @@ const FormPage = () => {
         not the <Code>Grid</Code> component used elsewhere on this site.
       </Paragraph>
 
-      <form className="example-form-page__fields" method="POST">
-        <Field>
+      <form className="example-form-page__FormFields" method="POST">
+        <FormField>
           <FormLabel htmlFor="name">Name</FormLabel>
           <TextInput autoComplete="name" id="name" inputRequired name="name" required />
-        </Field>
+        </FormField>
 
-        <Field invalid>
+        <FormField invalid>
           <FormLabel htmlFor="email">Email address</FormLabel>
           <ErrorMessage id="email-error">Enter a valid email address, such as name@example.com.</ErrorMessage>
           <TextInput
@@ -45,7 +45,7 @@ const FormPage = () => {
             required
             type="email"
           />
-        </Field>
+        </FormField>
 
         <RadioGroup
           label="Preferred contact time"
@@ -57,23 +57,23 @@ const FormPage = () => {
           ]}
         />
 
-        <Field>
+        <FormField>
           <FormLabel htmlFor="message">Message</FormLabel>
           <FormFieldDescription id="message-hint">Optional</FormFieldDescription>
           <TextArea aria-describedby="message-hint" id="message" name="message" rows={4} />
-        </Field>
+        </FormField>
 
-        <Field>
+        <FormField>
           <div className="example-form-page__option">
             <Checkbox id="agree-to-contact" inputRequired name="agree-to-contact" required value="yes" />
             <FormLabel htmlFor="agree-to-contact">I agree to be contacted about this request</FormLabel>
           </div>
-        </Field>
+        </FormField>
 
-        <Field>
+        <FormField>
           <FormLabel htmlFor="newsletter">Subscribe to the newsletter</FormLabel>
           <Switch id="newsletter" name="newsletter" value="yes" />
-        </Field>
+        </FormField>
         <ActionGroup>
           <Button type="submit">Send message</Button>
         </ActionGroup>
