@@ -3,6 +3,7 @@ import { ReactNode } from 'react';
 import { Logo } from '@/components/Logo';
 import { PageBody } from '@/components/PageBody/PageBody';
 import { SkipLink } from '@/components/SkipLink/SkipLink';
+import { DevPaneProvider } from '@/dev-pane/DevPaneProvider';
 import { Navbar } from '@/layout/Navbar/Navbar';
 import { PageFooter } from '@/layout/PageFooter/PageFooter';
 import { PageHeader } from '@/layout/PageHeader/PageHeader';
@@ -40,7 +41,9 @@ const Layout = ({ children, navbarCurrent, theme }: LayoutProps) => {
 
         <Navbar items={navItems} />
 
-        <PageBody id="main">{children}</PageBody>
+        <DevPaneProvider>
+          <PageBody id="main">{children}</PageBody>
+        </DevPaneProvider>
 
         <PageFooter />
       </body>
