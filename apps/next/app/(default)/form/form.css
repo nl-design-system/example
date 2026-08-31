@@ -18,13 +18,3 @@
   display: flex;
   flex-wrap: wrap;
 }
-
-.example-form-page__component-reference {
-  color: var(--basis-color-default-color-subtle);
-  font-size: smaller;
-}
-
-.example-form-page__option .example-form-page__component-reference {
-  flex-basis: 100%;
-  order: 1;
-}
