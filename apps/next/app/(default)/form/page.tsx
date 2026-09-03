@@ -1,4 +1,5 @@
 import { ActionGroup } from '@/components/ActionGroup/ActionGroup';
+import { Alert } from '@/components/Alert/Alert';
 import { Button } from '@/components/Button/Button';
 import { Checkbox } from '@/components/Checkbox/Checkbox';
 import { Code } from '@/components/Code/Code';
@@ -25,11 +26,15 @@ const FormPage = () => {
             <ComponentReference label="Heading" npmPackage="@nl-design-system-candidate/heading-react" />
             <ComponentReference label="Paragraph" npmPackage="@nl-design-system-candidate/paragraph-react" />
             <ComponentReference label="Code" npmPackage="@nl-design-system-candidate/code-react" />
+            <ComponentReference label="Alert" npmPackage="@utrecht/component-library-react" />
           </>
         }
         title="Contact form overview"
       >
         <Heading level={1}>Contact us</Heading>
+        <Alert className="example-form-page__intro-alert" type="warning">
+          <Paragraph>This is a dummy form for demonstration purposes only. It does not send any data.</Paragraph>
+        </Alert>
         <Paragraph>
           This page gathers the Utrecht Design System&apos;s form elements into a single contact form: text inputs, a
           radio group, a select, a text area, a checkbox, and a toggle. Every component here can render as a Server
