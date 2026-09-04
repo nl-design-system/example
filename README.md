@@ -6,6 +6,23 @@ This design system is based on the NL Design System architecture.
 
 For more info about the NL Design System and learn about things happening in our open source community, join the `#nl-design-system` Slack via [praatmee.codefor.nl](https://praatmee.codefor.nl)!
 
+## Projects in this repository
+
+This repository contains two independent projects:
+
+### Design system packages & Storybook
+
+The `packages/*` and `proprietary/*` directories contain this design system's own component packages (CSS, React, web components) and their documentation, published to npm and browsable via Storybook.
+
+- Install dependencies: `pnpm install`
+- Run storybook: `npm run storybook`
+
+### Next.js example app
+
+`apps/next` is a Next.js application that shows how to discover and use components from the NL Design System in a real app. It is **not** built from this repository's own packages above. It consumes published packages from the wider NL Design System ecosystem (`@nl-design-system-candidate`, `@utrecht/component-library-react`, `@amsterdam/design-system-react`). The two projects live in the same repository but demonstrate different things.
+
+See [apps/next/README.md](apps/next/README.md) for setup, available scripts, and how to use the example.
+
 ---
 
 ✂ In your own repository: **remove the "Getting started" section below!**

@@ -1,0 +1,138 @@
+/*
+ * Deliberately self-contained: this is tooling chrome, not part of the themes being
+ * demonstrated, so it must not depend on --basis-* tokens. Themes only define the tokens
+ * their own bundled components need rhc-theme, for example, defines --basis-color-default-*
+ * but none of the --basis-space-*, --basis-border-radius-*, or --basis-color-accent-1-*
+ * tokens the start-theme happens to provide, which silently drops spacing/color here.
+ */
+
+.example-dev-pane-toggle {
+  background-color: #4f46e5;
+  border-radius: 0.5rem;
+  border-style: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.875rem;
+  inset-block-end: 1.5rem;
+  inset-inline-start: 1.5rem;
+  padding-block: 0.5rem;
+  padding-inline: 1rem;
+  position: fixed;
+  z-index: 1000;
+}
+
+.example-dev-pane-toggle:hover {
+  background-color: #4338ca;
+}
+
+.example-dev-pane {
+  background-color: #f8f9fc;
+  border-inline-start-color: #d0d3dc;
+  border-inline-start-style: solid;
+  border-inline-start-width: 1px;
+  color: #1f2430;
+  font-size: 0.9375rem;
+  inline-size: min(24rem, 100%);
+  inset-block: 0;
+  inset-inline-end: 0;
+  overflow-y: auto;
+  padding-block: 2rem;
+  padding-inline: 1.5rem;
+  position: fixed;
+  z-index: 999;
+}
+
+.example-dev-pane__heading {
+  font-weight: 700;
+  margin-block-end: 1.5rem;
+}
+
+.example-dev-pane__list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin-block: 0;
+  margin-inline: 0;
+  padding-block: 0;
+  padding-inline: 0;
+  row-gap: 1rem;
+}
+
+.example-dev-pane__item {
+  border-color: #d0d3dc;
+  border-radius: 0.5rem;
+  border-style: solid;
+  border-width: 1px;
+  padding-block: 1rem;
+  padding-inline: 1rem;
+}
+
+.example-dev-pane__item[data-active] {
+  border-color: #4f46e5;
+}
+
+.example-dev-pane__item-button {
+  align-items: center;
+  background-color: transparent;
+  border-style: none;
+  color: inherit;
+  column-gap: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  font-weight: 700;
+  padding-block: 0;
+  padding-inline: 0;
+  text-align: start;
+}
+
+.example-dev-pane__item-number {
+  align-items: center;
+  background-color: #4f46e5;
+  block-size: 1.5rem;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  flex-shrink: 0;
+  font-weight: 700;
+  inline-size: 1.5rem;
+  justify-content: center;
+}
+
+.example-dev-pane__item-note {
+  padding-block-start: 0.5rem;
+}
+
+.example-dev-note {
+  position: relative;
+}
+
+.example-dev-note[data-dev-note-enabled] {
+  border-radius: 0.25rem;
+  outline: 1px dashed #a5b4fc;
+  outline-offset: 0.25rem;
+}
+
+.example-dev-note__marker {
+  background-color: #4f46e5;
+  block-size: 2rem;
+  border-color: #fff;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 35%);
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 700;
+  inline-size: 2rem;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  position: absolute;
+  translate: -50% -50%;
+  z-index: 1000;
+}
+
+.example-dev-note__marker:hover {
+  background-color: #4338ca;
+  scale: 1.1;
+}

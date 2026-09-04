@@ -1,0 +1,49 @@
+.start-theme {
+  /* Page Header */
+  --utrecht-page-header-background-color: var(--basis-color-accent-1-inverse-bg-default);
+  --utrecht-page-header-content-background-color: var(--basis-color-accent-1-inverse-bg-default);
+  --utrecht-page-header-content-color: var(--basis-color-accent-1-bg-default);
+
+  /* Navbar */
+  --rhc-nav-bar-background-color: var(--basis-color-default-bg-default);
+  --rhc-nav-bar-border-color: var(--basis-color-accent-1-color-document);
+  --rhc-nav-bar-color: var(--basis-color-accent-1-color-document);
+  --rhc-nav-bar-container-inline-size: 100%;
+  --rhc-nav-bar-content-column-gap: var(--basis-space-inline-xl);
+  --rhc-nav-bar-heading-font-weight: var(--basis-text-font-weight-default);
+  --rhc-nav-bar-icon-active-color: var(--basis-color-accent-1-color-active);
+  --rhc-nav-bar-icon-color: var(--basis-color-accent-1-color-document);
+  --rhc-nav-bar-link-active-background-color: var(--basis-color-accent-1-color-document);
+  --rhc-nav-bar-link-active-color: var(--basis-color-accent-1-color-active);
+  --rhc-nav-bar-link-background-color: var(--basis-color-accent-1-color-document);
+  --rhc-nav-bar-link-color: var(--basis-color-accent-1-color-document);
+  --rhc-nav-bar-link-column-gap: var(--basis-space-block-lg);
+  --rhc-nav-bar-link-focus-color: var(--basis-color-accent-1-color-document);
+  --rhc-nav-bar-link-font-size: var(--basis-text-font-size-md);
+  --rhc-nav-bar-link-hover-background-color: var(--basis-color-default-bg-hover);
+  --rhc-nav-bar-link-hover-color: var(--basis-color-accent-1-color-document);
+  --rhc-nav-bar-link-padding-block-end: var(--basis-space-block-lg);
+  --rhc-nav-bar-link-padding-block-start: var(--basis-space-block-lg);
+  --rhc-nav-bar-link-padding-inline-end: var(--basis-space-inline-xl);
+  --rhc-nav-bar-link-padding-inline-start: var(--basis-space-inline-xl);
+  --rhc-nav-bar-max-inline-size: var(--basis-page-max-inline-size);
+  --rhc-nav-bar-padding-inline: var(--basis-space-inline-xl);
+  --rhc-text-font-family-default: var(--basis-text-font-family-default);
+
+  /* Note */
+  --utrecht-note-info-color: var(--basis-color-info-color-document);
+  --utrecht-note-info-background-color: var(--basis-color-info-bg-default);
+  --utrecht-note-info-border-color: var(--basis-color-info-border-default);
+  --utrecht-note-info-border-width: var(--basis-border-width-sm);
+  --utrecht-space-around: var(--basis-space-inline-md);
+  --utrecht-note-border-radius: var(--basis-border-radius-sm);
+  --utrecht-note-border-width: var(--basis-border-width-md);
+  --utrecht-note-row-gap: var(--basis-space-inline-md);
+  --utrecht-note-padding-block-start: var(--basis-space-inline-xl);
+  --utrecht-note-padding-block-end: var(--basis-space-inline-xl);
+  --utrecht-note-padding-inline-start: var(--basis-space-inline-xl);
+  --utrecht-note-padding-inline-end: var(--basis-space-inline-xl);
+
+  /* RadioGroup */
+  --utrecht-form-field-label-margin-block-end: var(--basis-space-inline-md);
+}

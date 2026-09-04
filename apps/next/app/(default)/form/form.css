@@ -1,0 +1,24 @@
+.example-form-page {
+  display: flex;
+  flex-direction: column;
+  padding-block: var(--basis-space-block-2xl);
+  padding-inline: var(--basis-space-inline-xl);
+  row-gap: var(--basis-space-block-xl);
+}
+
+.example-form-page__intro-alert {
+  margin-block-end: var(--basis-space-block-md);
+}
+
+.example-form-page__fields {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--basis-space-block-2xl);
+}
+
+.example-form-page__option {
+  align-items: center;
+  column-gap: var(--basis-space-inline-sm);
+  display: flex;
+  flex-wrap: wrap;
+}
