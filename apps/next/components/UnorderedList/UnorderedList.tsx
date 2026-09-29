@@ -1,1 +1,2 @@
-export { UnorderedList, UnorderedListItem } from '@utrecht/component-library-react/css-module';
+export { UnorderedList, UnorderedListItem } from '@utrecht/component-library-react';
+import '@utrecht/unordered-list-css/dist/index.css';
