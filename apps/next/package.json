@@ -68,6 +68,7 @@
     "@utrecht/textarea-css": "4.1.0",
     "@utrecht/textbox-css": "4.1.0",
     "@utrecht/unordered-list-css": "3.1.1",
+    "dedent": "1.7.2",
     "next": "16.3.5",
     "react": "19.2.8",
     "react-dom": "19.2.8"

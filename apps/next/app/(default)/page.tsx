@@ -1,6 +1,6 @@
 import { Alert } from '@/components/Alert/Alert';
 import { Code } from '@/components/Code/Code';
-import { CodeBlock } from '@/components/CodeBlock/CodeBlock';
+import { CodeBlock, js, sh } from '@/components/CodeBlock/CodeBlock';
 import { ComponentReference } from '@/components/ComponentReference/ComponentReference';
 import { Grid, GridCell } from '@/components/Grid/Grid';
 import { Heading } from '@/components/Heading/Heading';
@@ -176,7 +176,7 @@ const Home = () => {
             <OrderedListItem>
               <Paragraph>Install the React component and its CSS package.</Paragraph>
               <CodeBlock>
-                {'pnpm add @nl-design-system-candidate/heading-react @nl-design-system-candidate/heading-css'}
+                {sh`pnpm add @nl-design-system-candidate/heading-react @nl-design-system-candidate/heading-css`}
               </CodeBlock>
             </OrderedListItem>
             <OrderedListItem>
@@ -184,7 +184,7 @@ const Home = () => {
                 Import the component's CSS once, wherever you set up your application or with your component
                 implementation.
               </Paragraph>
-              <CodeBlock>{"import '@nl-design-system-candidate/heading-css/heading.css';"}</CodeBlock>
+              <CodeBlock>{js`import '@nl-design-system-candidate/heading-css/heading.css';`}</CodeBlock>
             </OrderedListItem>
             <OrderedListItem>
               <Paragraph>
@@ -193,8 +193,11 @@ const Home = () => {
                 class in <Code>app/layout.tsx</Code>.
               </Paragraph>
               <CodeBlock>
-                {"import '@nl-design-system-unstable/start-design-tokens/dist/variables.css';\n\n" +
-                  '<html lang="en" className="start-theme">'}
+                {js`
+                  import '@nl-design-system-unstable/start-design-tokens/dist/variables.css';
+
+                  <html lang="en" className="start-theme">
+                `}
               </CodeBlock>
               <Alert type="warning">
                 <Paragraph>
@@ -207,14 +210,17 @@ const Home = () => {
             <OrderedListItem>
               <Paragraph>Import and render the component.</Paragraph>
               <CodeBlock>
-                {"import { Heading } from '@nl-design-system-candidate/heading-react';\n\n" +
-                  'const Example = () => <Heading level={1}>Hello world</Heading>;'}
+                {js`
+                  import { Heading } from '@nl-design-system-candidate/heading-react';
+
+                  const Example = () => <Heading level={1}>Hello world</Heading>;
+                `}
               </CodeBlock>
               <Paragraph>
                 The React components can also be imported with CSS included but with the caveat that it can only be
                 client side rendered:
               </Paragraph>
-              <CodeBlock>{"import { Link } from '@nl-design-system-candidate/link-react/css';"}</CodeBlock>
+              <CodeBlock>{js`import { Link } from '@nl-design-system-candidate/link-react/css';`}</CodeBlock>
             </OrderedListItem>
             <OrderedListItem>
               <Paragraph>Repeat for every component you need.</Paragraph>
