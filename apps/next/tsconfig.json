@@ -1,0 +1,23 @@
+{
+  "extends": "@nl-design-system/tsconfig",
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": false,
+    "noEmit": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "isolatedModules": true,
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "dist/types/**/*.ts", "dist/dev/types/**/*.ts", "**/*.mts"],
+  "exclude": ["node_modules"]
+}
