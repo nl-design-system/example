@@ -4,6 +4,7 @@
   "buildCommand": "cd ../.. && pnpm run build:next",
   "framework": null,
   "outputDirectory": "dist",
+  "cleanUrls": true,
   "git": {
     "deploymentEnabled": {
       "dependabot/*": false,
