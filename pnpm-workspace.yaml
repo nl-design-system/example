@@ -36,6 +36,7 @@ minimumReleaseAgeExclude:
   - '@utrecht/*'
 
 overrides:
+  shell-quote@>=1.8.4 <1.11.0: ^1.11.0
   tar@<=7.5.18: ^7.5.19 # GHSA-23hp-3jrh-7fpw
 
 # Configure pnpm to save exact version numbers (not including ^ or ~) in package.json. Lock dependencies to specific
