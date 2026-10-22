@@ -212,8 +212,8 @@ importers:
         specifier: 7.28.6
         version: 7.28.6(supports-color@10.2.2)
       '@etchteam/storybook-addon-status':
-        specifier: 8.0.0
-        version: 8.0.0(storybook@10.6.3(@types/react@19.2.17)(prettier@3.9.4)(react@19.2.7))
+        specifier: 8.1.0
+        version: 8.1.0(storybook@10.6.3(@types/react@19.2.17)(prettier@3.9.4)(react@19.2.7))
       '@example/assets':
         specifier: workspace:*
         version: link:../../proprietary/assets
@@ -1388,8 +1388,8 @@ packages:
     resolution: {integrity: sha512-43/qtrDUokr7LJqoF2c3+RInu/t4zfrpYdoSDfYyhg52rwLV6TnOvdG4fXm7IkSB3wErkcmJS9iEhjVtOSEjjA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@etchteam/storybook-addon-status@8.0.0':
-    resolution: {integrity: sha512-PR0qiT5ndB32rfRi3a6QJE66sUuTD2GeJMmQFdaEOLjTWuJ/usdZ6hXXCmWadPLZXcg6wkvHGFQxDSOKNVjU9A==}
+  '@etchteam/storybook-addon-status@8.1.0':
+    resolution: {integrity: sha512-jKEoBJwGO4uab3L4hNEjxlve1eBvyCf6FmTQYpxbMnEohciSYt3aT2iVtraNQD7E46IrcaR5CF5ykS1MfXNfyw==}
     peerDependencies:
       storybook: ^10.0.0
 
@@ -7986,7 +7986,7 @@ snapshots:
       '@eslint/core': 0.17.0
       levn: 0.4.1
 
-  '@etchteam/storybook-addon-status@8.0.0(storybook@10.6.3(@types/react@19.2.17)(prettier@3.9.4)(react@19.2.7))':
+  '@etchteam/storybook-addon-status@8.1.0(storybook@10.6.3(@types/react@19.2.17)(prettier@3.9.4)(react@19.2.7))':
     dependencies:
       lodash: 4.17.21
       storybook: 10.6.3(@types/react@19.2.17)(prettier@3.9.4)(react@19.2.7)
