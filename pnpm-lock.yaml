@@ -238,9 +238,6 @@ importers:
       '@storybook/addon-docs':
         specifier: 10.6.3
         version: 10.6.3(@types/react-dom@19.2.3(@types/react@19.2.17))(@types/react@19.2.17)(storybook@10.6.3(@types/react@19.2.17)(prettier@3.9.4)(react@19.2.7))
-      '@storybook/addon-links':
-        specifier: 10.6.3
-        version: 10.6.3(@types/react@19.2.17)(react@19.2.7)(storybook@10.6.3(@types/react@19.2.17)(prettier@3.9.4)(react@19.2.7))
       '@storybook/react-vite':
         specifier: 10.6.3
         version: 10.6.3(@types/react-dom@19.2.3(@types/react@19.2.17))(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(storybook@10.6.3(@types/react@19.2.17)(prettier@3.9.4)(react@19.2.7))(supports-color@10.2.2)(typescript@5.9.3)(vite@7.3.6(@types/node@24.10.9)(sass-embedded@1.89.2)(sass@1.97.3)(terser@5.19.0)(yaml@2.8.2))
@@ -2376,18 +2373,6 @@ packages:
       storybook: ^10.6.3
     peerDependenciesMeta:
       '@types/react':
-        optional: true
-
-  '@storybook/addon-links@10.6.3':
-    resolution: {integrity: sha512-tPtUUbAq8zEE5gh8/NJdZbdN1yR6VoOuOG+68xiVWEdccjOLfTD+KefilpqH8qtKPmDS5KVtH/14vI/pL0ES1w==}
-    peerDependencies:
-      '@types/react': ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
-      react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
-      storybook: ^10.6.3
-    peerDependenciesMeta:
-      '@types/react':
-        optional: true
-      react:
         optional: true
 
   '@storybook/builder-vite@10.6.3':
@@ -8715,14 +8700,6 @@ snapshots:
       '@types/react': 19.2.17
     transitivePeerDependencies:
       - '@types/react-dom'
-
-  '@storybook/addon-links@10.6.3(@types/react@19.2.17)(react@19.2.7)(storybook@10.6.3(@types/react@19.2.17)(prettier@3.9.4)(react@19.2.7))':
-    dependencies:
-      '@storybook/global': 5.0.0
-      storybook: 10.6.3(@types/react@19.2.17)(prettier@3.9.4)(react@19.2.7)
-    optionalDependencies:
-      '@types/react': 19.2.17
-      react: 19.2.7
 
   '@storybook/builder-vite@10.6.3(storybook@10.6.3(@types/react@19.2.17)(prettier@3.9.4)(react@19.2.7))(vite@7.3.6(@types/node@24.10.9)(sass-embedded@1.89.2)(sass@1.97.3)(terser@5.19.0)(yaml@2.8.2))':
     dependencies:
