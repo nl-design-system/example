@@ -1,0 +1,33 @@
+{
+  "name": "@example/next",
+  "version": "1.0.0-alpha.0",
+  "author": "Community for NL Design System",
+  "description": "Next.js website for the Example repository, based on the NL Design System architecture",
+  "license": "EUPL-1.2",
+  "keywords": [
+    "nl-design-system"
+  ],
+  "private": true,
+  "repository": {
+    "type": "git+ssh",
+    "url": "git@github.com:nl-design-system/example.git",
+    "directory": "apps/next"
+  },
+  "scripts": {
+    "build": "next build",
+    "clean": "rimraf .next/ dist/",
+    "dev": "next dev",
+    "lint": "tsc --project ./tsconfig.json --noEmit",
+    "start": "http-server dist/"
+  },
+  "dependencies": {
+    "next": "16.4.4",
+    "react": "19.2.7",
+    "react-dom": "19.2.7"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.17",
+    "rimraf": "6.1.2",
+    "typescript": "5.9.3"
+  }
+}

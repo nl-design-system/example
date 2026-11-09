@@ -1,0 +1,66 @@
+:root {
+  --example-color-background: #f7f7f8;
+  --example-color-text: #1a1a2e;
+  --example-color-text-subtle: #5c5c70;
+  --example-color-accent: #154273;
+  --example-color-surface: #fff;
+
+  color-scheme: light;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--example-color-background);
+  color: var(--example-color-text);
+  font-family:
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    "Roboto",
+    sans-serif;
+  line-height: 1.5;
+  margin-block: 0;
+  margin-inline: 0;
+}
+
+.example-page {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-block-size: 100vh;
+  padding-block: 2rem;
+  padding-inline: 1rem;
+}
+
+.example-card {
+  background-color: var(--example-color-surface);
+  border-end-end-radius: 8px;
+  border-end-start-radius: 8px;
+  border-start-end-radius: 8px;
+  border-start-start-radius: 8px;
+  box-shadow: 0 4px 24px rgb(0 0 0 / 8%);
+  inline-size: 100%;
+  max-inline-size: 36rem;
+  padding-block: 3rem;
+  padding-inline: 2rem;
+  text-align: center;
+}
+
+.example-heading {
+  color: var(--example-color-accent);
+  font-size: clamp(2rem, 5vw, 2.75rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-block: 0 0.75rem;
+}
+
+.example-paragraph {
+  color: var(--example-color-text-subtle);
+  font-size: 1.125rem;
+  margin-block: 0;
+}
