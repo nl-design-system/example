@@ -20,6 +20,7 @@
     "pnpm": "^11.4.0"
   },
   "workspaces": [
+    "./apps/*",
     "./packages/*",
     "./proprietary/*"
   ],
@@ -51,7 +52,9 @@
   },
   "scripts": {
     "build": "pnpm --recursive run build",
+    "build:next": "pnpm --filter @example/next build",
     "clean": "pnpm --recursive run clean",
+    "dev:next": "pnpm --filter @example/next dev",
     "lint": "pnpm run --sequential '/^lint:.+$/'",
     "lint:css": "stylelint --allow-empty-input '**/*.{css,scss}'",
     "lint:js": "eslint",

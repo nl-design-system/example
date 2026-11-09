@@ -89,6 +89,28 @@ importers:
         specifier: 8.54.0
         version: 8.54.0(eslint@9.39.2(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.9.3)
 
+  apps/next:
+    dependencies:
+      next:
+        specifier: 16.4.4
+        version: 16.4.4(@babel/core@7.29.7(supports-color@10.2.2))(@types/node@24.10.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(sass@1.97.3)
+      react:
+        specifier: 19.2.7
+        version: 19.2.7
+      react-dom:
+        specifier: 19.2.7
+        version: 19.2.7(react@19.2.7)
+    devDependencies:
+      '@types/react':
+        specifier: 19.2.17
+        version: 19.2.17
+      rimraf:
+        specifier: 6.1.2
+        version: 6.1.2
+      typescript:
+        specifier: 5.9.3
+        version: 5.9.3
+
   packages/components-css: {}
 
   packages/components-react:
@@ -11598,6 +11620,32 @@ snapshots:
       - '@types/node'
       - babel-plugin-macros
 
+  next@16.4.4(@babel/core@7.29.7(supports-color@10.2.2))(@types/node@24.10.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(sass@1.97.3):
+    dependencies:
+      '@next/env': 16.4.4
+      '@swc/helpers': 0.5.23
+      baseline-browser-mapping: 2.10.0
+      caniuse-lite: 1.0.30001774
+      postcss: 8.5.23
+      react: 19.2.7
+      react-dom: 19.2.7(react@19.2.7)
+      styled-jsx: 5.1.6(@babel/core@7.29.7(supports-color@10.2.2))(react@19.2.7)
+    optionalDependencies:
+      '@next/swc-darwin-arm64': 16.4.4
+      '@next/swc-darwin-x64': 16.4.4
+      '@next/swc-linux-arm64-gnu': 16.4.4
+      '@next/swc-linux-arm64-musl': 16.4.4
+      '@next/swc-linux-x64-gnu': 16.4.4
+      '@next/swc-linux-x64-musl': 16.4.4
+      '@next/swc-win32-arm64-msvc': 16.4.4
+      '@next/swc-win32-x64-msvc': 16.4.4
+      sass: 1.97.3
+      sharp: 0.35.5(@types/node@24.10.9)
+    transitivePeerDependencies:
+      - '@babel/core'
+      - '@types/node'
+      - babel-plugin-macros
+
   no-case@3.0.4:
     dependencies:
       lower-case: 2.0.2
@@ -13095,6 +13143,13 @@ snapshots:
       react: 19.2.7
     optionalDependencies:
       '@babel/core': 7.28.6(supports-color@10.2.2)
+
+  styled-jsx@5.1.6(@babel/core@7.29.7(supports-color@10.2.2))(react@19.2.7):
+    dependencies:
+      client-only: 0.0.1
+      react: 19.2.7
+    optionalDependencies:
+      '@babel/core': 7.29.7(supports-color@10.2.2)
 
   stylehacks@5.1.1(postcss@8.5.6):
     dependencies:
