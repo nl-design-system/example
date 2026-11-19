@@ -8,12 +8,6 @@
   color-scheme: light;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 body {
   background-color: var(--example-color-background);
   color: var(--example-color-text);
