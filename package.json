@@ -19,11 +19,6 @@
     "node": "^24.22.3 || ^26.13.1",
     "pnpm": "^12"
   },
-  "workspaces": [
-    "./apps/*",
-    "./packages/*",
-    "./proprietary/*"
-  ],
   "devDependencies": {
     "@changesets/cli": "3.0.1",
     "@eslint/js": "9.39.2",
